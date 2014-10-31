@@ -1,5 +1,4 @@
 require 'equalizer'
-require 'armory/utils'
 require 'armory/base'
 
 module Armory

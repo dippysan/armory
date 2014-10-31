@@ -110,11 +110,6 @@ module Armory
         headers = {}
       end
 
-      def request_params(params = {})
-        params
-      end
-
-
     end
 
   end

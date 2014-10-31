@@ -72,6 +72,7 @@ module Armory
 
     # Raised when Armory::Base does not receive a region
     RegionMissing = Class.new(ClientError)
+    InvalidRealm = Class.new(ClientError)
 
     # Raised when Armory returns the HTTP status code 403
     Forbidden = Class.new(ClientError)

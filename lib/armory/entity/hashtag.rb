@@ -1,10 +1,6 @@
-require 'armory/entity'
-
 module Armory
-  class Entity
-    class Hashtag < Armory::Entity
-      # @return [String]
-      attr_reader :text
-    end
+  class Hashtag < Armory::MetaMethods
+    # @return [String]
+    attr_reader :text
   end
 end

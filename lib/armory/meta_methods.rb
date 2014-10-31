@@ -82,7 +82,7 @@ module Armory
       #
       # @param key1 [Symbol]
       # @param klass [Symbol]
-      # @param key2 [Symbol] - alias
+      # @param key_alias [Symbol] - alias
       def define_attribute_method(key1, klass = nil, key_alias = key1)
         define_method(key_alias) do ||
           if @attrs[key1].nil? || @attrs[key1].respond_to?(:empty?) && @attrs[key1].empty?

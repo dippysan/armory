@@ -1,10 +1,8 @@
-require 'armory/entity'
+require 'armory/meta_methods'
 
 module Armory
-  class Entity
-    class Symbol < Armory::Entity
-      # @return [String]
-      attr_reader :text
-    end
+  class Symbol < Armory::MetaMethods
+    # @return [String]
+    attr_reader :text
   end
 end

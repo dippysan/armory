@@ -1,4 +1,3 @@
-require 'addressable/uri'
 require 'armory/error'
 require 'armory/utils'
 require 'armory/version'

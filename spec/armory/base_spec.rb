@@ -21,7 +21,7 @@ describe Armory::Base do
       end
     end
 
-    describe '.region' do
+    describe 'region' do
       it 'returns US' do
         expect(@base.region).to eq("US")
       end

@@ -11,20 +11,31 @@ module Armory
       URI_SUBSTRING = '://'
       DEFAULT_CURSOR = -1
 
-    private
-
       # Take a realm slug, or Armory::BasicRealm object and return its slug
       #
       # @param object [String, Armory::BasicRealm] A slug or object.
       # @return [String]
       def extract_slug(object)
         case object
-        when ::String
-          object
-        when Armory::BasicRealm
-          object.slug
+          when ::String;           object
+          when Armory::BasicRealm; object.slug
+          else raise (Armory::Error::InvalidRealm)
         end
       end
+
+      # Take an auction url string, URL, or Armory::Auction object and return the URL as a string
+      #
+      # @param object [String, Armory::BasicRealm] A slug or object.
+      # @return [String]
+      def extract_auction_file_url(object)
+        case object
+          when Addressable::URI; object.to_s
+          when ::String;         Addressable::URI.parse(object).to_s
+          when Armory::Auction;  object.url.to_s
+        end
+      end
+
+    private
 
       # # Take a URI string or Armory::Identity object and return its ID
       # #

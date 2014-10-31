@@ -1,13 +1,10 @@
 require 'armory/meta_methods'
 
 module Armory
-  class URL < Armory::MetaMethods
+  class URL < MetaMethods
 
-    url_attr_reader :url
+  	url_attr_reader :url
 
-	  URL = URI
-	  Uri = URI # rubocop:disable ConstantName
-	  Url = URI # rubocop:disable ConstantName
   end
 
 end

@@ -1,7 +1,3 @@
-require 'addressable/uri'
-require 'forwardable'
-require 'armory/null_object'
-require 'armory/utils'
 require 'armory/error'
 require 'armory/meta_methods'
 

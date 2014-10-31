@@ -1,3 +1,5 @@
+require 'armory/meta_methods'
+
 module Armory
   class WorldZone < Armory::MetaMethods
 
@@ -14,12 +16,12 @@ module Armory
 
     # @return [Integer]
     attr_reader :area, :status, :next
-    
+
 
     def controllingfaction
-        @attr[:'controlling-faction']
+        @attrs[:'controlling-faction']
     end
-    alias_method :controlling_faction, :'controllingfaction'
+    alias_method :controlling_faction, :controllingfaction
 
   end
 end
