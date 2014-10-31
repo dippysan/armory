@@ -1,0 +1,49 @@
+{
+    "realms": [{
+        "type": "pvp",
+        "population": "medium",
+        "queue": false,
+        "wintergrasp": {
+            "area": 1,
+            "controlling-faction": 1,
+            "status": 2,
+            "next": 1414635959807
+        },
+        "tol-barad": {
+            "area": 21,
+            "controlling-faction": 1,
+            "status": 0,
+            "next": 1414640673362
+        },
+        "status": true,
+        "name": "Aegwynn",
+        "slug": "aegwynn",
+        "battlegroup": "Vengeance",
+        "locale": "en_US",
+        "timezone": "America/Los_Angeles",
+        "connected_realms": ["daggerspine", "hakkar", "aegwynn", "bonechewer", "gurubashi"]
+    }, {
+        "type": "pve",
+        "population": "high",
+        "queue": false,
+        "wintergrasp": {
+            "area": 1,
+            "controlling-faction": 0,
+            "status": 1,
+            "next": 1414634295761
+        },
+        "tol-barad": {
+            "area": 21,
+            "controlling-faction": 0,
+            "status": 0,
+            "next": 1414641027934
+        },
+        "status": true,
+        "name": "Aerie Peak",
+        "slug": "aerie-peak",
+        "battlegroup": "Vindication",
+        "locale": "en_US",
+        "timezone": "America/Los_Angeles",
+        "connected_realms": ["aerie-peak", "ulduar"]
+    }]
+}
