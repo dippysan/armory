@@ -7,6 +7,7 @@ describe Armory::REST::Client do
     @client = Armory::REST::Client.new(api_key: "API")
   end
 
+
   describe '.new' do
     context 'when invalid credentials are provided' do
       it 'raises a ConfigurationError exception' do
@@ -29,6 +30,17 @@ describe Armory::REST::Client do
     it 'returns false if any credentials are missing' do
       client = Armory::REST::Client.new()
       expect(client.credentials?).to be false
+    end
+  end
+
+  describe '.api_key?' do
+    it 'returns true if only api_key is supplied' do
+      client = Armory::REST::Client.new(:api_key => 'API')
+      expect(client.api_key?).to be true
+    end
+    it 'returns false if api_key is missing' do
+      client = Armory::REST::Client.new()
+      expect(client.api_key?).to be false
     end
   end
 
@@ -84,5 +96,6 @@ describe Armory::REST::Client do
       expect { @client.send(:request, :get, '/path') }.to raise_error(Armory::Error)
     end
   end
+
 
 end

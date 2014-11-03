@@ -15,7 +15,8 @@ module Armory
       # @param options [Hash] A customizable set of options.
       # - [Addressable::URI] Auction file location
       def auctiondata(auction_url, options = {})
-        perform_with_object(:get, extract_url(auction_url), options, Armory::AuctionData)
+        # TODO Call URL without api_key in parameter
+        perform_bare_with_object(:get, extract_url(auction_url), options, Armory::AuctionData)
       end
 
     end

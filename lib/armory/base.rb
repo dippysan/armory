@@ -3,6 +3,11 @@ require 'armory/meta_methods'
 
 module Armory
   class Base < Armory::MetaMethods
+
+    def self.stores_region?
+      true
+    end
+
     ruby_attr_reader :region
 
     # Initializes a new object

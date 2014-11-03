@@ -2,7 +2,7 @@ require 'memoizable'
 require 'armory/null_object'
 require 'armory/utils'
 require 'armory/base'
-require 'armory/realm'
+require 'armory/auction_realm'
 require 'armory/enumerable'
 
 module Armory
@@ -11,10 +11,14 @@ module Armory
     include Armory::Utils
     include Memoizable
 
-    # @return [Hash]
-    attr_reader :attrs
-    alias_method :to_h, :attrs
-    alias_method :to_hash, :to_h
+    # { "realm":{"name":"Kil'jaeden","slug":"kiljaeden"},
+    #   "auctions":{"auctions":[
+    #     {"auc":1118830215,"item":43385,"owner":"Rokhzin","ownerRealm":"Kil'jaeden","bid":1019246,"buyout":1084305,"quantity":1,"timeLeft":"VERY_LONG","rand":0,"seed":0,"context":0},
+
+    def realm
+      Realm.new(@region, @attrs[:realm])
+    end
+    memoize :realm
 
     def auctions
       @collection
@@ -26,8 +30,8 @@ module Armory
     # @return [Armory::RealmStatus]
     def initialize(region, attrs = {})
       super
-      @collection = @attrs.fetch(:auctions, []).collect do |realm|
-        AuctionData.new(@region, realm)
+      @collection = attrs.fetch(:auctions, []).fetch(:auctions, []).collect do |auctiondata|
+        AuctionItem.new(@region, auctiondata)
       end
     end
 

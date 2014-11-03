@@ -1,6 +1,7 @@
 require 'addressable/uri'
 require 'armory/arguments'
 require 'armory/request'
+require 'armory/rest/connection'
 require 'armory/utils'
 require 'armory/basic_realm'
 
@@ -60,6 +61,12 @@ module Armory
       # @param klass [Class]
       def perform_with_object(request_method, path, options, klass)
         request = Armory::Request.new(self, request_method, path, options)
+        request.perform_with_object(klass)
+      end
+
+      # Same as above, but uses RequestBare so not to include any locale or region
+      def perform_bare_with_object(request_method, path, options, klass)
+        request = Armory::RequestBare.new(self, request_method, path, options)
         request.perform_with_object(klass)
       end
 

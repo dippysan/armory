@@ -25,39 +25,40 @@ RSpec.configure do |config|
   end
 end
 
+URL_PREFIX = 'https://us.api.battle.net'
 TEST_APIKEY_LOCALE = "?apikey=API&locale=en_US"
 
 
 def a_delete(path)
-  a_request(:delete, Armory::REST::Client::URL_PREFIX + path + TEST_APIKEY_LOCALE)
+  a_request(:delete, URL_PREFIX + path + TEST_APIKEY_LOCALE)
 end
 
 def a_get(path)
-  a_request(:get, Armory::REST::Client::URL_PREFIX + path + TEST_APIKEY_LOCALE)
+  a_request(:get, URL_PREFIX + path + TEST_APIKEY_LOCALE)
 end
 
 def a_post(path)
-  a_request(:post, Armory::REST::Client::URL_PREFIX + path + TEST_APIKEY_LOCALE)
+  a_request(:post, URL_PREFIX + path + TEST_APIKEY_LOCALE)
 end
 
 def a_put(path)
-  a_request(:put, Armory::REST::Client::URL_PREFIX + path + TEST_APIKEY_LOCALE)
+  a_request(:put, URL_PREFIX + path + TEST_APIKEY_LOCALE)
 end
 
 def stub_delete(path)
-  stub_request(:delete, Armory::REST::Client::URL_PREFIX + path + TEST_APIKEY_LOCALE)
+  stub_request(:delete, URL_PREFIX + path + TEST_APIKEY_LOCALE)
 end
 
 def stub_get(path)
-  stub_request(:get, Armory::REST::Client::URL_PREFIX + path + TEST_APIKEY_LOCALE)
+  stub_request(:get, URL_PREFIX + path + TEST_APIKEY_LOCALE)
 end
 
 def stub_post(path)
-  stub_request(:post, Armory::REST::Client::URL_PREFIX + path + TEST_APIKEY_LOCALE)
+  stub_request(:post, URL_PREFIX + path + TEST_APIKEY_LOCALE)
 end
 
 def stub_put(path)
-  stub_request(:put, Armory::REST::Client::URL_PREFIX + path + TEST_APIKEY_LOCALE)
+  stub_request(:put, URL_PREFIX + path + TEST_APIKEY_LOCALE)
 end
 
 def fixture_path

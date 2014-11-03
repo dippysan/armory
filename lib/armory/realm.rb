@@ -10,7 +10,7 @@ module Armory
     predicate_attr_reader :queue, :status
 
     object_attr_reader :WorldZone, :wintergrasp
-    object_attr_reader :WorldZone, :'tol-barad', :tol_barad
+    object_attr_reader :WorldZone, :'tol-barad', method_alias: :tol_barad
     alias_method :tolbarad, :tol_barad
 
     # @return [Array<Armory::BasicRealm>]

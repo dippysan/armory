@@ -13,11 +13,6 @@ module Armory
     include Armory::Utils
     include Memoizable
 
-    # @return [Hash]
-    attr_reader :attrs
-    alias_method :to_h, :attrs
-    alias_method :to_hash, :to_h
-
     def realms
       @collection
     end

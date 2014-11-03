@@ -1,32 +1,60 @@
 require 'helper'
+require 'addressable/uri'
 
-describe Armory::Base do
-  describe ".new" do
-    context 'when no region is provided' do
-      it 'raises a RegionMissing exception' do
-        expect { Armory::Base.new() }.to raise_exception(Armory::Error::RegionMissing)
-      end
-    end
-  end
+module Request  # For constants
 
-  describe "with valid constructor" do
+  TEST_PATH = "/path"
+  TEST_METHOD = :testget
+  TEST_OPTIONS = { a: 1 }
 
+  describe Armory::Request do
     before do
-      @base = Armory::Base.new("US", :id => 1)
+      @test_client = double("client")
+      allow(@test_client).to receive(:send).with(TEST_METHOD, kind_of(URI), kind_of(Hash)).and_return(@test_client)
+      allow(@test_client).to receive(:body).and_return("returned html")
+      @request = Armory::Request.new(@test_client, TEST_METHOD, TEST_PATH, TEST_OPTIONS)
     end
 
-    describe '#attrs' do
-      it 'returns a hash of attributes' do
-        expect(@base.attrs).to eq(:id => 1)
+    describe '.new' do
+      it 'stores passed parameters' do
+        expect(@request.client).to eql(@test_client)
+        expect(@request.request_method).to eql(TEST_METHOD)
+        expect(@request.path.to_s).to include(TEST_PATH)
+        expect(@request.options).to be_kind_of(Hash)
+      end
+      it 'translates path to full path including region' do
+        expect(@request.path.to_s).to eq("https://#{@request.region}.api.battle.net#{TEST_PATH}")
+      end
+      it 'adds locale to options' do
+        expect(@request.options).to include(locale: "en_US")
       end
     end
 
-    describe 'region' do
-      it 'returns US' do
-        expect(@base.region).to eq("US")
+    describe '.perform' do
+      it 'calls client with method, path and options. Returns body' do
+        expect(@request.perform).to eq("returned html")
+      end
+    end
+
+    describe '.region' do
+      it 'defaults to US' do
+        expect(@request.region).to eq("US")
+      end
+      it 'stores and returns upcase version of region' do
+        @request.region = "za"
+        expect(@request.region).to eq("ZA")
+      end
+    end
+
+    describe '.locale' do
+      it 'defaults to en_US' do
+        expect(@request.locale).to eq("en_US")
+      end
+      it 'stores and returns locale' do
+        @request.locale = "locale"
+        expect(@request.locale).to eq("locale")
       end
     end
 
   end
-
 end

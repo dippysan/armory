@@ -6,6 +6,10 @@ module Armory
     include Memoizable
     include Armory::Utils
 
+    def self.stores_region?
+      false
+    end
+
     # @return [Hash]
     attr_reader :attrs
     alias_method :to_h, :attrs
@@ -38,9 +42,9 @@ module Armory
       # @param klass [Symbol]
       # @param key1 [Symbol]
       # @param key2 [Symbol]
-      def object_attr_reader(klass, key1, key_alias = key1)
-        define_attribute_method(key1, klass, key_alias)
-        define_predicate_method(key1, key_alias)
+      def object_attr_reader(klass, key1, **args)
+        define_attribute_method(key1, klass, args)
+        define_predicate_method(key1, args)
       end
 
       # Define URI methods from attributes
@@ -51,21 +55,6 @@ module Armory
           define_uri_method(primary_key)
           define_predicate_method(primary_key)
         end
-        # attrs.each do |primary_key|
-        #   primary = 'url'; secondary = 'uri'
-        #   array = primary_key.to_s.split('_')
-        #   index = array.index(primary)
-        #   if index.nil? # No url present, so alias uri to url instead
-        #     primary, secondary = secondary, primary
-        #     index = array.index(primary)
-        #   end
-        #   array[index] = secondary
-        #   secondary_key = array.join('_').to_sym
-        #   define_uri_method(primary_key)
-        #   alias_method(secondary_key, primary_key)
-        #   define_predicate_method(secondary_key, primary_key)
-        #   alias_method(:"#{secondary_key}?", :"#{primary_key}?")
-        # end
       end
 
       # Dynamically define a method for a URI
@@ -80,42 +69,46 @@ module Armory
 
       # Dynamically define a method for an attribute
       #
-      # @param key1 [Symbol]
+      # @param key1 [Symbol], or [Array]
       # @param klass [Symbol]
-      # @param key_alias [Symbol] - alias
-      def define_attribute_method(key1, klass = nil, key_alias = key1)
-        define_method(key_alias) do ||
+      # @param method_alias [Symbol] - alias
+      def define_attribute_method(key1, klass = nil, method_alias: key1, target_alias: key1)
+        define_method(method_alias) do ||
           if @attrs[key1].nil? || @attrs[key1].respond_to?(:empty?) && @attrs[key1].empty?
             NullObject.new
           else
             if klass.nil?
               @attrs[key1]
             else
-              Armory.const_get(klass).new(@attrs[key1])
+              if defined? @region and Armory.const_get(klass).stores_region?
+                Armory.const_get(klass).new(@region, target_alias => @attrs[key1])
+              else
+                Armory.const_get(klass).new(@attrs[key1])
+              end
             end
           end
         end
-        memoize(key_alias)
+        memoize(method_alias)
       end
 
       # @param key [Symbol]
-      def deprecate_attribute_method(key, key_alias = key)
-        define_method(key_alias) do ||
+      def deprecate_attribute_method(key, method_alias = key)
+        define_method(method_alias) do ||
           warn "#{Kernel.caller.first}: [DEPRECATION] ##{key} is deprecated. Use ##{key}? instead."
           @attrs[key]
         end
-        memoize(key_alias)
+        memoize(method_alias)
       end
 
       # Dynamically define a predicate method for an attribute
       #
       # @param key1 [Symbol]
-      # @param key_alias [Symbol]
-      def define_predicate_method(key1, key_alias = key1)
-        define_method(:"#{key_alias}?") do ||
+      # @param method_alias [Symbol]
+      def define_predicate_method(key1, method_alias: key1, target_alias: key1)
+        define_method(:"#{method_alias}?") do ||
           !@attrs[key1].nil? && @attrs[key1] != false && !(@attrs[key1].respond_to?(:empty?) && @attrs[key1].empty?)
         end
-        memoize(:"#{key_alias}?")
+        memoize(:"#{method_alias}?")
       end
 
     end
