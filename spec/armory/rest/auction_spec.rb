@@ -27,6 +27,6 @@ describe Armory::REST::Auction do
       expect(auction.lastmodified).to be_a Time
       expect(auction.lastmodified).to eq(Time.at(1414758788000/1000))
     end
-  end
+end
 
 end

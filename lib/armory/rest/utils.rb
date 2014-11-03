@@ -27,7 +27,7 @@ module Armory
       #
       # @param object [String, Armory::BasicRealm] A slug or object.
       # @return [String]
-      def extract_auction_file_url(object)
+      def extract_url(object)
         case object
           when Addressable::URI; object.to_s
           when ::String;         Addressable::URI.parse(object).to_s

@@ -35,21 +35,21 @@ describe Armory::REST::Utils do
     end
   end
 
-  describe '#extract_auction_file_url' do
+  describe '#extract_url' do
     it "returns valid URL as string" do
-      object = @dummy_class.extract_auction_file_url("http://blizzard.com/home")
+      object = @dummy_class.extract_url("http://blizzard.com/home")
       expect(object).to be_a ::String
       expect(object).to eq("http://blizzard.com/home")
     end
     it "returns Armory::Auction as string" do
       realm = Armory::Auction.new('us', files: [{ url: "http://blizzard.com/home2"}])
-      object = @dummy_class.extract_auction_file_url(realm)
+      object = @dummy_class.extract_url(realm)
       expect(object).to be_a ::String
       expect(object).to eq("http://blizzard.com/home2")
     end
     it "returns Addressable::URI as string" do
       realm = Addressable::URI.parse("http://blizzard.com/home3")
-      object = @dummy_class.extract_auction_file_url(realm)
+      object = @dummy_class.extract_url(realm)
       expect(object).to be_a ::String
       expect(object).to eq("http://blizzard.com/home3")
     end
