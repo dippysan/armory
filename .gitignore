@@ -7,5 +7,6 @@ Gemfile.lock
 doc/*
 measurement/*
 vendor/*
+coverage/*
 armory.sublime-project
 armory.sublime-workspace
