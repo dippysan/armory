@@ -6,7 +6,7 @@ module Armory
   module REST
     class Connection
       include Armory::Utils
-      attr_accessor :proxy
+      attr_accessor :proxy, :cache
       attr_writer :user_agent
 
       URL_PREFIX = 'https://us.api.battle.net'
@@ -53,9 +53,9 @@ module Armory
           # Parse JSON response bodies
           faraday.response :armory_parse_json
 
-  #          faraday.response :caching, Dalli::Client.new('localhost:11211', { :namespace => "armory", :compress => true, :expires_in => 60*60 }), :ignore_params => %w[access_token]
+          faraday.response :caching, cache unless cache.nil?
 
-          faraday.response :logger  
+          faraday.response :logger
           # Set default HTTP adapter
           faraday.adapter :net_http
         end
