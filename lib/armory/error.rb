@@ -46,7 +46,7 @@ module Armory
       def parse_error(body)
         if body.nil?
           ['', nil]
-        elsif body[:detail]
+        elsif body.is_a?(Hash) && body[:detail]
           [body[:detail], nil]
         end
       end

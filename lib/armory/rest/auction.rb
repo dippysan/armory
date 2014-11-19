@@ -17,6 +17,7 @@ module Armory
       # This API resource provides a per-realm list of recently generated auction house data dumps.
       #
       # @return [Armory::Auction] Auction file location
+      # @param realm_slug [string | Armory::Realm]
       # @param options [Hash] A customizable set of options.
       #  - realms : list of realms to limit to
       def auction(realm_slug, options = {})

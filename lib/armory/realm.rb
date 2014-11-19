@@ -5,7 +5,7 @@ module Armory
   class Realm < Armory::BasicRealm
 
     # @return [String]
-    attr_reader :name, :battlegroup, :locale, :timezone, :type, :population
+    attr_reader :battlegroup, :locale, :timezone, :type, :population
     # @return [Boolean]
     predicate_attr_reader :queue, :status
 

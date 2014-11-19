@@ -1,0 +1,23 @@
+{
+    "lastModified": 1416305354000,
+    "name": "Frodo",
+    "realm": "Middleearth",
+    "battlegroup": "Rampage",
+    "class": 11,
+    "race": 4,
+    "gender": 0,
+    "level": 91,
+    "achievementPoints": 7280,
+    "thumbnail": "ravencrest/95/43890783-avatar.jpg",
+    "calcClass": "U",
+    "totalHonorableKills": 849,
+    "achievements": {
+        "achievementsCompleted": [9141, 9146, 9618],
+        "achievementsCompletedTimestamp": [1416270000000, 1416231960000, 1413967140000],
+        "criteria": [26706, 26801, 26867, 26870],
+        "criteriaQuantity": [1, 12, 1, 1],
+        "criteriaTimestamp": [1416313542000, 1415832272000, 1416313542000, 1416313542000],
+        "criteriaCreated": [1416313542000, 0, 1416313542000, 1416313542000]
+    },
+    "totalHonorableKills": 849
+}

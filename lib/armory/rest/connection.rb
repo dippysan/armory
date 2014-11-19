@@ -6,7 +6,7 @@ module Armory
   module REST
     class Connection
       include Armory::Utils
-      attr_accessor :proxy, :cache
+      attr_accessor :proxy, :cache, :logging
       attr_writer :user_agent
 
       URL_PREFIX = 'https://us.api.battle.net'
@@ -48,14 +48,17 @@ module Armory
 
           # Encodes as "application/x-www-form-urlencoded" if not already encoded
           faraday.request :url_encoded
+
           # Handle error responses
           faraday.response :armory_raise_error
+
           # Parse JSON response bodies
           faraday.response :armory_parse_json
 
           faraday.response :caching, cache unless cache.nil?
 
-          faraday.response :logger
+          faraday.response :logger unless logging.nil?
+
           # Set default HTTP adapter
           faraday.adapter :net_http
         end

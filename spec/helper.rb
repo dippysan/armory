@@ -26,39 +26,39 @@ RSpec.configure do |config|
 end
 
 URL_PREFIX = 'https://us.api.battle.net'
-TEST_APIKEY_LOCALE = "?apikey=API&locale=en_US"
+TEST_APIKEY_LOCALE = { apikey:"API", locale: "en_US" }
 
 
-def a_delete(path)
-  a_request(:delete, URL_PREFIX + path + TEST_APIKEY_LOCALE)
+def a_delete(path, params = {})
+  a_request(:delete, URL_PREFIX + path + merge_api_and_locale(params))
 end
 
-def a_get(path)
-  a_request(:get, URL_PREFIX + path + TEST_APIKEY_LOCALE)
+def a_get(path, params = {})
+  a_request(:get, URL_PREFIX + path + merge_api_and_locale(params))
 end
 
-def a_post(path)
-  a_request(:post, URL_PREFIX + path + TEST_APIKEY_LOCALE)
+def a_post(path, params = {})
+  a_request(:post, URL_PREFIX + path + merge_api_and_locale(params))
 end
 
-def a_put(path)
-  a_request(:put, URL_PREFIX + path + TEST_APIKEY_LOCALE)
+def a_put(path, params = {})
+  a_request(:put, URL_PREFIX + path + merge_api_and_locale(params))
 end
 
-def stub_delete(path)
-  stub_request(:delete, URL_PREFIX + path + TEST_APIKEY_LOCALE)
+def stub_delete(path, params = {})
+  stub_request(:delete, URL_PREFIX + path + merge_api_and_locale(params))
 end
 
-def stub_get(path)
-  stub_request(:get, URL_PREFIX + path + TEST_APIKEY_LOCALE)
+def stub_get(path, params = {})
+  stub_request(:get, URL_PREFIX + path + merge_api_and_locale(params))
 end
 
-def stub_post(path)
-  stub_request(:post, URL_PREFIX + path + TEST_APIKEY_LOCALE)
+def stub_post(path, params = {})
+  stub_request(:post, URL_PREFIX + path + merge_api_and_locale(params))
 end
 
-def stub_put(path)
-  stub_request(:put, URL_PREFIX + path + TEST_APIKEY_LOCALE)
+def stub_put(path, params = {})
+  stub_request(:put, URL_PREFIX + path + merge_api_and_locale(params))
 end
 
 def fixture_path
@@ -79,4 +79,9 @@ def capture_warning
     $stderr = old_stderr
   end
   result
+end
+
+def merge_api_and_locale(params)
+  url_query = URI.encode_www_form params.merge(TEST_APIKEY_LOCALE).sort
+  url_query.empty? ? "" : "?"+url_query
 end

@@ -21,7 +21,7 @@ module Armory
         end
 
         def unparsable_status_codes
-          [204, 301, 302, 304]
+          [204, 301, 302, 304, 404]
         end
       end
     end

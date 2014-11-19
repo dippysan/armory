@@ -72,7 +72,7 @@ module Armory
       # @param key1 [Symbol], or [Array]
       # @param klass [Symbol]
       # @param method_alias [Symbol] - alias
-      def define_attribute_method(key1, klass = nil, method_alias: key1, target_alias: key1)
+      def define_attribute_method(key1, klass = nil, method_alias: key1, target_alias: nil)
         define_method(method_alias) do ||
           if @attrs[key1].nil? || @attrs[key1].respond_to?(:empty?) && @attrs[key1].empty?
             NullObject.new
@@ -80,10 +80,16 @@ module Armory
             if klass.nil?
               @attrs[key1]
             else
-              if defined? @region and Armory.const_get(klass).stores_region?
-                Armory.const_get(klass).new(@region, target_alias => @attrs[key1])
+              raise "Can't call '#{key1}' method - Armory::#{klass} is not defined" unless const_defined_deep? "Armory::#{klass}"
+              if defined? @region and const_get_deep("Armory::#{klass}").stores_region?
+                target_alias ||= key1
+                const_get_deep("Armory::#{klass}").new(@region, target_alias => @attrs[key1])
               else
-                Armory.const_get(klass).new(@attrs[key1])
+                if target_alias.nil?
+                  const_get_deep("Armory::#{klass}").new(@attrs[key1])
+                else
+                  const_get_deep("Armory::#{klass}").new(target_alias => @attrs[key1])
+                end
               end
             end
           end
@@ -121,6 +127,14 @@ module Armory
       @attrs = attrs || {}
     end
 
+  private
+    # deep version of const_get that handles :: like Armory::Character::Achievements
+    def const_get_deep(str)
+      str.split("::").inject(Object) {|x,y| x = x.const_get(y)}
+    end
+    def const_defined_deep?(str)
+      str.split("::").inject(Object) {|x,y| x.const_defined?(y) ? x.const_get(y) : raise("#{y} not defined for #{str}") }
+    end
 
   end
 end
