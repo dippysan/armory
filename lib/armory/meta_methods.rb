@@ -37,6 +37,13 @@ module Armory
         end
       end
 
+      def predicate_attr_reader_with_alias(meth, meth_alias)
+        predicate_attr_reader(meth)
+        define_predicate_method(meth, method_alias: meth_alias)
+        deprecate_attribute_method(meth, meth_alias)
+      end
+
+
       # Define object methods from attributes
       #
       # @param klass [Symbol]
@@ -72,9 +79,11 @@ module Armory
       # @param key1 [Symbol], or [Array]
       # @param klass [Symbol]
       # @param method_alias [Symbol] - alias
-      def define_attribute_method(key1, klass = nil, method_alias: key1, target_alias: nil)
+      # @param target_alias [Symbol] - key for this item in the target class
+      # @param include_keys [Symbol] - used in define_attribute_method not here
+      def define_attribute_method(key1, klass = nil, method_alias: key1, target_alias: nil, include_keys: nil)
         define_method(method_alias) do ||
-          if @attrs[key1].nil? || @attrs[key1].respond_to?(:empty?) && @attrs[key1].empty?
+          if @attrs[key1].nil?
             NullObject.new
           else
             if klass.nil?
@@ -86,7 +95,8 @@ module Armory
                 const_get_deep("Armory::#{klass}").new(@region, target_alias => @attrs[key1])
               else
                 if target_alias.nil?
-                  const_get_deep("Armory::#{klass}").new(@attrs[key1])
+                  extra_attrs = add_wanted_keys_to_attrs(@attrs[key1], include_keys)
+                  const_get_deep("Armory::#{klass}").new(extra_attrs)
                 else
                   const_get_deep("Armory::#{klass}").new(target_alias => @attrs[key1])
                 end
@@ -109,8 +119,10 @@ module Armory
       # Dynamically define a predicate method for an attribute
       #
       # @param key1 [Symbol]
-      # @param method_alias [Symbol]
-      def define_predicate_method(key1, method_alias: key1, target_alias: key1)
+      # @param method_alias [Symbol] - alternate name for this method
+      # @param target_alias [Symbol] - used in define_attribute_method not here
+      # @param include_keys [Symbol] - used in define_attribute_method not here
+      def define_predicate_method(key1, method_alias: key1, target_alias: key1, include_keys: nil)
         define_method(:"#{method_alias}?") do ||
           !@attrs[key1].nil? && @attrs[key1] != false && !(@attrs[key1].respond_to?(:empty?) && @attrs[key1].empty?)
         end
@@ -136,5 +148,24 @@ module Armory
       str.split("::").inject(Object) {|x,y| x.const_defined?(y) ? x.const_get(y) : raise("#{y} not defined for #{str}") }
     end
 
+    def slice hsh, keys
+      hsh.select{|k| keys.member?(k)}
+    end
+
+    def add_wanted_keys_to_attrs(target, keys_to_add)
+      return target if keys_to_add.nil?
+
+      case target
+        when Hash
+          target.dup.merge(slice(@attrs, Array(keys_to_add)))
+        when Array
+          # Add keys to every element of array
+          target.dup.map {|h| add_wanted_keys_to_attrs(h,keys_to_add)}
+        else
+          raise "Can't merge keys into unknown type #{target.class}"
+      end
+
+    end
+      
   end
 end

@@ -1,18 +1,20 @@
 require 'equalizer'
 require 'armory/meta_methods'
+require 'armory/timestamp'
 
 module Armory
   class Character::Achievements::Completed < Armory::MetaMethods
     include Equalizer.new(:id)
+    include Timestamp
 
-    attr_reader :id
+    attr_reader :id, :title, :points, :description, :rewardItems, :icon, :accountWide, :factionId
+    alias_method :reward_items, :rewardItems
+    alias_method :account_wide, :accountWide
+    alias_method :faction_id, :factionId
 
-    def timestamp
-      Time.at(@attrs[:timestamp]/1000) unless @attrs[:timestamp].nil?
-    end
-    memoize :timestamp
     alias_method :completed_timestamp, :timestamp
 
+    object_attr_reader :'Character::Achievements::CriteriaList', :criteria
 
 
   end

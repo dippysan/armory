@@ -40,6 +40,9 @@ describe Armory::RealmStatus do
     before do
       @realm_results = Armory::RealmStatus.new("US", :realms => [{slug: "r1"}, {slug: "r2"}, {slug: "r3"}, {slug: "r4"}, {slug: "r5"}, {slug: "r6"}])
     end
+    it 'has count' do
+      expect(@realm_results.count).to eq(6)
+    end
     it 'iterates' do
       count = 0
       @realm_results.each { count += 1 }

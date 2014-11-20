@@ -50,4 +50,35 @@ describe Armory::REST::Character do
   end
 
 
+  describe '#character_appearance' do
+    before do
+      stub_get('/wow/character/middleearth/frodo', {fields:"appearance"})
+        .to_return(:body => fixture('character_appearance.json'),
+                   :headers => {:content_type => 'application/json; charset=utf-8'})
+    end
+    it 'returns valid data' do
+      character = @client.character_appearance('middleearth','frodo')
+      expect(character).to be_a Armory::Character
+      expect(character.appearance).to be_a Armory::Character::Appearance
+      expect(character.appearance.face_variation).to be_a Integer
+      expect(character.appearance.face_variation).to eq(0)
+    end
+  end
+
+  describe '#character_feed' do
+    before do
+      stub_get('/wow/character/middleearth/frodo', {fields:"feed"})
+        .to_return(:body => fixture('character_feed.json'),
+                   :headers => {:content_type => 'application/json; charset=utf-8'})
+    end
+    it 'returns valid data' do
+      character = @client.character_feed('middleearth','frodo')
+      expect(character).to be_a Armory::Character
+      expect(character.feed).to be_a Armory::Character::Feed
+      expect(character.feed.first).to be_a Armory::Character::Feed::Item::Criteria
+      expect(character.feed.first.achievement.id).to eq(9407)
+    end
+  end
+
+
 end

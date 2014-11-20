@@ -16,6 +16,14 @@ module Armory
       self
     end
 
+    def count
+      @collection.count
+    end
+
+    def last
+      @collection.last
+    end
+
   private
 
     # @return [Boolean]
