@@ -12,6 +12,7 @@ module Request  # For constants
       @test_client = double("client")
       allow(@test_client).to receive(:send).with(TEST_METHOD, kind_of(URI), kind_of(Hash)).and_return(@test_client)
       allow(@test_client).to receive(:body).and_return("returned html")
+      allow(@test_client).to receive(:status).and_return(200)
       @request = Armory::Request.new(@test_client, TEST_METHOD, TEST_PATH, TEST_OPTIONS)
     end
 

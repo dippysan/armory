@@ -2,7 +2,7 @@
 
 module Armory
   class RequestBare
-    attr_accessor :client, :request_method, :path, :options
+    attr_accessor :client, :request_method, :path, :options, :last_status
     alias_method :verb, :request_method
 
     # @param client [Armory::Client]
@@ -27,7 +27,10 @@ module Armory
 
     # @return [Hash]
     def perform
-      @client.send(@request_method, @path, @options).body
+      @last_status = nil
+      response = @client.send(@request_method, @path, @options)
+      @last_status = response.status
+      response.body
     end
 
     # @param klass [Class]

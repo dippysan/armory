@@ -65,6 +65,7 @@ module Armory
     end
 
     ConfigurationError = Class.new(::ArgumentError)
+    IncorrectLastUpdate = Class.new(::ArgumentError)
 
 
     # Raised when Armory returns a 4xx HTTP status code

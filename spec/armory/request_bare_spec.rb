@@ -24,12 +24,22 @@ module RequestBare  # For constants
     end
 
     describe '.perform' do
-      it 'calls client with method, path and options. Returns body' do
+      before do
         allow(@test_client).to receive(:send).with(TEST_METHOD, TEST_PATH, TEST_OPTIONS).and_return(@test_client)
         allow(@test_client).to receive(:body).and_return("returned html")
-        request = Armory::RequestBare.new(@test_client, TEST_METHOD, TEST_PATH, TEST_OPTIONS)
+        @request = Armory::RequestBare.new(@test_client, TEST_METHOD, TEST_PATH, TEST_OPTIONS)
+      end
 
-        expect(request.perform).to eq("returned html")
+      it 'calls client with method, path and options. Returns body' do
+        allow(@test_client).to receive(:status).and_return(200)
+        expect(@request.perform).to eq("returned html")
+        expect(@request.last_status).to eq(200)
+      end
+
+      it 'returns 304 when received' do
+        allow(@test_client).to receive(:status).and_return(304)
+        @request.perform
+        expect(@request.last_status).to eq(304)
       end
     end
 

@@ -68,32 +68,49 @@ describe Armory::REST::Client do
     end
   end
 
-  describe '#connection' do
-    it 'looks like Faraday connection' do
-      expect(@client.send(:connection)).to respond_to(:run_request)
-    end
-    it 'memoizes the connection' do
-      c1, c2 = @client.send(:connection), @client.send(:connection)
-      expect(c1.object_id).to eq(c2.object_id)
-    end
-  end
 
   describe '#request' do
-    it 'catches and reraises Faraday timeout errors' do
-      allow(@client).to receive(:connection).and_raise(Faraday::Error::TimeoutError.new('execution expired'))
-      expect { @client.send(:request, :get, '/path') }.to raise_error(Armory::Error::RequestTimeout)
+    before do
+      @test_client = double("client")
+      allow(@test_client).to receive(:env).and_return("ENV RETURN")
+
+      @test_connection = double("connection")
+      allow(@test_connection).to receive(:send).with(:get, '/path', {param:1, apikey:"API"}).and_return(@test_client)
+
+      allow(@client).to receive(:connection).and_return(@test_connection)
     end
-    it 'catches and reraises Timeout errors' do
-      allow(@client).to receive(:connection).and_raise(Timeout::Error.new('execution expired'))
-      expect { @client.send(:request, :get, '/path') }.to raise_error(Armory::Error::RequestTimeout)
+
+    it "adds api_key to headers" do
+      allow(@test_connection).to receive(:send).with(:get, '/path', {param:1, apikey:"API"}).and_return(@test_client)
+      expect(@client.send(:request, :get, '/path', {param:1}, {header:2}))
+          .to eq("ENV RETURN")
     end
-    it 'catches and reraises Faraday client errors' do
-      allow(@client).to receive(:connection).and_raise(Faraday::Error::ClientError.new('connection failed'))
-      expect { @client.send(:request, :get, '/path') }.to raise_error(Armory::Error)
-    end
-    it 'catches and reraises JSON::ParserError errors' do
-      allow(@client).to receive(:connection).and_raise(JSON::ParserError.new('unexpected token'))
-      expect { @client.send(:request, :get, '/path') }.to raise_error(Armory::Error)
+
+
+    describe "moves last_modified parameter to if-last-modified header" do
+
+      before do
+        request_double = double("request")
+
+        @yield_passed = nil
+        allow(request_double).to receive_message_chain(:headers, :update) {|x| @yield_passed = x }
+
+        allow(@test_connection).to receive(:send).and_yield(request_double).and_return(@test_client)
+      end
+      
+      it "handles Time and retuns as rfc2822" do
+        @client.send(:request, :get, '/path', {param:1, last_modified: Time.at(1416305354).utc}, {header:2})
+        expect(@yield_passed).to eq({header:2, :'if-last-modified' => Time.at(1416305354).utc.rfc2822})
+      end
+      it "handles String and retuns unchanged" do
+        @client.send(:request, :get, '/path', {param:1, last_modified: "time string"}, {header:2})
+        expect(@yield_passed).to eq({header:2, :'if-last-modified' => "time string"})
+      end
+      it "returns IncorrectLastUpdate when incorrect last modified date passed" do
+        expect { @client.send(:request, :get, '/path', {param:1, last_modified: 123.45}, {header:2}) }
+          .to raise_error(Armory::Error::IncorrectLastUpdate)
+        
+      end
     end
   end
 

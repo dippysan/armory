@@ -1,4 +1,3 @@
-require 'base64'
 require 'faraday'
 require 'json'
 require 'timeout'
@@ -7,10 +6,12 @@ require 'armory/rest/api'
 require 'armory/rest/connection'
 require 'armory/rest/response/parse_json'
 require 'armory/rest/response/raise_error'
+require 'time'
 
 module Armory
   module REST
     # Wrapper for the Armory REST API
+    # Handles API key and last_modified header (out of options)
     class Client < Armory::REST::Connection
       include Armory::REST::API
 
@@ -56,9 +57,22 @@ module Armory
         end
       end
 
-      def request_params(params = {})
-        params[:apikey] = api_key
-        params
+      def update_headers
+        if !@params[:last_modified].nil?
+          case last_modified = @params.delete(:last_modified)
+          when String
+            @headers[:"if-last-modified"] = last_modified
+          when Time
+            @headers[:"if-last-modified"] = last_modified.utc.rfc2822
+          else
+            fail(Armory::Error::IncorrectLastUpdate.new("Unable to coerce Last Modified header #{last_modified} into String"))
+          end
+        end
+      end        
+
+      def update_params
+        super
+        @params[:apikey] = api_key
       end
 
     end

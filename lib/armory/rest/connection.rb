@@ -71,16 +71,12 @@ module Armory
 
       # Perform an HTTP GET request
       def get(path, params = {})
-        headers = request_headers
-        params = request_params(params)
-        request(:get, path, params, headers)
+        request(:get, path, params)
       end
 
       # Perform an HTTP POST request
       def post(path, params = {})
-        headers = request_headers
-        params = request_params(params)
-        request(:post, path, params, headers)
+        request(:post, path, params)
       end
 
     private
@@ -93,15 +89,22 @@ module Armory
       end
 
       def request(method, path, params = {}, headers = {})
-        connection.send(method.to_sym, path, params) { |request| request.headers.update(headers) }.env
+        @params = params
+        @headers = headers
+        update_headers
+        update_params
+
+        connection.send(method.to_sym, path, @params) { |request| request.headers.update(@headers) }.env
         rescue Faraday::Error::TimeoutError, Timeout::Error => error
           raise(Armory::Error::RequestTimeout.new(error))
         rescue Faraday::Error::ClientError, JSON::ParserError => error
           raise(Armory::Error.new(error))
       end
 
-      def request_headers
-        headers = {}
+      def update_headers
+      end
+
+      def update_params
       end
 
     end
