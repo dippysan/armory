@@ -1,4 +1,4 @@
-require 'armory/character_feed_item_achievement'
+require 'armory/character/feed/item/achievement'
 
 module Armory
   class Character::Feed::Item::Criteria < Character::Feed::Item::Achievement

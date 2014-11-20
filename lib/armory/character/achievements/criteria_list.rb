@@ -1,4 +1,4 @@
-require 'armory/character_achievements_criteria'
+require 'armory/character/achievements/criteria'
 require 'armory/enumerable'
 
 module Armory

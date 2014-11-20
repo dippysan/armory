@@ -1,4 +1,4 @@
-require 'armory/character_feed_item'
+require 'armory/character/feed/item'
 
 module Armory
   class Character::Feed::Item::Loot < Character::Feed::Item

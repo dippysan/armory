@@ -12,7 +12,7 @@ module Armory
     def initialize(attrs = {})
       super
 
-      require 'armory/character_feed_item'
+      require 'armory/character/feed/item'
       @collection = attrs.collect do |data|
         Character::Feed::Item.create(data)
       end

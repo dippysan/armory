@@ -15,7 +15,7 @@ module Armory
     alias_method :calc_class, :calcClass
     alias_method :total_honerable_kills, :totalHonorableKills
 
-    require 'armory/character_achievements'  # here because of recursive require above
+    require 'armory/character/achievements'  # here because of recursive require above
     object_attr_reader :'Character::Achievements', :achievements
     object_attr_reader :'Character::Appearance', :appearance
     object_attr_reader :'Character::Feed', :feed
