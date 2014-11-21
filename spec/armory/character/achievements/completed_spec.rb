@@ -33,7 +33,8 @@ describe Armory::Character::Achievements::Completed do
                 title: "Sha of Pride kills (LFR Siege of Orgrimmar)",
                 points: 0,
                 description: "desc",
-                rewardItems: [],
+                reward: "Reward: Chirping Box",
+                rewardItems: [{ id: 3, name: "Chirping Box" }, { id: 4, name: "Basket" }],
                 icon: "trade_engineering",
                 criteria: [{ id: 1, orderIndex: 1, max: 1}, {id: 2, orderIndex: 2, max: 2}],
                 accountWide: false,
@@ -63,8 +64,8 @@ describe Armory::Character::Achievements::Completed do
         expect(@completed_achievement.points).to eq(0)
         expect(@completed_achievement.description).to be_a String
         expect(@completed_achievement.description).to eq("desc")
-        expect(@completed_achievement.reward_items).to be_a Array
-        expect(@completed_achievement.reward_items).to eq([])
+        expect(@completed_achievement.reward).to be_a String
+        expect(@completed_achievement.reward).to eq("Reward: Chirping Box")
         expect(@completed_achievement.icon).to be_a String
         expect(@completed_achievement.icon).to eq("trade_engineering")
         expect(@completed_achievement.account_wide).to be_a FalseClass
@@ -82,6 +83,16 @@ describe Armory::Character::Achievements::Completed do
         expect(@completed_achievement.criteria.last.id).to eq(2)
         expect(@completed_achievement.criteria.last.max).to eq(2)
         expect(@completed_achievement.criteria.last.order_index).to eq(2)
+      end
+      skip '#reward_items returns Armory::Item with the correct data' do
+        expect(@completed_achievement.reward_items).to be_a Armory::ItemList
+        expect(@completed_achievement.reward_items.count).to eq(2)
+        expect(@completed_achievement.reward_items.first).to be_a Armory::Item
+        expect(@completed_achievement.reward_items.first.id).to eq(3)
+        expect(@completed_achievement.reward_items.first.name).to eq("Chirping Box")
+        expect(@completed_achievement.reward_items.last).to be_a Armory::Item
+        expect(@completed_achievement.reward_items.last.id).to eq(4)
+        expect(@completed_achievement.reward_items.last.name).to eq("Basket")
       end
     end
   end

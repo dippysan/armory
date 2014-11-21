@@ -1,4 +1,5 @@
 require 'memoizable'
+require 'armory/utils'
 
 module Armory
   class MetaMethods

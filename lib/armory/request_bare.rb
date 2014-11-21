@@ -48,8 +48,9 @@ module Armory
     # @param klass [Class]
     # @return [Array]
     def perform_with_objects(klass, initial_key = nil)
+      send_region = klass.stores_region?
       (initial_key.nil? ? perform : perform.fetch(initial_key, [])).collect do |element|
-        klass.new(region, element)
+        send_region ? klass.new(region, element) : klass.new(element)
       end
     end
 
