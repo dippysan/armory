@@ -58,14 +58,17 @@ module Armory
       end
 
       def update_headers
-        if !@params[:last_modified].nil?
-          case last_modified = @params.delete(:last_modified)
+        last_modified_key = (:last_modified if @params.key?(:last_modified)) ||
+                            (:lastmodified if @params.key?(:lastmodified)) ||
+                            (:modified if @params.key?(:modified))
+        if last_modified_key
+          case last_modified_value = @params.delete(last_modified_key)
           when String
-            @headers[:"if-last-modified"] = last_modified
+            @headers[:"if-last-modified"] = last_modified_value
           when Time
-            @headers[:"if-last-modified"] = last_modified.utc.rfc2822
+            @headers[:"if-last-modified"] = last_modified_value.utc.rfc2822
           else
-            fail(Armory::Error::IncorrectLastUpdate.new("Unable to coerce Last Modified header #{last_modified} into String"))
+            fail(Armory::Error::IncorrectLastUpdate.new("Unable to coerce Last Modified header #{last_modified_key} (#{last_modified_value}) into String"))
           end
         end
       end        
