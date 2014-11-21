@@ -18,13 +18,5 @@ module Armory
     memoize :created
     alias_method :created_timestamp, :created
 
-    def initialize(attrs = {})
-      super
-
-      @collection = attrs.fetch(:criteria, []).collect do |data|
-        Character::Achievements::Criteria.new(data)
-      end
-    end
-
   end
 end

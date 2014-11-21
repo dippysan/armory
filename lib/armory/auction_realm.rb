@@ -3,6 +3,7 @@
 # - name has spaces removed from realm name
 # - no slug
 # So we can't relate it to any other realms
+require 'equalizer'
 
 module Armory
   class AuctionRealm < Base

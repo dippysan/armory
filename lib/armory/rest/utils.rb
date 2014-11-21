@@ -74,9 +74,11 @@ module Armory
       # @param path [String]
       # @param options [Hash]
       # @param klass [Class]
-      def perform_with_objects(request_method, path, options, klass)
+      # @param inital_key [String] - If exists, uses this key of returned json.
+      #                              Used because Bliz never returns arrays alone
+      def perform_with_objects(request_method, path, options, klass, initial_key = nil)
         request = Armory::Request.new(self, request_method, path, options)
-        request.perform_with_objects(klass)
+        request.perform_with_objects(klass, initial_key)
       end
 
       # @param klass [Class]

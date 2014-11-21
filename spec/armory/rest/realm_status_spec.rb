@@ -17,7 +17,7 @@ describe Armory::REST::RealmStatus do
     end
     it 'returns statuses for all realms in this region' do
       realms = @client.realm_status
-      expect(realms).to be_a Armory::RealmStatus
+      expect(realms).to be_a Array
       expect(realms.first).to be_a Armory::Realm
       expect(realms.first.slug).to eq('aegwynn')
     end

@@ -23,4 +23,27 @@ describe Armory::Character::Feed::Item do
     end
   end
 
+  describe '#create' do
+    it "can create Item::BossKill" do
+      item = Armory::Character::Feed::Item.create(type: "BOSSKILL", timestamp: 1403593976000)
+      expect(item).to be_a Armory::Character::Feed::Item::BossKill
+    end
+
+    it "can create Item::Loot" do
+      item = Armory::Character::Feed::Item.create(type: "LOOT", timestamp: 1403593976000)
+      expect(item).to be_a Armory::Character::Feed::Item::Loot
+    end
+
+    it "can create Item::Criteria" do
+      item = Armory::Character::Feed::Item.create(type: "CRITERIA", timestamp: 1403593976000)
+      expect(item).to be_a Armory::Character::Feed::Item::Criteria
+    end
+
+    it "can create Item::Achievement" do
+      item = Armory::Character::Feed::Item.create(type: "ACHIEVEMENT", timestamp: 1403593976000)
+      expect(item).to be_a Armory::Character::Feed::Item::Achievement
+    end
+  end
+
+
 end

@@ -1,5 +1,4 @@
 require 'armory/arguments'
-require 'armory/realm_status'
 require 'armory/request'
 require 'armory/rest/utils'
 require 'armory/utils'
@@ -18,7 +17,7 @@ module Armory
       # @param options [Hash] A customizable set of options.
       #  - realms : list of realms to limit to
       def realm_status(options = {})
-        perform_with_object(:get, '/wow/realm/status', options, Armory::RealmStatus)
+        perform_with_objects(:get, '/wow/realm/status', options, Armory::Realm, :realms)
       end
 
       alias_method :status, :realm_status

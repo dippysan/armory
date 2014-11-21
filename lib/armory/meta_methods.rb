@@ -54,6 +54,10 @@ module Armory
         define_predicate_method(key1, args)
       end
 
+      def object_attr_reader_as_array(klass, key1)
+        define_attribute_array_method(key1, klass)
+      end
+
       # Define URI methods from attributes
       # Defines both uri and url versions (:display_uri also defines display_url)
       # @param attrs [Array, Symbol]
@@ -89,7 +93,6 @@ module Armory
             if klass.nil?
               @attrs[key1]
             else
-              raise "Can't call '#{key1}' method - Armory::#{klass} is not defined" unless const_defined_deep? "Armory::#{klass}"
               if defined? @region and const_get_deep("Armory::#{klass}").stores_region?
                 target_alias ||= key1
                 const_get_deep("Armory::#{klass}").new(@region, target_alias => @attrs[key1])
@@ -102,6 +105,24 @@ module Armory
                 end
               end
             end
+          end
+        end
+        memoize(method_alias)
+      end
+
+      # Dynamically define a method for an attribute which contains an array of objetcts
+      #
+      # @param key1 [Symbol], or [Array]
+      # @param klass [Symbol]
+      # @param method_alias [Symbol] - alias
+      # @param target_alias [Symbol] - key for this item in the target class
+      # @param include_keys [Symbol] - used in define_attribute_method not here
+      def define_attribute_array_method(key1, klass, method_alias = key1)
+        define_method(method_alias) do ||
+          if @attrs[key1].nil? 
+            NullObject.new
+          else
+            list_of_objects(const_get_deep("Armory::#{klass}"),key1)
           end
         end
         memoize(method_alias)
@@ -142,6 +163,7 @@ module Armory
   private
     # deep version of const_get that handles :: like Armory::Character::Achievements
     def const_get_deep(str)
+      raise "Can't call const_get_deep - #{str} is not defined" unless const_defined_deep? str
       str.split("::").inject(Object) {|x,y| x = x.const_get(y)}
     end
     def const_defined_deep?(str)
@@ -167,5 +189,13 @@ module Armory
 
     end
       
+    def list_of_objects(klass, key)
+      send_region = klass.stores_region?
+      # use factory generator if object supports it
+      creation_method = klass.respond_to?(:create)? :create : :new
+      @attrs.fetch(key.to_sym, {}).collect do |item|
+        send_region ? klass.send(creation_method, region, item) : klass.send(creation_method, item)
+      end
+    end
   end
 end

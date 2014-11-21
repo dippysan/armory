@@ -71,8 +71,8 @@ describe Armory::Character::Achievements::Completed do
         expect(@completed_achievement.faction_id).to be_a Integer
         expect(@completed_achievement.faction_id).to eq(2)
       end
-      it '#criteria returns Armory::Character::Achievements::CriteriaList with the correct data' do
-        expect(@completed_achievement.criteria).to be_a Armory::Character::Achievements::CriteriaList
+      it '#criteria returns array of Armory::Character::Achievements::Criteria' do
+        expect(@completed_achievement.criteria).to be_a Array
         expect(@completed_achievement.criteria.count).to eq(2)
         expect(@completed_achievement.criteria.first).to be_a Armory::Character::Achievements::Criteria
         expect(@completed_achievement.criteria.first.id).to eq(1)

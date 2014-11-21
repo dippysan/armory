@@ -4,6 +4,7 @@ module Armory
   class RequestBare
     attr_accessor :client, :request_method, :path, :options, :last_status
     alias_method :verb, :request_method
+    include Armory::Utils
 
     # @param client [Armory::Client]
     # @param request_method [String, Symbol]
@@ -37,13 +38,17 @@ module Armory
     # @param request [Armory::Request]
     # @return [Object]
     def perform_with_object(klass)
-      klass.new(region, perform)
+      if klass.send(:stores_region?)
+        klass.new(region, perform)
+      else
+        klass.new(perform)
+      end
     end
 
     # @param klass [Class]
     # @return [Array]
-    def perform_with_objects(klass)
-      perform.collect do |element|
+    def perform_with_objects(klass, initial_key = nil)
+      (initial_key.nil? ? perform : perform.fetch(initial_key, [])).collect do |element|
         klass.new(region, element)
       end
     end

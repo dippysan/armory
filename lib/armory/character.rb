@@ -18,7 +18,7 @@ module Armory
     require 'armory/character/achievements'  # here because of recursive require above
     object_attr_reader :'Character::Achievements', :achievements
     object_attr_reader :'Character::Appearance', :appearance
-    object_attr_reader :'Character::Feed', :feed
+    object_attr_reader_as_array :'Character::Feed::Item', :feed
 
   end
 end

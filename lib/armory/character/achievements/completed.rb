@@ -14,7 +14,7 @@ module Armory
 
     alias_method :completed_timestamp, :timestamp
 
-    object_attr_reader :'Character::Achievements::CriteriaList', :criteria
+    object_attr_reader_as_array :'Character::Achievements::Criteria', :criteria
 
 
   end

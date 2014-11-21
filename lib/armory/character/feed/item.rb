@@ -7,6 +7,7 @@ ITEM_BOSSKILL    = "BOSSKILL"
 ITEM_LOOT        = "LOOT"
 
 module Armory
+  class Character::Feed; end
   class Character::Feed::Item < Armory::MetaMethods
     include Timestamp
 
