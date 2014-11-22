@@ -5,6 +5,7 @@ describe Armory::Data::Spec do
 
   before do
     @data = {
+            id: 1, # Populated by toonclass when flatenning talents
             name: "Arms",
             role: "DPS",
             backgroundImage: "bg-warrior-arms",
@@ -25,6 +26,8 @@ describe Armory::Data::Spec do
   describe '#new' do
     it 'returns Armory::Data::Spec with the correct data' do
       expect(@item).to be_a Armory::Data::Spec
+      expect(@item.id).to be_a Integer
+      expect(@item.id).to eq(1)
       expect(@item.name).to be_a String
       expect(@item.name).to eq("Arms")
       expect(@item.role).to be_a String

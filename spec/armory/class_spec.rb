@@ -147,9 +147,11 @@ describe Armory::Data::ToonClass do
         flattened_talents = @data_class.talents_flatten
         expect(flattened_talents.first).to be_a Armory::Data::Talent
         expect(flattened_talents.first.spec).to be_a Armory::Data::Spec
+        expect(flattened_talents.first.spec.id).to eq(0)
         expect(flattened_talents.first.spec.name).to eq("Spec 1")
         expect(flattened_talents.last).to be_a Armory::Data::Talent
         expect(flattened_talents.last.spec).to be_a Armory::Data::Spec
+        expect(flattened_talents.last.spec.id).to eq(1)
         expect(flattened_talents.last.spec.name).to eq("Spec 2")
       end
     end
