@@ -68,7 +68,7 @@ describe Armory::Character::Achievements::Completed do
         expect(@completed_achievement.reward).to eq("Reward: Chirping Box")
         expect(@completed_achievement.icon).to be_a String
         expect(@completed_achievement.icon).to eq("trade_engineering")
-        expect(@completed_achievement.account_wide).to be_a FalseClass
+        expect(@completed_achievement.account_wide?).to be_a FalseClass
         expect(@completed_achievement.faction_id).to be_a Integer
         expect(@completed_achievement.faction_id).to eq(2)
       end

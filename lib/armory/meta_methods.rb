@@ -55,8 +55,8 @@ module Armory
         define_predicate_method(key1, args)
       end
 
-      def object_attr_reader_as_array(klass, key1)
-        define_attribute_array_method(key1, klass)
+      def object_attr_reader_as_array(klass, key1, meth_alias = key1)
+        define_attribute_array_method(key1, klass, meth_alias)
       end
 
       # Define URI methods from attributes
@@ -121,7 +121,7 @@ module Armory
       def define_attribute_array_method(key1, klass, method_alias = key1)
         define_method(method_alias) do ||
           if @attrs[key1].nil? 
-            NullObject.new
+            nil
           else
             list_of_objects(const_get_deep("Armory::#{klass}"),key1)
           end
