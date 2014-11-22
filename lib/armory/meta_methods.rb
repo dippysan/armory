@@ -89,7 +89,7 @@ module Armory
       def define_attribute_method(key1, klass = nil, method_alias: key1, target_alias: nil, include_keys: nil)
         define_method(method_alias) do ||
           if @attrs[key1].nil?
-            NullObject.new
+            nil
           else
             if klass.nil?
               @attrs[key1]
