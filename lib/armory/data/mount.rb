@@ -17,7 +17,8 @@ module Armory
     predicate_attr_reader_with_alias :isAquatic, :aquatic
     predicate_attr_reader_with_alias :isJumping, :jumping
 
-    object_attr_reader :Item, :itemId, target_alias: :id, method_alias: :item, include_keys: [:name, {qualityId: :quality}]
+    object_attr_reader :Item, :itemId, target_alias: :id, method_alias: :item,
+       include_keys: [IncludeKey.new(:name), IncludeKey.new(:qualityId, :quality)]
     
     def item_id
       @attrs[:itemId]

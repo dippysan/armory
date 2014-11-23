@@ -16,7 +16,7 @@ module Armory
     #predicate_attr_reader :showCloak
     #predicate_attr_reader_with_alias :showCloak, :show_cloak
 
-    #object_attr_reader :Item, :item, method_alias: key1, target_alias: nil, include_keys: nil
+    #object_attr_reader :Item, :item, method_alias: key1, target_alias: nil, include_keys: IncludeKey.new(symbol: :timestamp)
     #object_attr_reader_as_array :'Armory::Data::Spec', :petSpecs, :pet_specs
 
 

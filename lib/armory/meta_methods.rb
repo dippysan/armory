@@ -2,7 +2,22 @@ require 'memoizable'
 require 'armory/utils'
 
 module Armory
+
+  # Key to include in included object of master object
+  class IncludeKey
+    attr_reader :symbol
+    def initialize(symbol, to_alias = symbol)
+      @symbol = symbol
+      @alias = to_alias
+    end
+
+    def to_alias
+      @alias || @symbol
+    end
+  end
+
   class MetaMethods
+
     extend Forwardable
     include Memoizable
     include Armory::Utils
@@ -110,8 +125,6 @@ module Armory
       # @param key1 [Symbol], or [Array]
       # @param klass [Symbol]
       # @param method_alias [Symbol] - alias
-      # @param target_alias [Symbol] - key for this item in the target class
-      # @param include_keys [Symbol] - used in define_attribute_method not here
       def define_attribute_array_method(key1, klass, method_alias = key1)
         define_method(method_alias) do ||
           if @attrs[key1].nil? 
@@ -183,28 +196,21 @@ module Armory
       hsh.select{|k| keys.member?(k)}
     end
 
-    def add_wanted_keys_to_attrs(target, keys_to_add)
-      return target if keys_to_add.nil?
+    def add_wanted_keys_to_attrs(target, include_keys)
+      return target if include_keys.nil?
 
       case target
         when Hash
           target = target.dup
-          Array(keys_to_add).each do |key_or_hash|
-            case key_or_hash
-            when ::Symbol
-              # target[:itemId] = @attrs[:itemId]
-              target[key_or_hash] = @attrs[key_or_hash]  
-            when Hash
-              # Alias method in target class: target[:itemId] = @attrs[:id]
-              target[key_or_hash.values.first] = @attrs[key_or_hash.keys.first]  
-            else
-              raise "Can't include_keys with unknown object #{key_or_hash}"
-            end
+          Array(include_keys).each do |key|
+            # target[:itemId]  = @attrs[:itemId] or
+            # target[:item_id] = @attrs[:itemId]
+            target[key.to_alias] = @attrs[key.symbol]
           end
           target
         when Array
           # Add keys to every element of array
-          target.dup.map {|h| add_wanted_keys_to_attrs(h,keys_to_add)}
+          target.dup.map {|h| add_wanted_keys_to_attrs(h,include_keys)}
         else
           raise "Can't merge keys into unknown type #{target.class}"
       end
