@@ -94,20 +94,11 @@ module Armory
             if klass.nil?
               @attrs[key1]
             else
-              if defined? @region and const_get_deep("Armory::#{klass}").stores_region?
-                if target_alias.nil?
-                  const_get_deep("Armory::#{klass}").new(@region, @attrs[key1])
-                else
-                  const_get_deep("Armory::#{klass}").new(@region, target_alias => @attrs[key1])
-                end
-              else
-                if target_alias.nil?
-                  extra_attrs = add_wanted_keys_to_attrs(@attrs[key1], include_keys)
-                  const_get_deep("Armory::#{klass}").new(extra_attrs)
-                else
-                  const_get_deep("Armory::#{klass}").new(target_alias => @attrs[key1])
-                end
-              end
+              extra_attrs = add_wanted_keys_to_attrs(@attrs[key1], include_keys)
+              target_params = add_target_alias_if_requested(target_alias,extra_attrs)
+              target_params = add_region_if_needed(klass, target_params)
+
+              const_get_deep("Armory::#{klass}").new(*target_params)
             end
           end
         end
@@ -165,6 +156,20 @@ module Armory
     end
 
   private
+
+    def add_target_alias_if_requested(target_alias,extra_attrs)
+      target_alias.nil? ? extra_attrs : {target_alias => extra_attrs}
+    end
+
+    def add_region_if_needed(klass, target_params)
+      if defined? @region and const_get_deep("Armory::#{klass}").stores_region?
+        [@region, target_params]
+      else
+        [target_params]
+      end
+    end
+
+
     # deep version of const_get that handles :: like Armory::Character::Achievements
     def const_get_deep(str)
       raise "Can't call const_get_deep - #{str} is not defined" unless const_defined_deep? str
