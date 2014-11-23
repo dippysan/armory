@@ -34,8 +34,8 @@ before do
       expect(character).to be_a Armory::Character
       expect(character.name).to be_a String
       expect(character.name).to eq('Frodo')
-      expect(character.lastmodified).to be_a Time
-      expect(character.lastmodified).to eq(Time.at(1416305354000/1000))
+      expect(character.last_modified).to be_a Time
+      expect(character.last_modified).to eq(Time.at(1416305354000/1000))
       expect(character.realm).to be_a Armory::BasicRealm
       expect(character.realm.name).to eq('MiddleEarth')
       expect(character.class).to be_a Armory::Data::ToonClass

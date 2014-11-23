@@ -17,7 +17,7 @@ module Armory
 
       object_attr_reader_as_array :'Armory::Data::Glyph', :glyphs
       object_attr_reader_as_array :'Armory::Data::Spec', :specs
-      object_attr_reader_as_array :'Armory::Data::Spec', :petSpecs, :pet_specs
+      object_attr_reader_as_array :'Armory::Data::Spec', :petSpecs, method_alias: :pet_specs
 
       # For Character.class
       attr_reader :mask, :powerType

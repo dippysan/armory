@@ -70,8 +70,12 @@ module Armory
         define_predicate_method(key1, args)
       end
 
-      def object_attr_reader_as_array(klass, key1, meth_alias = key1)
-        define_attribute_array_method(key1, klass, meth_alias)
+      # @param klass [Symbol]
+      # @param key1 [Symbol], or [Array]
+      # @param method_alias [Symbol] - alias
+      # @param extra_key [Symbol] - down an extra level. IE progression: { raids: [...] }
+      def object_attr_reader_as_array(klass, key1, *attrs)
+        define_attribute_array_method(key1, klass, *attrs)
       end
 
       # Define URI methods from attributes
@@ -125,12 +129,14 @@ module Armory
       # @param key1 [Symbol], or [Array]
       # @param klass [Symbol]
       # @param method_alias [Symbol] - alias
-      def define_attribute_array_method(key1, klass, method_alias = key1)
+      # @param extra_key [Symbol] - down an extra level. IE progression: { raids: [...] }
+      def define_attribute_array_method(key1, klass, method_alias: key1, extra_key: nil)
         define_method(method_alias) do ||
-          if @attrs[key1].nil? 
+          target = extra_key.nil? ? @attrs[key1] : @attrs[key1][extra_key]
+          if target.nil? 
             nil
           else
-            list_of_objects(const_get_deep("Armory::#{klass}"),key1)
+            list_of_objects(const_get_deep("Armory::#{klass}"),key1, target)
           end
         end
         memoize(method_alias)
@@ -217,11 +223,11 @@ module Armory
 
     end
       
-    def list_of_objects(klass, key)
+    def list_of_objects(klass, key, target_array)
       send_region = klass.stores_region?
       # use factory generator if object supports it
       creation_method = klass.respond_to?(:create)? :create : :new
-      @attrs.fetch(key.to_sym, {}).collect do |item|
+      target_array.collect do |item|
         send_region ? klass.send(creation_method, region, item) : klass.send(creation_method, item)
       end
     end

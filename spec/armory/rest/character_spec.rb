@@ -187,5 +187,38 @@ describe Armory::REST::Character do
     end
   end
 
+  describe '#character_progression' do
+    before do
+      stub_get('/wow/character/Illidan/Sleight', {fields:"progression"})
+        .to_return(:body => fixture('character_progression.json'),
+                   :headers => {:content_type => 'application/json; charset=utf-8'})
+    end
+    it 'returns valid progression data' do
+      character = @client.character_progression('Illidan','Sleight')
+      expect(character).to be_a Armory::Character
+
+      progression = character.progression
+      expect(progression).to be_a Array
+
+      first = progression.first
+      expect(first).to be_a Armory::Data::Raid
+      expect(first.name).to eq("Molten Core")
+      expect(first.bosses.first.name).to eq("Ragnaros")
+
+      middle = progression[20]
+      expect(middle.name).to eq("The Ruby Sanctum")
+      expect(middle.bosses.first.name).to eq("Halion")
+      expect(middle.bosses.first.heroic_timestamp).to eq(Time.at(1414543173000/1000))
+
+      last = progression.last
+      expect(last.name).to eq("Blackrock Foundry")
+      expect(last.lfr).to eq(0)
+      expect(last.bosses.last.name).to eq("Blackhand")
+      expect(last.bosses.last.heroic_kills).to eq(0)
+      expect(last.bosses.last.mythic_timestamp).to eq(nil)
+
+    end
+  end
+
 
 end

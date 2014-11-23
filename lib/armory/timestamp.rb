@@ -11,6 +11,7 @@ module Armory
 
   private
     def convert_to_time(seconds_times_thousand)
+      return nil if seconds_times_thousand==0
       Time.at(seconds_times_thousand/1000) unless seconds_times_thousand.nil?
     end
 

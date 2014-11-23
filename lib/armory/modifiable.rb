@@ -12,6 +12,7 @@ module Armory
     end
     memoize :last_modified
     alias_method :lastmodified, :last_modified
+    alias_method :modified, :last_modified
 
     # @return [Boolean]
     def last_modified?
