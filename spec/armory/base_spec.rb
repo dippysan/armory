@@ -7,6 +7,11 @@ describe Armory::Base do
         expect { Armory::Base.new() }.to raise_exception(Armory::Error::RegionMissing)
       end
     end
+    context 'when first paramter is not a string (region)' do
+      it 'raises a RegionMissing exception' do
+        expect { Armory::Base.new({id: 1}) }.to raise_exception(Armory::Error::RegionMissing)
+      end
+    end
   end
 
   describe "with valid constructor" do

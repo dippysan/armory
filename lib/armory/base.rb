@@ -16,6 +16,7 @@ module Armory
     # @return [Armory::Base]
     def initialize(region = nil, attrs = {})
       raise(Armory::Error::RegionMissing) if region.nil?
+      raise(Armory::Error::RegionMissing) if region && region.class != String
       @region = region
       super(attrs)
     end

@@ -95,8 +95,11 @@ module Armory
               @attrs[key1]
             else
               if defined? @region and const_get_deep("Armory::#{klass}").stores_region?
-                target_alias ||= key1
-                const_get_deep("Armory::#{klass}").new(@region, target_alias => @attrs[key1])
+                if target_alias.nil?
+                  const_get_deep("Armory::#{klass}").new(@region, @attrs[key1])
+                else
+                  const_get_deep("Armory::#{klass}").new(@region, target_alias => @attrs[key1])
+                end
               else
                 if target_alias.nil?
                   extra_attrs = add_wanted_keys_to_attrs(@attrs[key1], include_keys)

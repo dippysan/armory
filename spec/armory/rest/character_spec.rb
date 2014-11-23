@@ -80,5 +80,20 @@ describe Armory::REST::Character do
     end
   end
 
+  describe '#character_guild' do
+    before do
+      stub_get('/wow/character/middleearth/frodo', {fields:"guild"})
+        .to_return(:body => fixture('character_guild.json'),
+                   :headers => {:content_type => 'application/json; charset=utf-8'})
+    end
+    it 'returns valid data' do
+      character = @client.character_guild('middleearth','frodo')
+      expect(character).to be_a Armory::Character
+      expect(character.guild).to be_a Armory::Guild
+      expect(character.guild.name).to be_a String
+      expect(character.guild.name).to eq("The Best Guild")
+    end
+  end
+
 
 end

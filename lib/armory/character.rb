@@ -17,10 +17,10 @@ module Armory
     object_attr_reader :'Data::Race', :race, target_alias: :id
     object_attr_reader :'Data::Gender', :gender, target_alias: :id
 
-    require 'armory/character/achievements'  # here because of recursive require above
     object_attr_reader :'Character::Achievements', :achievements
     object_attr_reader :'Character::Appearance', :appearance
     object_attr_reader_as_array :'Character::Feed::Item', :feed
+    object_attr_reader :Guild, :guild
 
   end
 end

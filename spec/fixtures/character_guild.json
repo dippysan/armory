@@ -1,0 +1,28 @@
+{
+    "lastModified": 1416454132000,
+    "name": "Trail",
+    "realm": "Ravencrest",
+    "battlegroup": "Rampage",
+    "class": 11,
+    "race": 4,
+    "gender": 0,
+    "level": 91,
+    "achievementPoints": 7285,
+    "thumbnail": "ravencrest/95/43890783-avatar.jpg",
+    "calcClass": "U",
+    "guild": {
+          "name": "The Best Guild",
+          "realm": "Ravencrest",
+          "battlegroup": "Rampage",
+          "members": 352,
+          "achievementPoints": 2210,
+          "emblem": {
+              "icon": 138,
+              "iconColor": "ff00671f",
+              "border": 3,
+              "borderColor": "ff00671f",
+              "backgroundColor": "ff232323"
+          }
+    },
+    "totalHonorableKills": 849
+}
