@@ -10,7 +10,7 @@ module Armory
 
     alias_method :achievement_points, :achievementPoints
     alias_method :calc_class, :calcClass
-    alias_method :total_honerable_kills, :totalHonorableKills
+    alias_method :total_honorable_kills, :totalHonorableKills
 
     object_attr_reader :BasicRealm, :realm, target_alias: :name
     object_attr_reader :'Data::ToonClass', :class, target_alias: :id
@@ -21,6 +21,7 @@ module Armory
     object_attr_reader :'Character::Appearance', :appearance
     object_attr_reader_as_array :'Character::Feed::Item', :feed
     object_attr_reader :Guild, :guild
+    object_attr_reader :'Character::Items', :items
 
   end
 end

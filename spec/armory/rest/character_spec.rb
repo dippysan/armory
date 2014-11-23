@@ -96,4 +96,30 @@ describe Armory::REST::Character do
   end
 
 
+  describe '#character_items' do
+    before do
+      stub_get('/wow/character/Illidan/Sleight', {fields:"items"})
+        .to_return(:body => fixture('character_items.json'),
+                   :headers => {:content_type => 'application/json; charset=utf-8'})
+    end
+    it 'returns valid item data' do
+      character = @client.character_items('Illidan','Sleight')
+      expect(character).to be_a Armory::Character
+
+      items = character.items 
+      expect(items).to be_a Armory::Character::Items
+      expect(items.average_item_level).to eq(629)
+      expect(items.head).to be_a Armory::Item
+      expect(items.head.id).to eq(118941)
+      expect(items.head.slot).to eq(0)
+      expect(items.trinket1).to be_a Armory::Item
+      expect(items.trinket1.id).to eq(119927)
+      expect(items.trinket1.slot).to eq(12)
+      expect(items.main_hand.extras.enchant).to eq(5331)
+      expect(items.slots[6].stats[1].amount).to eq(87)
+      
+    end
+  end
+
+
 end

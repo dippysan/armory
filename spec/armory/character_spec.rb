@@ -52,8 +52,8 @@ before do
       expect(character.thumbnail).to eq("middleearth/94/4209397-avatar.jpg")
       expect(character.calc_class).to be_a String
       expect(character.calc_class).to eq('U')
-      expect(character.total_honerable_kills).to be_a Integer
-      expect(character.total_honerable_kills).to eq(849)
+      expect(character.total_honorable_kills).to be_a Integer
+      expect(character.total_honorable_kills).to eq(849)
     end
   end
 
