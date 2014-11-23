@@ -23,6 +23,7 @@ module Armory
     object_attr_reader :Guild, :guild
     object_attr_reader :'Character::Items', :items
     object_attr_reader :'Character::Mounts', :mounts
+    object_attr_reader :'Character::Pets', :pets
 
   end
 end

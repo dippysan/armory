@@ -154,5 +154,38 @@ describe Armory::REST::Character do
     end
   end
 
+  describe '#character_pets' do
+    before do
+      stub_get('/wow/character/Illidan/Sleight', {fields:"pets"})
+        .to_return(:body => fixture('character_pets.json'),
+                   :headers => {:content_type => 'application/json; charset=utf-8'})
+    end
+    it 'returns valid pets data' do
+      character = @client.character_pets('Illidan','Sleight')
+      expect(character).to be_a Armory::Character
+
+      pets = character.pets
+      expect(pets).to be_a Armory::Character::Pets
+
+      expect(pets.num_collected).to be_a Integer
+      expect(pets.num_collected).to eq(290)
+
+      expect(pets.collected.count).to eq(pets.num_collected)
+
+      first = pets.first
+      expect(first).to be_a Armory::Data::Pet
+      expect(first.name).to eq("Alpine Hare")
+      expect(first.item.name).to eq("Alpine Hare")
+      expect(first.favorite?).to eq(false)
+
+      last = pets.collected.last
+      expect(last.name).to eq("Yu'lon Kite")
+      expect(last.quality).to eq(1)
+      expect(last.item.quality).to eq(1)
+      expect(last.third?).to eq(false)
+
+    end
+  end
+
 
 end
