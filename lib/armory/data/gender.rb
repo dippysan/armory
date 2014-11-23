@@ -1,8 +1,8 @@
-require 'armory/base_resource'
+require 'armory/identity'
 require 'memoizable'
 
 module Armory
-  class ToonGender < Armory::BaseResource
+  class Data::Gender < Armory::Identity
     include Memoizable
 
     def name

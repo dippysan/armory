@@ -38,11 +38,11 @@ before do
       expect(character.lastmodified).to eq(Time.at(1416305354000/1000))
       expect(character.realm).to be_a Armory::BasicRealm
       expect(character.realm.name).to eq('MiddleEarth')
-      expect(character.class).to be_a Armory::ToonClass
+      expect(character.class).to be_a Armory::Data::ToonClass
       expect(character.class.id).to eq(11)
-      expect(character.race).to be_a Armory::ToonRace
+      expect(character.race).to be_a Armory::Data::Race
       expect(character.race.id).to eq(4)
-      expect(character.gender).to be_a Armory::ToonGender
+      expect(character.gender).to be_a Armory::Data::Gender
       expect(character.gender.id).to eq(0)
       expect(character.level).to be_a Integer
       expect(character.level).to eq(100)

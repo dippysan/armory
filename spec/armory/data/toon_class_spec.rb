@@ -3,7 +3,36 @@ require 'helper'
 
 describe Armory::Data::ToonClass do
 
-  describe "top class level" do
+  describe "from character" do
+    before do
+      @toonclass = Armory::Data::ToonClass.new(:id => 1)
+    end
+
+    describe '#attrs' do
+      it 'returns a hash of attributes' do
+        expect(@toonclass.attrs).to eq(:id => 1)
+      end
+    end
+
+    describe '#new' do
+      it 'returns an Armory::Data::ToonClass with the correct data' do
+        toonclass = Armory::Data::ToonClass.new({id: 8, mask: 128, powerType: 'mana', name: 'Mage'})
+        expect(toonclass).to be_a Armory::Data::ToonClass
+        expect(toonclass.id).to be_a Integer
+        expect(toonclass.id).to eq(8)
+        expect(toonclass.mask).to be_a Integer
+        expect(toonclass.mask).to eq(128)
+        expect(toonclass.power_type).to be_a String
+        expect(toonclass.power_type).to eq('mana')
+        expect(toonclass.name).to be_a String
+        expect(toonclass.name).to eq('Mage')
+      end
+    end
+
+  end
+
+
+  describe "from talent_data" do
 
     before do
       @talent_class_data = {

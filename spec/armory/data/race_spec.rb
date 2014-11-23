@@ -1,9 +1,9 @@
 require 'helper'
 
-describe Armory::ToonRace do
+describe Armory::Data::Race do
   describe "with valid constructor" do
     before do
-      @toonrace = Armory::ToonRace.new(:id => 1)
+      @toonrace = Armory::Data::Race.new(:id => 1)
     end
 
     describe '#attrs' do
@@ -13,9 +13,9 @@ describe Armory::ToonRace do
     end
 
     describe '#new' do
-      it 'returns an Armory::ToonRace with the correct data' do
-        toonrace = Armory::ToonRace.new({id: 4, mask: 8, side: 'alliance', name: 'Night Elf'})
-        expect(toonrace).to be_a Armory::ToonRace
+      it 'returns an Armory::Data::Race with the correct data' do
+        toonrace = Armory::Data::Race.new({id: 4, mask: 8, side: 'alliance', name: 'Night Elf'})
+        expect(toonrace).to be_a Armory::Data::Race
         expect(toonrace.id).to be_a Integer
         expect(toonrace.id).to eq(4)
         expect(toonrace.mask).to be_a Integer
