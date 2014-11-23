@@ -22,6 +22,7 @@ module Armory
     object_attr_reader_as_array :'Character::Feed::Item', :feed
     object_attr_reader :Guild, :guild
     object_attr_reader :'Character::Items', :items
+    object_attr_reader :'Character::Mounts', :mounts
 
   end
 end

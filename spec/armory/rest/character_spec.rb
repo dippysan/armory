@@ -121,5 +121,38 @@ describe Armory::REST::Character do
     end
   end
 
+  describe '#character_mounts' do
+    before do
+      stub_get('/wow/character/Illidan/Sleight', {fields:"mounts"})
+        .to_return(:body => fixture('character_mounts.json'),
+                   :headers => {:content_type => 'application/json; charset=utf-8'})
+    end
+    it 'returns valid mount data' do
+      character = @client.character_mounts('Illidan','Sleight')
+      expect(character).to be_a Armory::Character
+
+      mounts = character.mounts
+      expect(mounts).to be_a Armory::Character::Mounts
+
+      expect(mounts.num_collected).to be_a Integer
+      expect(mounts.num_collected).to eq(17)
+
+      expect(mounts.collected.count).to eq(mounts.num_collected)
+
+      first = mounts.first
+      expect(first).to be_a Armory::Data::Mount
+      expect(first.name).to eq("Albino Drake")
+      expect(first.item.name).to eq("Albino Drake")
+      expect(first.jumping?).to eq(false)
+
+      last = mounts.collected.last
+      expect(last.name).to eq("Black War Bear")
+      expect(last.quality).to eq(4)
+      expect(last.item.quality).to eq(4)
+      expect(last.creature_id).to eq(32205)
+
+    end
+  end
+
 
 end

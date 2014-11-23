@@ -45,7 +45,7 @@ module Armory
       end
 
 
-      # Define object methods from attributes
+      # Define object methods from attribute#s
       #
       # @param klass [Symbol]
       # @param key1 [Symbol]
@@ -69,9 +69,9 @@ module Armory
         end
       end
 
-      # Dynamically define a method for a URI
       #
-      # @param key1 [Symbol]
+      # Dr aynamically define a method #fo
+      # @param key1 [ URISymbol]
       def define_uri_method(key1)
         define_method(key1) do ||
           Addressable::URI.parse(@attrs[key1]) unless @attrs[key1].nil?
@@ -94,8 +94,8 @@ module Armory
             if klass.nil?
               @attrs[key1]
             else
-              extra_attrs = add_wanted_keys_to_attrs(@attrs[key1], include_keys)
-              target_params = add_target_alias_if_requested(target_alias,extra_attrs)
+              extra_attrs = add_target_alias_if_requested(target_alias,@attrs[key1])
+              target_params = add_wanted_keys_to_attrs(extra_attrs, include_keys)
               target_params = add_region_if_needed(klass, target_params)
 
               const_get_deep("Armory::#{klass}").new(*target_params)
@@ -188,7 +188,20 @@ module Armory
 
       case target
         when Hash
-          target.dup.merge(slice(@attrs, Array(keys_to_add)))
+          target = target.dup
+          Array(keys_to_add).each do |key_or_hash|
+            case key_or_hash
+            when ::Symbol
+              # target[:itemId] = @attrs[:itemId]
+              target[key_or_hash] = @attrs[key_or_hash]  
+            when Hash
+              # Alias method in target class: target[:itemId] = @attrs[:id]
+              target[key_or_hash.values.first] = @attrs[key_or_hash.keys.first]  
+            else
+              raise "Can't include_keys with unknown object #{key_or_hash}"
+            end
+          end
+          target
         when Array
           # Add keys to every element of array
           target.dup.map {|h| add_wanted_keys_to_attrs(h,keys_to_add)}
