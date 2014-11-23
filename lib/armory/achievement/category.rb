@@ -10,7 +10,7 @@ module Armory
     attr_reader :name
 
     object_attr_reader_as_array :'Armory::Achievement::Category', :categories
-    object_attr_reader_as_array :'Armory::Character::Achievements::Completed', :achievements
+    object_attr_reader_as_array :'Data::Achievement', :achievements
 
   end
 end

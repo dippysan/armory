@@ -41,7 +41,7 @@ module Armory
       super
 
       @collection = achievement_array.collect do |data|
-        Character::Achievements::Completed.new(data)
+        Data::Achievement.new(data)
       end
       @criteria = criteria_array.collect do |data|
         Character::Achievements::Criteria.new(data)

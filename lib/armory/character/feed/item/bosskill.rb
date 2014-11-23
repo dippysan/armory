@@ -6,7 +6,7 @@ module Armory
     attr_reader :name, :quantity
     predicate_attr_reader_with_alias :featOfStrength, :feat_of_strength
 
-    object_attr_reader :'Character::Achievements::Completed', :achievement, include_keys: :timestamp
+    object_attr_reader :'Data::Achievement', :achievement, include_keys: :timestamp
     object_attr_reader :'Character::Achievements::Criteria', :criteria, include_keys: :timestamp
 
   end

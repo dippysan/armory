@@ -27,7 +27,7 @@ describe Armory::Achievement::Category do
         expect(ach.categories.first.id).to eq(2)
         expect(ach.categories.first.name).to eq('Sub Category')
         expect(ach.achievements).to be_a Array
-        expect(ach.achievements.first).to be_a Armory::Character::Achievements::Completed
+        expect(ach.achievements.first).to be_a Armory::Data::Achievement
         expect(ach.achievements.first.id).to eq(3)
         expect(ach.achievements.first.title).to eq('Achievement 1')
       end
@@ -52,7 +52,7 @@ describe Armory::Achievement::Category do
         ach = Armory::Achievement::Category.new(@achievement_category_data)
         subcat_ach_array = ach.categories.first.achievements
         expect(subcat_ach_array).to be_a Array
-        expect(subcat_ach_array.first).to be_a Armory::Character::Achievements::Completed
+        expect(subcat_ach_array.first).to be_a Armory::Data::Achievement
         expect(subcat_ach_array.first.id).to eq(3)
         expect(subcat_ach_array.first.title).to eq('Achievement 1')
       end

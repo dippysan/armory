@@ -57,10 +57,10 @@ describe Armory::Character::Achievements do
       expect(@achievements.criteria_created.last).to eq(1616313544000)
     end
 
-    it '.achievements returns array of Armory::Character::Achievements::Completed' do
+    it '.achievements returns array of Armory::Data::Achievement' do
       completed = @achievements.completed
-      # expect(completed).to be_an Array # It's not an array, but a Armory::Character::Achievements::Completed
-      expect(completed.first).to be_a Armory::Character::Achievements::Completed
+      # expect(completed).to be_an Array # It's not an array, but a Armory::Data::Achievement
+      expect(completed.first).to be_a Armory::Data::Achievement
       expect(completed.first.id).to eq(9141)
       expect(completed.first.timestamp).to eq(i_to_time(1516270000000))
     end

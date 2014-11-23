@@ -1,10 +1,12 @@
 require 'armory/identity'
 
 module Armory
-  class Data::Race < Armory::Identity
+  module Data
+    class Race < Armory::Identity
 
-    attr_reader :mask, :side, :name
+      attr_reader :mask, :side, :name
     
+    end
   end
 end
 

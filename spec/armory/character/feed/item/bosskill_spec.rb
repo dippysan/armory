@@ -35,13 +35,13 @@ describe Armory::Character::Feed::Item::BossKill do
       expect(@feed_item.name).to be_a String
       expect(@feed_item.name).to eq("Sha of Pride")
       expect(@feed_item.feat_of_strength?).to be_a FalseClass
-      expect(@feed_item.achievement).to be_a Armory::Character::Achievements::Completed
+      expect(@feed_item.achievement).to be_a Armory::Data::Achievement
       expect(@feed_item.criteria).to be_a Armory::Character::Achievements::Criteria
     end
 
-    it '#achievement returns Armory::Character::Achievements::Completed with id and timestamp inherited from Item' do
+    it '#achievement returns Armory::Data::Achievement with id and timestamp inherited from Item' do
       ach = @feed_item.achievement
-      expect(ach).to be_a Armory::Character::Achievements::Completed
+      expect(ach).to be_a Armory::Data::Achievement
       expect(ach.id).to be_a Integer
       expect(ach.id).to eq(1)
       expect(ach.timestamp).to be_a Time

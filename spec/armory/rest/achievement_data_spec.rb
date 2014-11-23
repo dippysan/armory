@@ -46,7 +46,7 @@ describe Armory::Achievement::Category do
       it 'achievements' do
         ach_ach = @ach.achievements
         expect(ach_ach).to be_a Array
-        expect(ach_ach.first).to be_a Armory::Character::Achievements::Completed
+        expect(ach_ach.first).to be_a Armory::Data::Achievement
         expect(ach_ach.first.title).to eq('50 Quests Completed')
       end
     end

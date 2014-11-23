@@ -28,12 +28,12 @@ describe Armory::Character::Feed::Item::Achievement do
       expect(@feed_item.timestamp).to be_a Time
       expect(@feed_item.timestamp).to eq(Time.at(1416294000000/1000))
       expect(@feed_item.feat_of_strength?).to be_a TrueClass
-      expect(@feed_item.achievement).to be_a Armory::Character::Achievements::Completed
+      expect(@feed_item.achievement).to be_a Armory::Data::Achievement
     end
 
-    it '#achievement returns Armory::Character::Achievements::Completed with id and timestamp inherited from Item' do
+    it '#achievement returns Armory::Data::Achievement with id and timestamp inherited from Item' do
       ach = @feed_item.achievement
-      expect(ach).to be_a Armory::Character::Achievements::Completed
+      expect(ach).to be_a Armory::Data::Achievement
       expect(ach.id).to be_a Integer
       expect(ach.id).to eq(9107)
       expect(ach.timestamp).to be_a Time
