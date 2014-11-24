@@ -28,14 +28,20 @@ describe Armory::Data::Glyph do
       expect(@item.id).to eq(183)
       expect(@item.glyph).to be_a Integer
       expect(@item.glyph).to eq(183)
-      expect(@item.item).to be_a Integer
-      expect(@item.item).to eq(2)
       expect(@item.name).to be_a String
       expect(@item.name).to eq("Glyph of Double Jeopardy")
       expect(@item.icon).to be_a String
       expect(@item.icon).to eq("spell_holy_righteousfury")
       expect(@item.type_id).to be_a Integer
-      expect(@item.type_id).to eq(0)
+      expect(@item.type_id).to eq(Armory::Data::Glyph::MAJOR)
+
+      expect(@item.item).to be_a Armory::Item
+      expect(@item.item.id).to be_a Integer
+      expect(@item.item.id).to eq(2)
+      expect(@item.item.name).to be_a String
+      expect(@item.item.name).to eq("Glyph of Double Jeopardy")
+      expect(@item.minor?).to eq(false)
+      expect(@item.major?).to eq(true)
     end
 
   end

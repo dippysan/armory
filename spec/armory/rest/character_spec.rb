@@ -248,4 +248,58 @@ describe Armory::REST::Character do
     end
   end
 
+  describe '#character_talents' do
+    before do
+      stub_get('/wow/character/Illidan/Zerosurv', {fields:"talents"})
+        .to_return(:body => fixture('character_talent.json'),
+                   :headers => {:content_type => 'application/json; charset=utf-8'})
+
+      @character = @client.character_talents('Illidan','Zerosurv')
+      @talent = @character.talents
+    end
+    it 'returns valid talent/glyph/spec data' do
+      expect(@character).to be_a Armory::Character
+      expect(@talent).to be_a Array
+    end
+
+    it "returns data for spec 1" do
+      spec = @talent.first
+
+      expect(spec).to be_a Armory::Character::Talents
+      expect(spec.selected?).to eq(false)
+      expect(spec.calc_talent).to eq("000022.")
+      expect(spec.talents.first.tier).to eq(4)
+      expect(spec.talents.first.column).to eq(2)
+      expect(spec.talents.first.spell.id).to eq(114030)
+
+      expect(spec.spec.name).to eq("Protection")
+      expect(spec.spec.order).to eq(2)
+      
+      expect(spec.glyphs.major.first.id).to eq(502)
+      expect(spec.glyphs.major.first.name).to eq("Glyph of Shield Slam")
+      expect(spec.glyphs.major.first.item.id).to eq(43425)
+      expect(spec.glyphs.major.first.item.name).to eq("Glyph of Shield Slam")
+      expect(spec.glyphs.minor.last.id).to eq(765)
+    end
+
+    it "returns data for spec 2" do
+      spec = @talent.last
+
+      expect(spec).to be_a Armory::Character::Talents
+      expect(spec.selected?).to eq(true)
+      expect(spec.calc_talent).to eq("110022.")
+      expect(spec.talents.last.tier).to eq(0)
+      expect(spec.talents.last.column).to eq(1)
+      expect(spec.talents.last.spell.id).to eq(103827)
+
+      expect(spec.spec.name).to eq("Fury")
+      expect(spec.spec.order).to eq(1)
+      
+      expect(spec.glyphs.major.last.id).to eq(509)
+      expect(spec.glyphs.minor.last.id).to eq(765)
+    end
+
+
+  end
+
 end

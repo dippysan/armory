@@ -5,10 +5,15 @@ module Armory
 
   # Key to include in included object of master object
   class IncludeKey
-    attr_reader :symbol
-    def initialize(symbol, to_alias = symbol)
+    attr_reader :symbol, :default
+    def initialize(symbol, to_alias = symbol, default_value = nil)
       @symbol = symbol
       @alias = to_alias
+      @default = default_value
+    end
+
+    def value_or_default(value)
+      default.nil? ? value : default
     end
 
     def to_alias
@@ -132,13 +137,13 @@ module Armory
       # @param klass [Symbol]
       # @param method_alias [Symbol] - alias
       # @param extra_key [Symbol] - down an extra level. IE progression: { raids: [...] }
-      def define_attribute_array_method(key1, klass, method_alias: key1, extra_key: nil)
+      def define_attribute_array_method(key1, klass, method_alias: key1, extra_key: nil, **args)
         define_method(method_alias) do ||
           target = extra_key.nil? ? @attrs[key1] : @attrs[key1][extra_key]
           if target.nil? 
             nil
           else
-            list_of_objects(const_get_deep("Armory::#{klass}"),key1, target)
+            list_of_objects(const_get_deep("Armory::#{klass}"),key1, target, **args)
           end
         end
         memoize(method_alias)
@@ -211,9 +216,10 @@ module Armory
         when Hash
           target = target.dup
           Array(include_keys).each do |key|
+            # target[:item_id] = use key.default if exists
             # target[:itemId]  = @attrs[:itemId] or
             # target[:item_id] = @attrs[:itemId]
-            target[key.to_alias] = @attrs[key.symbol]
+            target[key.to_alias] = key.value_or_default(@attrs[key.symbol])
           end
           target
         when Array
@@ -225,12 +231,13 @@ module Armory
 
     end
       
-    def list_of_objects(klass, key, target_array)
+    def list_of_objects(klass, key, target_array, include_keys: nil)
       send_region = klass.stores_region?
       # use factory generator if object supports it
       creation_method = klass.respond_to?(:create)? :create : :new
       target_array.collect do |item|
-        send_region ? klass.send(creation_method, region, item) : klass.send(creation_method, item)
+        item_dup = add_wanted_keys_to_attrs(item.dup, include_keys)
+        send_region ? klass.send(creation_method, region, item_dup) : klass.send(creation_method, item_dup)
       end
     end
   end
