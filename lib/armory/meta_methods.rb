@@ -105,15 +105,17 @@ module Armory
       # @param method_alias [Symbol] - alias
       # @param target_alias [Symbol] - key for this item in the target class
       # @param include_keys [Symbol] - used in define_attribute_method not here
-      def define_attribute_method(key1, klass = nil, method_alias: key1, target_alias: nil, include_keys: nil)
+      # @param extra_key [Symbol] - down an extra level. IE progression: { raids: [...] }
+      def define_attribute_method(key1, klass = nil, method_alias: key1, target_alias: nil, include_keys: nil, extra_key: nil)
         define_method(method_alias) do ||
-          if @attrs[key1].nil?
+          target = extra_key.nil? ? @attrs[key1] : @attrs[key1][extra_key]
+          if target.nil?
             nil
           else
             if klass.nil?
-              @attrs[key1]
+              target
             else
-              extra_attrs = add_target_alias_if_requested(target_alias,@attrs[key1])
+              extra_attrs = add_target_alias_if_requested(target_alias,target)
               target_params = add_wanted_keys_to_attrs(extra_attrs, include_keys)
               target_params = add_region_if_needed(klass, target_params)
 
@@ -157,7 +159,7 @@ module Armory
       # @param method_alias [Symbol] - alternate name for this method
       # @param target_alias [Symbol] - used in define_attribute_method not here
       # @param include_keys [Symbol] - used in define_attribute_method not here
-      def define_predicate_method(key1, method_alias: key1, target_alias: key1, include_keys: nil)
+      def define_predicate_method(key1, method_alias: key1, target_alias: key1, include_keys: nil, extra_key: nil)
         define_method(:"#{method_alias}?") do ||
           !@attrs[key1].nil? && @attrs[key1] != false && !(@attrs[key1].respond_to?(:empty?) && @attrs[key1].empty?)
         end

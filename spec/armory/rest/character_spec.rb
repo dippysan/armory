@@ -220,5 +220,32 @@ describe Armory::REST::Character do
     end
   end
 
+  describe '#character_pvp' do
+    before do
+      stub_get('/wow/character/Illidan/Zerosurv', {fields:"pvp"})
+        .to_return(:body => fixture('character_pvp.json'),
+                   :headers => {:content_type => 'application/json; charset=utf-8'})
+    end
+    it 'returns valid pvp data' do
+      character = @client.character_pvp('Illidan','Zerosurv')
+      expect(character).to be_a Armory::Character
+
+      pvp = character.pvp
+      expect(pvp).to be_a Armory::Character::PvP
+
+      expect(pvp.v2).to be_a Armory::Data::ArenaBracket
+      expect(pvp.v3).to be_a Armory::Data::ArenaBracket
+      expect(pvp.v5).to be_a Armory::Data::ArenaBracket
+      expect(pvp.rbg).to be_a Armory::Data::ArenaBracket
+      expect(pvp.unknown).to be_a Armory::Data::ArenaBracket
+
+      expect(pvp.v2.season_played).to eq(856)
+      expect(pvp.v3.season_lost).to eq(103)
+      expect(pvp.v5.weekly_won).to eq(0)
+      expect(pvp.rbg.slug).to eq("rbg")
+      expect(pvp.unknown.rating).to eq(576)
+
+    end
+  end
 
 end

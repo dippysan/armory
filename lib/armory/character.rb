@@ -25,6 +25,7 @@ module Armory
     object_attr_reader :'Character::Mounts', :mounts
     object_attr_reader :'Character::Pets', :pets
     object_attr_reader_as_array :'Data::Raid', :progression, extra_key: :raids
+    object_attr_reader :'Character::PvP', :pvp, extra_key: :brackets
 
   end
 end

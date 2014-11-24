@@ -65,6 +65,11 @@ module Armory
         character(realm_slug, character_name, options)
       end
 
+      def character_pvp(realm_slug, character_name, options = {})
+        insert_fields_value(options, "pvp")
+        character(realm_slug, character_name, options)
+      end
+
     private
       def insert_fields_value(options, field_value)
         # insert field_value into options: :fields, unless it's already there
