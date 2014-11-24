@@ -84,8 +84,8 @@ describe Armory::Data::Achievement do
         expect(@ach.criteria.last.max).to eq(2)
         expect(@ach.criteria.last.order_index).to eq(2)
       end
-      skip '#reward_items returns Armory::Item with the correct data' do
-        expect(@ach.reward_items).to be_a Armory::ItemList
+      it '#reward_items returns Armory::Item with the correct data' do
+        expect(@ach.reward_items).to be_a Array
         expect(@ach.reward_items.count).to eq(2)
         expect(@ach.reward_items.first).to be_a Armory::Item
         expect(@ach.reward_items.first.id).to eq(3)

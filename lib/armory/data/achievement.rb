@@ -13,12 +13,12 @@ module Armory
       alias_method :completed_timestamp, :timestamp
 
       # From achievement data
-      attr_reader :rewardItems, :icon, :factionId, :reward
+      attr_reader :icon, :factionId, :reward
       alias_method :faction_id, :factionId
-      alias_method :reward_items, :rewardItems
       predicate_attr_reader_with_alias :accountWide, :account_wide
 
       object_attr_reader_as_array :'Character::Achievements::Criteria', :criteria
+      object_attr_reader_as_array :Item, :rewardItems, method_alias: :reward_items
 
     end
   end
