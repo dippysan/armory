@@ -37,6 +37,8 @@ describe Armory::Character::Appearance do
       expect(@appearance.feature_variation).to eq(2)
       expect(@appearance.show_helm?).to be_a FalseClass
       expect(@appearance.show_cloak?).to be_a TrueClass
+      expect(@appearance.helm?).to be_a FalseClass
+      expect(@appearance.cloak?).to be_a TrueClass
     end
   end
 
