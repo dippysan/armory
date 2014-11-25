@@ -72,14 +72,14 @@ describe Armory::Data::Achievement do
         expect(@ach.faction_id).to be_a Integer
         expect(@ach.faction_id).to eq(2)
       end
-      it '#criteria returns array of Armory::Character::Achievements::Criteria' do
+      it '#criteria returns array of Armory::Data::AchievementCriteria' do
         expect(@ach.criteria).to be_a Array
         expect(@ach.criteria.count).to eq(2)
-        expect(@ach.criteria.first).to be_a Armory::Character::Achievements::Criteria
+        expect(@ach.criteria.first).to be_a Armory::Data::AchievementCriteria
         expect(@ach.criteria.first.id).to eq(1)
         expect(@ach.criteria.first.max).to eq(1)
         expect(@ach.criteria.first.order_index).to eq(1)
-        expect(@ach.criteria.last).to be_a Armory::Character::Achievements::Criteria
+        expect(@ach.criteria.last).to be_a Armory::Data::AchievementCriteria
         expect(@ach.criteria.last.id).to eq(2)
         expect(@ach.criteria.last.max).to eq(2)
         expect(@ach.criteria.last.order_index).to eq(2)

@@ -17,7 +17,7 @@ module Armory
       alias_method :faction_id, :factionId
       predicate_attr_reader_with_alias :accountWide, :account_wide
 
-      object_attr_reader_as_array :'Character::Achievements::Criteria', :criteria
+      object_attr_reader_as_array :'Data::AchievementCriteria', :criteria
       object_attr_reader_as_array :Item, :rewardItems, method_alias: :reward_items
 
     end

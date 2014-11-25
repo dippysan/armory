@@ -44,7 +44,7 @@ describe Armory::Character::Feed::Item::Criteria do
       expect(@feed_item.name).to eq("Sha of Pride")
       expect(@feed_item.feat_of_strength?).to be_a FalseClass
       expect(@feed_item.achievement).to be_a Armory::Data::Achievement
-      expect(@feed_item.criteria).to be_a Armory::Character::Achievements::Criteria
+      expect(@feed_item.criteria).to be_a Armory::Data::AchievementCriteria
     end
 
     it '#achievement returns Armory::Data::Achievement with id and timestamp inherited from Item' do
@@ -58,7 +58,7 @@ describe Armory::Character::Feed::Item::Criteria do
 
     it '#criteria returns Armory::Character::Achievements::Criteria with id and timestamp inherited from Item' do
       crt = @feed_item.criteria
-      expect(crt).to be_a Armory::Character::Achievements::Criteria
+      expect(crt).to be_a Armory::Data::AchievementCriteria
       expect(crt.id).to be_a Integer
       expect(crt.id).to eq(2)
       expect(crt.timestamp).to be_a Time

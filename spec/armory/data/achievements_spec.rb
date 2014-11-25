@@ -1,7 +1,7 @@
 # coding: utf-8
 require 'helper'
 
-describe Armory::Character::Achievements do
+describe Armory::Data::Achievements do
 
   def i_to_time(i)
     Time.at(i/1000)
@@ -16,7 +16,7 @@ describe Armory::Character::Achievements do
         criteriaTimestamp: [1416313545000, 1516313546000, 1616313547000, 1716313548000],
         criteriaCreated: [1416313542000, 0, 1516313543000, 1616313544000]
        }
-    @achievements = Armory::Character::Achievements.new(@achievements_hash)
+    @achievements = Armory::Data::Achievements.new(@achievements_hash)
   end
 
   describe '#achievements' do
@@ -65,10 +65,10 @@ describe Armory::Character::Achievements do
       expect(completed.first.timestamp).to eq(i_to_time(1516270000000))
     end
 
-    it '.achievement_criteria returns array of Armory::Character::Achievements::Criteria' do
+    it '.achievement_criteria returns array of Armory::Data::AchievementCriteria' do
       criteria = @achievements.achievement_criteria
       expect(criteria).to be_an Array
-      expect(criteria.first).to be_a Armory::Character::Achievements::Criteria
+      expect(criteria.first).to be_a Armory::Data::AchievementCriteria
       expect(criteria.first.id).to eq(26706)
       expect(criteria.first.quantity).to eq(1)
       expect(criteria.first.timestamp).to eq(i_to_time(1416313545000))

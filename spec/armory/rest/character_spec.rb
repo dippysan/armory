@@ -39,10 +39,10 @@ describe Armory::REST::Character do
     it 'returns valid data' do
       character = @client.character_achievements('middleearth','frodo')
       expect(character).to be_a Armory::Character
-      expect(character.achievements).to be_a Armory::Character::Achievements
+      expect(character.achievements).to be_a Armory::Data::Achievements
       expect(character.achievements.first).to be_a Armory::Data::Achievement
       expect(character.achievements.achievement_criteria).to be_a Array
-      expect(character.achievements.achievement_criteria.first).to be_a Armory::Character::Achievements::Criteria
+      expect(character.achievements.achievement_criteria.first).to be_a Armory::Data::AchievementCriteria
 
       expect(character.achievements.achievement_criteria.first.quantity).to eq(1)
       expect(character.achievements.achievement_criteria.first.timestamp).to eq(Time.at(1416313542000/1000))

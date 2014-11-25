@@ -22,7 +22,7 @@ describe Armory::REST::Character do
       expect(@character.name).to eq('Spazzo')
 
       expect(@character).to be_a Armory::Character
-      expect(@character.achievements).to be_a Armory::Character::Achievements
+      expect(@character.achievements).to be_a Armory::Data::Achievements
       expect(@character.achievements.first).to be_a Armory::Data::Achievement
 
       expect(@character.achievements.first.id).to eq(6)

@@ -1,0 +1,4344 @@
+{
+    "lastModified": 1416901650000,
+    "name": "Placeholder",
+    "realm": "Illidan",
+    "battlegroup": "Rampage",
+    "level": 25,
+    "side": 1,
+    "achievementPoints": 800,
+    "members": [{
+        "character": {
+            "name": "Nerftastic",
+            "realm": "Illidan",
+            "battlegroup": "Rampage",
+            "class": 7,
+            "race": 2,
+            "gender": 0,
+            "level": 90,
+            "achievementPoints": 5580,
+            "thumbnail": "illidan/46/39512110-avatar.jpg",
+            "spec": {
+                "name": "Restoration",
+                "role": "HEALING",
+                "backgroundImage": "bg-shaman-restoration",
+                "icon": "spell_nature_magicimmunity",
+                "description": "A healer who calls upon ancestral spirits and the cleansing power of water to mend allies' wounds.",
+                "order": 2
+            },
+            "guild": "Placeholder",
+            "guildRealm": "Illidan"
+        },
+        "rank": 7
+    }, {
+        "character": {
+            "name": "Zentheria",
+            "realm": "Illidan",
+            "battlegroup": "Rampage",
+            "class": 2,
+            "race": 10,
+            "gender": 0,
+            "level": 90,
+            "achievementPoints": 8955,
+            "thumbnail": "illidan/135/45749895-avatar.jpg",
+            "spec": {
+                "name": "Retribution",
+                "role": "DPS",
+                "backgroundImage": "bg-paladin-retribution",
+                "icon": "spell_holy_auraoflight",
+                "description": "A righteous crusader who judges and punishes opponents with weapons and Holy magic.",
+                "order": 2
+            },
+            "guild": "Placeholder",
+            "guildRealm": "Illidan"
+        },
+        "rank": 6
+    }, {
+        "character": {
+            "name": "Hikary",
+            "realm": "Illidan",
+            "battlegroup": "Rampage",
+            "class": 5,
+            "race": 10,
+            "gender": 1,
+            "level": 29,
+            "achievementPoints": 13545,
+            "thumbnail": "illidan/199/56515015-avatar.jpg",
+            "spec": {
+                "name": "Shadow",
+                "role": "DPS",
+                "backgroundImage": "bg-priest-shadow",
+                "icon": "spell_shadow_shadowwordpain",
+                "description": "Uses sinister Shadow magic, especially damage-over-time spells, to eradicate enemies.",
+                "order": 2
+            },
+            "guild": "Placeholder",
+            "guildRealm": "Illidan"
+        },
+        "rank": 8
+    }, {
+        "character": {
+            "name": "Gorshalakh",
+            "realm": "Illidan",
+            "battlegroup": "Rampage",
+            "class": 2,
+            "race": 6,
+            "gender": 0,
+            "level": 90,
+            "achievementPoints": 9550,
+            "thumbnail": "illidan/176/64153776-avatar.jpg",
+            "spec": {
+                "name": "Retribution",
+                "role": "DPS",
+                "backgroundImage": "bg-paladin-retribution",
+                "icon": "spell_holy_auraoflight",
+                "description": "A righteous crusader who judges and punishes opponents with weapons and Holy magic.",
+                "order": 2
+            },
+            "guild": "Placeholder",
+            "guildRealm": "Illidan"
+        },
+        "rank": 6
+    }, {
+        "character": {
+            "name": "Deur",
+            "realm": "Illidan",
+            "battlegroup": "Rampage",
+            "class": 9,
+            "race": 2,
+            "gender": 0,
+            "level": 85,
+            "achievementPoints": 3735,
+            "thumbnail": "illidan/15/72710159-avatar.jpg",
+            "spec": {
+                "name": "Affliction",
+                "role": "DPS",
+                "backgroundImage": "bg-warlock-affliction",
+                "icon": "spell_shadow_deathcoil",
+                "description": "A master of shadow magic who specializes in drains and damage-over-time spells.",
+                "order": 0
+            },
+            "guild": "Placeholder",
+            "guildRealm": "Illidan"
+        },
+        "rank": 8
+    }, {
+        "character": {
+            "name": "Gaje",
+            "realm": "Illidan",
+            "battlegroup": "Rampage",
+            "class": 7,
+            "race": 8,
+            "gender": 0,
+            "level": 86,
+            "achievementPoints": 5805,
+            "thumbnail": "illidan/20/76779796-avatar.jpg",
+            "spec": {
+                "name": "Elemental",
+                "role": "DPS",
+                "backgroundImage": "bg-shaman-elemental",
+                "icon": "spell_nature_lightning",
+                "description": "A spellcaster who harnesses the destructive forces of nature and the elements.",
+                "order": 0
+            },
+            "guild": "Placeholder",
+            "guildRealm": "Illidan"
+        },
+        "rank": 8
+    }, {
+        "character": {
+            "name": "Saelahjh",
+            "realm": "Illidan",
+            "battlegroup": "Rampage",
+            "class": 11,
+            "race": 6,
+            "gender": 1,
+            "level": 90,
+            "achievementPoints": 3415,
+            "thumbnail": "illidan/178/82291890-avatar.jpg",
+            "spec": {
+                "name": "Balance",
+                "role": "DPS",
+                "backgroundImage": "bg-druid-balance",
+                "icon": "spell_nature_starfall",
+                "description": "Can take on the form of a powerful Moonkin, balancing the power of Arcane and Nature magic to destroy enemies at a distance.",
+                "order": 0
+            },
+            "guild": "Placeholder",
+            "guildRealm": "Illidan"
+        },
+        "rank": 7
+    }, {
+        "character": {
+            "name": "Avainas",
+            "realm": "Illidan",
+            "battlegroup": "Rampage",
+            "class": 8,
+            "race": 5,
+            "gender": 1,
+            "level": 90,
+            "achievementPoints": 4530,
+            "thumbnail": "illidan/246/84415222-avatar.jpg",
+            "spec": {
+                "name": "Frost",
+                "role": "DPS",
+                "backgroundImage": "bg-mage-frost",
+                "icon": "spell_frost_frostbolt02",
+                "description": "Freezes enemies in their tracks and shatters them with Frost magic.",
+                "order": 2
+            },
+            "guild": "Placeholder",
+            "guildRealm": "Illidan"
+        },
+        "rank": 7
+    }, {
+        "character": {
+            "name": "Aphexa",
+            "realm": "Illidan",
+            "battlegroup": "Rampage",
+            "class": 3,
+            "race": 10,
+            "gender": 1,
+            "level": 71,
+            "achievementPoints": 9360,
+            "thumbnail": "illidan/90/84529242-avatar.jpg",
+            "spec": {
+                "name": "Marksmanship",
+                "role": "DPS",
+                "backgroundImage": "bg-hunter-marksman",
+                "icon": "ability_hunter_focusedaim",
+                "description": "A master archer or sharpshooter who excels in bringing down enemies from afar.",
+                "order": 1
+            },
+            "guild": "Placeholder",
+            "guildRealm": "Illidan"
+        },
+        "rank": 8
+    }, {
+        "character": {
+            "name": "Absolushun",
+            "realm": "Illidan",
+            "battlegroup": "Rampage",
+            "class": 5,
+            "race": 10,
+            "gender": 1,
+            "level": 90,
+            "achievementPoints": 6960,
+            "thumbnail": "illidan/230/85898982-avatar.jpg",
+            "spec": {
+                "name": "Shadow",
+                "role": "DPS",
+                "backgroundImage": "bg-priest-shadow",
+                "icon": "spell_shadow_shadowwordpain",
+                "description": "Uses sinister Shadow magic, especially damage-over-time spells, to eradicate enemies.",
+                "order": 2
+            },
+            "guild": "Placeholder",
+            "guildRealm": "Illidan"
+        },
+        "rank": 8
+    }, {
+        "character": {
+            "name": "Angelictouch",
+            "realm": "Illidan",
+            "battlegroup": "Rampage",
+            "class": 5,
+            "race": 10,
+            "gender": 1,
+            "level": 90,
+            "achievementPoints": 9415,
+            "thumbnail": "illidan/123/85924219-avatar.jpg",
+            "spec": {
+                "name": "Shadow",
+                "role": "DPS",
+                "backgroundImage": "bg-priest-shadow",
+                "icon": "spell_shadow_shadowwordpain",
+                "description": "Uses sinister Shadow magic, especially damage-over-time spells, to eradicate enemies.",
+                "order": 2
+            },
+            "guild": "Placeholder",
+            "guildRealm": "Illidan"
+        },
+        "rank": 7
+    }, {
+        "character": {
+            "name": "Protoknite",
+            "realm": "Illidan",
+            "battlegroup": "Rampage",
+            "class": 2,
+            "race": 10,
+            "gender": 0,
+            "level": 91,
+            "achievementPoints": 8025,
+            "thumbnail": "illidan/78/86243406-avatar.jpg",
+            "spec": {
+                "name": "Holy",
+                "role": "HEALING",
+                "backgroundImage": "bg-paladin-holy",
+                "icon": "spell_holy_holybolt",
+                "description": "Invokes the power of the Light to protect and to heal.",
+                "order": 0
+            },
+            "guild": "Placeholder",
+            "guildRealm": "Illidan"
+        },
+        "rank": 7
+    }, {
+        "character": {
+            "name": "Protóstrike",
+            "realm": "Illidan",
+            "battlegroup": "Rampage",
+            "class": 4,
+            "race": 10,
+            "gender": 1,
+            "level": 90,
+            "achievementPoints": 8440,
+            "thumbnail": "illidan/246/86392566-avatar.jpg",
+            "spec": {
+                "name": "Subtlety",
+                "role": "DPS",
+                "backgroundImage": "bg-rogue-subtlety",
+                "icon": "ability_stealth",
+                "description": "A dark stalker who leaps from the shadows to ambush her unsuspecting prey.",
+                "order": 2
+            },
+            "guild": "Placeholder",
+            "guildRealm": "Illidan"
+        },
+        "rank": 7
+    }, {
+        "character": {
+            "name": "Snigglet",
+            "realm": "Illidan",
+            "battlegroup": "Rampage",
+            "class": 8,
+            "race": 5,
+            "gender": 0,
+            "level": 90,
+            "achievementPoints": 6855,
+            "thumbnail": "illidan/136/88095112-avatar.jpg",
+            "spec": {
+                "name": "Frost",
+                "role": "DPS",
+                "backgroundImage": "bg-mage-frost",
+                "icon": "spell_frost_frostbolt02",
+                "description": "Freezes enemies in their tracks and shatters them with Frost magic.",
+                "order": 2
+            },
+            "guild": "Placeholder",
+            "guildRealm": "Illidan"
+        },
+        "rank": 7
+    }, {
+        "character": {
+            "name": "Thegøøn",
+            "realm": "Illidan",
+            "battlegroup": "Rampage",
+            "class": 5,
+            "race": 5,
+            "gender": 0,
+            "level": 90,
+            "achievementPoints": 7320,
+            "thumbnail": "illidan/159/88522143-avatar.jpg",
+            "spec": {
+                "name": "Holy",
+                "role": "HEALING",
+                "backgroundImage": "bg-priest-holy",
+                "icon": "spell_holy_guardianspirit",
+                "description": "A versatile healer who can reverse damage on individuals or groups and even heal from beyond the grave.",
+                "order": 1
+            },
+            "guild": "Placeholder",
+            "guildRealm": "Illidan"
+        },
+        "rank": 8
+    }, {
+        "character": {
+            "name": "Wrathena",
+            "realm": "Illidan",
+            "battlegroup": "Rampage",
+            "class": 11,
+            "race": 6,
+            "gender": 1,
+            "level": 90,
+            "achievementPoints": 7990,
+            "thumbnail": "illidan/26/89577498-avatar.jpg",
+            "spec": {
+                "name": "Feral",
+                "role": "DPS",
+                "backgroundImage": "bg-druid-cat",
+                "icon": "ability_druid_catform",
+                "description": "Takes on the form of a great cat to deal damage with bleeds and bites.",
+                "order": 1
+            },
+            "guild": "Placeholder",
+            "guildRealm": "Illidan"
+        },
+        "rank": 7
+    }, {
+        "character": {
+            "name": "Benjarvus",
+            "realm": "Illidan",
+            "battlegroup": "Rampage",
+            "class": 6,
+            "race": 2,
+            "gender": 0,
+            "level": 90,
+            "achievementPoints": 2805,
+            "thumbnail": "illidan/21/90891285-avatar.jpg",
+            "spec": {
+                "name": "Unholy",
+                "role": "DPS",
+                "backgroundImage": "bg-deathknight-unholy",
+                "icon": "spell_deathknight_unholypresence",
+                "description": "A master of death and decay, spreading infection and controlling undead minions to do her bidding.",
+                "order": 2
+            },
+            "guild": "Placeholder",
+            "guildRealm": "Illidan"
+        },
+        "rank": 7
+    }, {
+        "character": {
+            "name": "Epicbulldog",
+            "realm": "Illidan",
+            "battlegroup": "Rampage",
+            "class": 7,
+            "race": 6,
+            "gender": 0,
+            "level": 90,
+            "achievementPoints": 5980,
+            "thumbnail": "illidan/3/91890179-avatar.jpg",
+            "spec": {
+                "name": "Enhancement",
+                "role": "DPS",
+                "backgroundImage": "bg-shaman-enhancement",
+                "icon": "spell_shaman_improvedstormstrike",
+                "description": "A totemic warrior who strikes foes with weapons imbued with elemental power.",
+                "order": 1
+            },
+            "guild": "Placeholder",
+            "guildRealm": "Illidan"
+        },
+        "rank": 7
+    }, {
+        "character": {
+            "name": "Missjudy",
+            "realm": "Illidan",
+            "battlegroup": "Rampage",
+            "class": 2,
+            "race": 10,
+            "gender": 1,
+            "level": 90,
+            "achievementPoints": 5980,
+            "thumbnail": "illidan/132/92162436-avatar.jpg",
+            "spec": {
+                "name": "Retribution",
+                "role": "DPS",
+                "backgroundImage": "bg-paladin-retribution",
+                "icon": "spell_holy_auraoflight",
+                "description": "A righteous crusader who judges and punishes opponents with weapons and Holy magic.",
+                "order": 2
+            },
+            "guild": "Placeholder",
+            "guildRealm": "Illidan"
+        },
+        "rank": 7
+    }, {
+        "character": {
+            "name": "Canadìan",
+            "realm": "Illidan",
+            "battlegroup": "Rampage",
+            "class": 7,
+            "race": 2,
+            "gender": 1,
+            "level": 85,
+            "achievementPoints": 5230,
+            "thumbnail": "illidan/135/92363143-avatar.jpg",
+            "spec": {
+                "name": "Restoration",
+                "role": "HEALING",
+                "backgroundImage": "bg-shaman-restoration",
+                "icon": "spell_nature_magicimmunity",
+                "description": "A healer who calls upon ancestral spirits and the cleansing power of water to mend allies' wounds.",
+                "order": 2
+            },
+            "guild": "Placeholder",
+            "guildRealm": "Illidan"
+        },
+        "rank": 8
+    }, {
+        "character": {
+            "name": "Mezhan",
+            "realm": "Illidan",
+            "battlegroup": "Rampage",
+            "class": 8,
+            "race": 10,
+            "gender": 1,
+            "level": 90,
+            "achievementPoints": 7410,
+            "thumbnail": "illidan/99/93016163-avatar.jpg",
+            "spec": {
+                "name": "Arcane",
+                "role": "DPS",
+                "backgroundImage": "bg-mage-arcane",
+                "icon": "spell_holy_magicalsentry",
+                "description": "Manipulate the arcane, destroying enemies with overwhelming power.",
+                "order": 0
+            },
+            "guild": "Placeholder",
+            "guildRealm": "Illidan"
+        },
+        "rank": 8
+    }, {
+        "character": {
+            "name": "Syrellari",
+            "realm": "Illidan",
+            "battlegroup": "Rampage",
+            "class": 2,
+            "race": 10,
+            "gender": 1,
+            "level": 90,
+            "achievementPoints": 10550,
+            "thumbnail": "illidan/204/94041292-avatar.jpg",
+            "spec": {
+                "name": "Holy",
+                "role": "HEALING",
+                "backgroundImage": "bg-paladin-holy",
+                "icon": "spell_holy_holybolt",
+                "description": "Invokes the power of the Light to protect and to heal.",
+                "order": 0
+            },
+            "guild": "Placeholder",
+            "guildRealm": "Illidan"
+        },
+        "rank": 6
+    }, {
+        "character": {
+            "name": "Ironorcs",
+            "realm": "Illidan",
+            "battlegroup": "Rampage",
+            "class": 1,
+            "race": 2,
+            "gender": 0,
+            "level": 90,
+            "achievementPoints": 2755,
+            "thumbnail": "illidan/228/94281956-avatar.jpg",
+            "spec": {
+                "name": "Arms",
+                "role": "DPS",
+                "backgroundImage": "bg-warrior-arms",
+                "icon": "ability_warrior_savageblow",
+                "description": "A battle-hardened master of two-handed weapons, using mobility and overpowering attacks to strike her opponents down.",
+                "order": 0
+            },
+            "guild": "Placeholder",
+            "guildRealm": "Illidan"
+        },
+        "rank": 8
+    }, {
+        "character": {
+            "name": "Shamabulance",
+            "realm": "Illidan",
+            "battlegroup": "Rampage",
+            "class": 7,
+            "race": 9,
+            "gender": 0,
+            "level": 85,
+            "achievementPoints": 7510,
+            "thumbnail": "illidan/100/94349412-avatar.jpg",
+            "spec": {
+                "name": "Restoration",
+                "role": "HEALING",
+                "backgroundImage": "bg-shaman-restoration",
+                "icon": "spell_nature_magicimmunity",
+                "description": "A healer who calls upon ancestral spirits and the cleansing power of water to mend allies' wounds.",
+                "order": 2
+            },
+            "guild": "Placeholder",
+            "guildRealm": "Illidan"
+        },
+        "rank": 8
+    }, {
+        "character": {
+            "name": "Ganykus",
+            "realm": "Illidan",
+            "battlegroup": "Rampage",
+            "class": 2,
+            "race": 10,
+            "gender": 0,
+            "level": 90,
+            "achievementPoints": 6600,
+            "thumbnail": "illidan/57/94441785-avatar.jpg",
+            "spec": {
+                "name": "Retribution",
+                "role": "DPS",
+                "backgroundImage": "bg-paladin-retribution",
+                "icon": "spell_holy_auraoflight",
+                "description": "A righteous crusader who judges and punishes opponents with weapons and Holy magic.",
+                "order": 2
+            },
+            "guild": "Placeholder",
+            "guildRealm": "Illidan"
+        },
+        "rank": 8
+    }, {
+        "character": {
+            "name": "Grezwazluz",
+            "realm": "Illidan",
+            "battlegroup": "Rampage",
+            "class": 4,
+            "race": 8,
+            "gender": 0,
+            "level": 90,
+            "achievementPoints": 9170,
+            "thumbnail": "illidan/156/94544284-avatar.jpg",
+            "spec": {
+                "name": "Subtlety",
+                "role": "DPS",
+                "backgroundImage": "bg-rogue-subtlety",
+                "icon": "ability_stealth",
+                "description": "A dark stalker who leaps from the shadows to ambush her unsuspecting prey.",
+                "order": 2
+            },
+            "guild": "Placeholder",
+            "guildRealm": "Illidan"
+        },
+        "rank": 6
+    }, {
+        "character": {
+            "name": "Kryptek",
+            "realm": "Illidan",
+            "battlegroup": "Rampage",
+            "class": 2,
+            "race": 10,
+            "gender": 1,
+            "level": 90,
+            "achievementPoints": 2905,
+            "thumbnail": "illidan/42/96130602-avatar.jpg",
+            "spec": {
+                "name": "Protection",
+                "role": "TANK",
+                "backgroundImage": "bg-paladin-protection",
+                "icon": "ability_paladin_shieldofthetemplar",
+                "description": "Uses Holy magic to shield herself and defend allies from attackers.",
+                "order": 1
+            },
+            "guild": "Placeholder",
+            "guildRealm": "Illidan"
+        },
+        "rank": 8
+    }, {
+        "character": {
+            "name": "Magikoopä",
+            "realm": "Illidan",
+            "battlegroup": "Rampage",
+            "class": 8,
+            "race": 2,
+            "gender": 0,
+            "level": 90,
+            "achievementPoints": 12095,
+            "thumbnail": "illidan/69/96389957-avatar.jpg",
+            "spec": {
+                "name": "Frost",
+                "role": "DPS",
+                "backgroundImage": "bg-mage-frost",
+                "icon": "spell_frost_frostbolt02",
+                "description": "Freezes enemies in their tracks and shatters them with Frost magic.",
+                "order": 2
+            },
+            "guild": "Placeholder",
+            "guildRealm": "Illidan"
+        },
+        "rank": 7
+    }, {
+        "character": {
+            "name": "Altae",
+            "realm": "Illidan",
+            "battlegroup": "Rampage",
+            "class": 1,
+            "race": 26,
+            "gender": 1,
+            "level": 90,
+            "achievementPoints": 8115,
+            "thumbnail": "illidan/106/99830378-avatar.jpg",
+            "spec": {
+                "name": "Fury",
+                "role": "DPS",
+                "backgroundImage": "bg-warrior-fury",
+                "icon": "ability_warrior_innerrage",
+                "description": "A furious berserker wielding a weapon in each hand, unleashing a flurry of attacks to carve her opponents to pieces.",
+                "order": 1
+            },
+            "guild": "Placeholder",
+            "guildRealm": "Illidan"
+        },
+        "rank": 7
+    }, {
+        "character": {
+            "name": "Mahuurona",
+            "realm": "Illidan",
+            "battlegroup": "Rampage",
+            "class": 11,
+            "race": 6,
+            "gender": 1,
+            "level": 90,
+            "achievementPoints": 11140,
+            "thumbnail": "illidan/8/100336648-avatar.jpg",
+            "spec": {
+                "name": "Balance",
+                "role": "DPS",
+                "backgroundImage": "bg-druid-balance",
+                "icon": "spell_nature_starfall",
+                "description": "Can take on the form of a powerful Moonkin, balancing the power of Arcane and Nature magic to destroy enemies at a distance.",
+                "order": 0
+            },
+            "guild": "Placeholder",
+            "guildRealm": "Illidan"
+        },
+        "rank": 6
+    }, {
+        "character": {
+            "name": "Indigofuture",
+            "realm": "Illidan",
+            "battlegroup": "Rampage",
+            "class": 2,
+            "race": 10,
+            "gender": 1,
+            "level": 90,
+            "achievementPoints": 2030,
+            "thumbnail": "illidan/165/100569509-avatar.jpg",
+            "spec": {
+                "name": "Holy",
+                "role": "HEALING",
+                "backgroundImage": "bg-paladin-holy",
+                "icon": "spell_holy_holybolt",
+                "description": "Invokes the power of the Light to protect and to heal.",
+                "order": 0
+            },
+            "guild": "Placeholder",
+            "guildRealm": "Illidan"
+        },
+        "rank": 7
+    }, {
+        "character": {
+            "name": "Ozien",
+            "realm": "Illidan",
+            "battlegroup": "Rampage",
+            "class": 2,
+            "race": 10,
+            "gender": 0,
+            "level": 90,
+            "achievementPoints": 5615,
+            "thumbnail": "illidan/56/100958776-avatar.jpg",
+            "spec": {
+                "name": "Protection",
+                "role": "TANK",
+                "backgroundImage": "bg-paladin-protection",
+                "icon": "ability_paladin_shieldofthetemplar",
+                "description": "Uses Holy magic to shield herself and defend allies from attackers.",
+                "order": 1
+            },
+            "guild": "Placeholder",
+            "guildRealm": "Illidan"
+        },
+        "rank": 8
+    }, {
+        "character": {
+            "name": "Bhjn",
+            "realm": "Illidan",
+            "battlegroup": "Rampage",
+            "class": 10,
+            "race": 26,
+            "gender": 0,
+            "level": 90,
+            "achievementPoints": 7570,
+            "thumbnail": "illidan/232/101532648-avatar.jpg",
+            "spec": {
+                "name": "Mistweaver",
+                "role": "HEALING",
+                "backgroundImage": "bg-monk-mistweaver",
+                "icon": "spell_monk_mistweaver_spec",
+                "description": "A healer who mixes traditional herbal medicine with Pandaren martial arts.",
+                "order": 1
+            },
+            "guild": "Placeholder",
+            "guildRealm": "Illidan"
+        },
+        "rank": 8
+    }, {
+        "character": {
+            "name": "Poposballz",
+            "realm": "Illidan",
+            "battlegroup": "Rampage",
+            "class": 6,
+            "race": 10,
+            "gender": 0,
+            "level": 90,
+            "achievementPoints": 3270,
+            "thumbnail": "illidan/244/101685236-avatar.jpg",
+            "spec": {
+                "name": "Frost",
+                "role": "DPS",
+                "backgroundImage": "bg-deathknight-frost",
+                "icon": "spell_deathknight_frostpresence",
+                "description": "An icy harbinger of doom, channeling runic power and delivering vicious weapon strikes.",
+                "order": 1
+            },
+            "guild": "Placeholder",
+            "guildRealm": "Illidan"
+        },
+        "rank": 8
+    }, {
+        "character": {
+            "name": "Curseblaze",
+            "realm": "Illidan",
+            "battlegroup": "Rampage",
+            "class": 9,
+            "race": 5,
+            "gender": 0,
+            "level": 90,
+            "achievementPoints": 11340,
+            "thumbnail": "illidan/228/102113508-avatar.jpg",
+            "spec": {
+                "name": "Destruction",
+                "role": "DPS",
+                "backgroundImage": "bg-warlock-destruction",
+                "icon": "spell_shadow_rainoffire",
+                "description": "A master of chaos who calls down fire to burn and demolish enemies.",
+                "order": 2
+            },
+            "guild": "Placeholder",
+            "guildRealm": "Illidan"
+        },
+        "rank": 6
+    }, {
+        "character": {
+            "name": "Newcha",
+            "realm": "Illidan",
+            "battlegroup": "Rampage",
+            "class": 7,
+            "race": 6,
+            "gender": 0,
+            "level": 90,
+            "achievementPoints": 7685,
+            "thumbnail": "illidan/38/102186790-avatar.jpg",
+            "spec": {
+                "name": "Elemental",
+                "role": "DPS",
+                "backgroundImage": "bg-shaman-elemental",
+                "icon": "spell_nature_lightning",
+                "description": "A spellcaster who harnesses the destructive forces of nature and the elements.",
+                "order": 0
+            },
+            "guild": "Placeholder",
+            "guildRealm": "Illidan"
+        },
+        "rank": 7
+    }, {
+        "character": {
+            "name": "Kusaribe",
+            "realm": "Illidan",
+            "battlegroup": "Rampage",
+            "class": 9,
+            "race": 2,
+            "gender": 0,
+            "level": 90,
+            "achievementPoints": 12005,
+            "thumbnail": "illidan/174/102817198-avatar.jpg",
+            "spec": {
+                "name": "Destruction",
+                "role": "DPS",
+                "backgroundImage": "bg-warlock-destruction",
+                "icon": "spell_shadow_rainoffire",
+                "description": "A master of chaos who calls down fire to burn and demolish enemies.",
+                "order": 2
+            },
+            "guild": "Placeholder",
+            "guildRealm": "Illidan"
+        },
+        "rank": 7
+    }, {
+        "character": {
+            "name": "Afallenangel",
+            "realm": "Illidan",
+            "battlegroup": "Rampage",
+            "class": 10,
+            "race": 10,
+            "gender": 1,
+            "level": 54,
+            "achievementPoints": 9640,
+            "thumbnail": "illidan/192/102818752-avatar.jpg",
+            "spec": {
+                "name": "Brewmaster",
+                "role": "TANK",
+                "backgroundImage": "bg-monk-brewmaster",
+                "icon": "spell_monk_brewmaster_spec",
+                "description": "A sturdy brawler who uses liquid fortification and unpredictable movement to avoid damage and protect allies.",
+                "order": 0
+            },
+            "guild": "Placeholder",
+            "guildRealm": "Illidan"
+        },
+        "rank": 8
+    }, {
+        "character": {
+            "name": "Prodotcom",
+            "realm": "Illidan",
+            "battlegroup": "Rampage",
+            "class": 9,
+            "race": 8,
+            "gender": 1,
+            "level": 90,
+            "achievementPoints": 11185,
+            "thumbnail": "illidan/35/103197987-avatar.jpg",
+            "spec": {
+                "name": "Affliction",
+                "role": "DPS",
+                "backgroundImage": "bg-warlock-affliction",
+                "icon": "spell_shadow_deathcoil",
+                "description": "A master of shadow magic who specializes in drains and damage-over-time spells.",
+                "order": 0
+            },
+            "guild": "Placeholder",
+            "guildRealm": "Illidan"
+        },
+        "rank": 6
+    }, {
+        "character": {
+            "name": "Waffleface",
+            "realm": "Illidan",
+            "battlegroup": "Rampage",
+            "class": 11,
+            "race": 8,
+            "gender": 0,
+            "level": 90,
+            "achievementPoints": 8860,
+            "thumbnail": "illidan/247/103526135-avatar.jpg",
+            "spec": {
+                "name": "Feral",
+                "role": "DPS",
+                "backgroundImage": "bg-druid-cat",
+                "icon": "ability_druid_catform",
+                "description": "Takes on the form of a great cat to deal damage with bleeds and bites.",
+                "order": 1
+            },
+            "guild": "Placeholder",
+            "guildRealm": "Illidan"
+        },
+        "rank": 7
+    }, {
+        "character": {
+            "name": "Decoymang",
+            "realm": "Illidan",
+            "battlegroup": "Rampage",
+            "class": 6,
+            "race": 10,
+            "gender": 0,
+            "level": 90,
+            "achievementPoints": 9425,
+            "thumbnail": "illidan/118/103652982-avatar.jpg",
+            "spec": {
+                "name": "Frost",
+                "role": "DPS",
+                "backgroundImage": "bg-deathknight-frost",
+                "icon": "spell_deathknight_frostpresence",
+                "description": "An icy harbinger of doom, channeling runic power and delivering vicious weapon strikes.",
+                "order": 1
+            },
+            "guild": "Placeholder",
+            "guildRealm": "Illidan"
+        },
+        "rank": 8
+    }, {
+        "character": {
+            "name": "Essemdee",
+            "realm": "Illidan",
+            "battlegroup": "Rampage",
+            "class": 5,
+            "race": 6,
+            "gender": 0,
+            "level": 90,
+            "achievementPoints": 4495,
+            "thumbnail": "illidan/166/103916198-avatar.jpg",
+            "spec": {
+                "name": "Holy",
+                "role": "HEALING",
+                "backgroundImage": "bg-priest-holy",
+                "icon": "spell_holy_guardianspirit",
+                "description": "A versatile healer who can reverse damage on individuals or groups and even heal from beyond the grave.",
+                "order": 1
+            },
+            "guild": "Placeholder",
+            "guildRealm": "Illidan"
+        },
+        "rank": 7
+    }, {
+        "character": {
+            "name": "Gizzy",
+            "realm": "Illidan",
+            "battlegroup": "Rampage",
+            "class": 7,
+            "race": 26,
+            "gender": 1,
+            "level": 90,
+            "achievementPoints": 7090,
+            "thumbnail": "illidan/58/104317754-avatar.jpg",
+            "spec": {
+                "name": "Restoration",
+                "role": "HEALING",
+                "backgroundImage": "bg-shaman-restoration",
+                "icon": "spell_nature_magicimmunity",
+                "description": "A healer who calls upon ancestral spirits and the cleansing power of water to mend allies' wounds.",
+                "order": 2
+            },
+            "guild": "Placeholder",
+            "guildRealm": "Illidan"
+        },
+        "rank": 7
+    }, {
+        "character": {
+            "name": "Tinklemonkey",
+            "realm": "Illidan",
+            "battlegroup": "Rampage",
+            "class": 11,
+            "race": 6,
+            "gender": 0,
+            "level": 90,
+            "achievementPoints": 9415,
+            "thumbnail": "illidan/213/104595669-avatar.jpg",
+            "spec": {
+                "name": "Feral",
+                "role": "DPS",
+                "backgroundImage": "bg-druid-cat",
+                "icon": "ability_druid_catform",
+                "description": "Takes on the form of a great cat to deal damage with bleeds and bites.",
+                "order": 1
+            },
+            "guild": "Placeholder",
+            "guildRealm": "Illidan"
+        },
+        "rank": 8
+    }, {
+        "character": {
+            "name": "Tuneski",
+            "realm": "Illidan",
+            "battlegroup": "Rampage",
+            "class": 3,
+            "race": 2,
+            "gender": 0,
+            "level": 90,
+            "achievementPoints": 6915,
+            "thumbnail": "illidan/187/104659131-avatar.jpg",
+            "spec": {
+                "name": "Marksmanship",
+                "role": "DPS",
+                "backgroundImage": "bg-hunter-marksman",
+                "icon": "ability_hunter_focusedaim",
+                "description": "A master archer or sharpshooter who excels in bringing down enemies from afar.",
+                "order": 1
+            },
+            "guild": "Placeholder",
+            "guildRealm": "Illidan"
+        },
+        "rank": 7
+    }, {
+        "character": {
+            "name": "Gladerth",
+            "realm": "Illidan",
+            "battlegroup": "Rampage",
+            "class": 8,
+            "race": 5,
+            "gender": 0,
+            "level": 90,
+            "achievementPoints": 10715,
+            "thumbnail": "illidan/163/104757667-avatar.jpg",
+            "spec": {
+                "name": "Fire",
+                "role": "DPS",
+                "backgroundImage": "bg-mage-fire",
+                "icon": "spell_fire_firebolt02",
+                "description": "Ignite enemies with balls of fire and combustive flames.",
+                "order": 1
+            },
+            "guild": "Placeholder",
+            "guildRealm": "Illidan"
+        },
+        "rank": 7
+    }, {
+        "character": {
+            "name": "Nâníte",
+            "realm": "Illidan",
+            "battlegroup": "Rampage",
+            "class": 5,
+            "race": 5,
+            "gender": 0,
+            "level": 90,
+            "achievementPoints": 13520,
+            "thumbnail": "illidan/56/105689144-avatar.jpg",
+            "spec": {
+                "name": "Shadow",
+                "role": "DPS",
+                "backgroundImage": "bg-priest-shadow",
+                "icon": "spell_shadow_shadowwordpain",
+                "description": "Uses sinister Shadow magic, especially damage-over-time spells, to eradicate enemies.",
+                "order": 2
+            },
+            "guild": "Placeholder",
+            "guildRealm": "Illidan"
+        },
+        "rank": 7
+    }, {
+        "character": {
+            "name": "Vlito",
+            "realm": "Illidan",
+            "battlegroup": "Rampage",
+            "class": 8,
+            "race": 9,
+            "gender": 0,
+            "level": 90,
+            "achievementPoints": 6395,
+            "thumbnail": "illidan/247/105839351-avatar.jpg",
+            "spec": {
+                "name": "Frost",
+                "role": "DPS",
+                "backgroundImage": "bg-mage-frost",
+                "icon": "spell_frost_frostbolt02",
+                "description": "Freezes enemies in their tracks and shatters them with Frost magic.",
+                "order": 2
+            },
+            "guild": "Placeholder",
+            "guildRealm": "Illidan"
+        },
+        "rank": 7
+    }, {
+        "character": {
+            "name": "Prettyflaco",
+            "realm": "Illidan",
+            "battlegroup": "Rampage",
+            "class": 8,
+            "race": 9,
+            "gender": 0,
+            "level": 90,
+            "achievementPoints": 7380,
+            "thumbnail": "illidan/161/106065057-avatar.jpg",
+            "spec": {
+                "name": "Frost",
+                "role": "DPS",
+                "backgroundImage": "bg-mage-frost",
+                "icon": "spell_frost_frostbolt02",
+                "description": "Freezes enemies in their tracks and shatters them with Frost magic.",
+                "order": 2
+            },
+            "guild": "Placeholder",
+            "guildRealm": "Illidan"
+        },
+        "rank": 6
+    }, {
+        "character": {
+            "name": "Hargay",
+            "realm": "Illidan",
+            "battlegroup": "Rampage",
+            "class": 3,
+            "race": 6,
+            "gender": 0,
+            "level": 90,
+            "achievementPoints": 5440,
+            "thumbnail": "illidan/193/106241473-avatar.jpg",
+            "spec": {
+                "name": "Beast Mastery",
+                "role": "DPS",
+                "backgroundImage": "bg-hunter-beastmaster",
+                "icon": "ability_hunter_bestialdiscipline",
+                "description": "A master of the wild who can tame a wide variety of beasts to assist her in combat.",
+                "order": 0
+            },
+            "guild": "Placeholder",
+            "guildRealm": "Illidan"
+        },
+        "rank": 8
+    }, {
+        "character": {
+            "name": "Thrashaholic",
+            "realm": "Illidan",
+            "battlegroup": "Rampage",
+            "class": 3,
+            "race": 6,
+            "gender": 0,
+            "level": 90,
+            "achievementPoints": 11705,
+            "thumbnail": "illidan/152/106304152-avatar.jpg",
+            "spec": {
+                "name": "Marksmanship",
+                "role": "DPS",
+                "backgroundImage": "bg-hunter-marksman",
+                "icon": "ability_hunter_focusedaim",
+                "description": "A master archer or sharpshooter who excels in bringing down enemies from afar.",
+                "order": 1
+            },
+            "guild": "Placeholder",
+            "guildRealm": "Illidan"
+        },
+        "rank": 7
+    }, {
+        "character": {
+            "name": "Shockblocken",
+            "realm": "Illidan",
+            "battlegroup": "Rampage",
+            "class": 7,
+            "race": 2,
+            "gender": 0,
+            "level": 90,
+            "achievementPoints": 7015,
+            "thumbnail": "illidan/12/106594060-avatar.jpg",
+            "spec": {
+                "name": "Enhancement",
+                "role": "DPS",
+                "backgroundImage": "bg-shaman-enhancement",
+                "icon": "spell_shaman_improvedstormstrike",
+                "description": "A totemic warrior who strikes foes with weapons imbued with elemental power.",
+                "order": 1
+            },
+            "guild": "Placeholder",
+            "guildRealm": "Illidan"
+        },
+        "rank": 7
+    }, {
+        "character": {
+            "name": "Imalakai",
+            "realm": "Illidan",
+            "battlegroup": "Rampage",
+            "class": 11,
+            "race": 6,
+            "gender": 0,
+            "level": 90,
+            "achievementPoints": 3220,
+            "thumbnail": "illidan/214/108086998-avatar.jpg",
+            "spec": {
+                "name": "Restoration",
+                "role": "HEALING",
+                "backgroundImage": "bg-druid-restoration",
+                "icon": "spell_nature_healingtouch",
+                "description": "Uses heal-over-time Nature spells to keep allies alive.",
+                "order": 3
+            },
+            "guild": "Placeholder",
+            "guildRealm": "Illidan"
+        },
+        "rank": 8
+    }, {
+        "character": {
+            "name": "Exòthermic",
+            "realm": "Illidan",
+            "battlegroup": "Rampage",
+            "class": 8,
+            "race": 5,
+            "gender": 0,
+            "level": 90,
+            "achievementPoints": 7880,
+            "thumbnail": "illidan/31/108227615-avatar.jpg",
+            "spec": {
+                "name": "Frost",
+                "role": "DPS",
+                "backgroundImage": "bg-mage-frost",
+                "icon": "spell_frost_frostbolt02",
+                "description": "Freezes enemies in their tracks and shatters them with Frost magic.",
+                "order": 2
+            },
+            "guild": "Placeholder",
+            "guildRealm": "Illidan"
+        },
+        "rank": 7
+    }, {
+        "character": {
+            "name": "Medipakk",
+            "realm": "Illidan",
+            "battlegroup": "Rampage",
+            "class": 5,
+            "race": 10,
+            "gender": 1,
+            "level": 90,
+            "achievementPoints": 6990,
+            "thumbnail": "illidan/33/108842273-avatar.jpg",
+            "spec": {
+                "name": "Discipline",
+                "role": "HEALING",
+                "backgroundImage": "bg-priest-discipline",
+                "icon": "spell_holy_powerwordshield",
+                "description": "Uses magic to shield allies from taking damage as well as heal their wounds.",
+                "order": 0
+            },
+            "guild": "Placeholder",
+            "guildRealm": "Illidan"
+        },
+        "rank": 7
+    }, {
+        "character": {
+            "name": "Ookabooga",
+            "realm": "Illidan",
+            "battlegroup": "Rampage",
+            "class": 3,
+            "race": 8,
+            "gender": 0,
+            "level": 90,
+            "achievementPoints": 2705,
+            "thumbnail": "illidan/33/109037857-avatar.jpg",
+            "spec": {
+                "name": "Beast Mastery",
+                "role": "DPS",
+                "backgroundImage": "bg-hunter-beastmaster",
+                "icon": "ability_hunter_bestialdiscipline",
+                "description": "A master of the wild who can tame a wide variety of beasts to assist her in combat.",
+                "order": 0
+            },
+            "guild": "Placeholder",
+            "guildRealm": "Illidan"
+        },
+        "rank": 7
+    }, {
+        "character": {
+            "name": "Zorne",
+            "realm": "Illidan",
+            "battlegroup": "Rampage",
+            "class": 1,
+            "race": 5,
+            "gender": 0,
+            "level": 90,
+            "achievementPoints": 7970,
+            "thumbnail": "illidan/115/109054835-avatar.jpg",
+            "spec": {
+                "name": "Arms",
+                "role": "DPS",
+                "backgroundImage": "bg-warrior-arms",
+                "icon": "ability_warrior_savageblow",
+                "description": "A battle-hardened master of two-handed weapons, using mobility and overpowering attacks to strike her opponents down.",
+                "order": 0
+            },
+            "guild": "Placeholder",
+            "guildRealm": "Illidan"
+        },
+        "rank": 7
+    }, {
+        "character": {
+            "name": "Wynston",
+            "realm": "Illidan",
+            "battlegroup": "Rampage",
+            "class": 1,
+            "race": 2,
+            "gender": 0,
+            "level": 90,
+            "achievementPoints": 4705,
+            "thumbnail": "illidan/19/109612051-avatar.jpg",
+            "spec": {
+                "name": "Protection",
+                "role": "TANK",
+                "backgroundImage": "bg-warrior-protection",
+                "icon": "ability_warrior_defensivestance",
+                "description": "A stalwart protector who uses a shield to safeguard herself and her allies.",
+                "order": 2
+            },
+            "guild": "Placeholder",
+            "guildRealm": "Illidan"
+        },
+        "rank": 6
+    }, {
+        "character": {
+            "name": "Vodu",
+            "realm": "Illidan",
+            "battlegroup": "Rampage",
+            "class": 5,
+            "race": 8,
+            "gender": 0,
+            "level": 90,
+            "achievementPoints": 9110,
+            "thumbnail": "illidan/129/110094465-avatar.jpg",
+            "spec": {
+                "name": "Shadow",
+                "role": "DPS",
+                "backgroundImage": "bg-priest-shadow",
+                "icon": "spell_shadow_shadowwordpain",
+                "description": "Uses sinister Shadow magic, especially damage-over-time spells, to eradicate enemies.",
+                "order": 2
+            },
+            "guild": "Placeholder",
+            "guildRealm": "Illidan"
+        },
+        "rank": 7
+    }, {
+        "character": {
+            "name": "Bradraeda",
+            "realm": "Illidan",
+            "battlegroup": "Rampage",
+            "class": 2,
+            "race": 10,
+            "gender": 1,
+            "level": 85,
+            "achievementPoints": 560,
+            "thumbnail": "illidan/163/111013795-avatar.jpg",
+            "spec": {
+                "name": "Protection",
+                "role": "TANK",
+                "backgroundImage": "bg-paladin-protection",
+                "icon": "ability_paladin_shieldofthetemplar",
+                "description": "Uses Holy magic to shield herself and defend allies from attackers.",
+                "order": 1
+            },
+            "guild": "Placeholder",
+            "guildRealm": "Illidan"
+        },
+        "rank": 8
+    }, {
+        "character": {
+            "name": "Svyyxx",
+            "realm": "Illidan",
+            "battlegroup": "Rampage",
+            "class": 6,
+            "race": 10,
+            "gender": 0,
+            "level": 90,
+            "achievementPoints": 0,
+            "thumbnail": "illidan/161/112182433-avatar.jpg",
+            "guild": "Placeholder",
+            "guildRealm": "Illidan"
+        },
+        "rank": 7
+    }, {
+        "character": {
+            "name": "Plasmaz",
+            "realm": "Illidan",
+            "battlegroup": "Rampage",
+            "class": 10,
+            "race": 5,
+            "gender": 0,
+            "level": 90,
+            "achievementPoints": 7180,
+            "thumbnail": "illidan/6/112471302-avatar.jpg",
+            "spec": {
+                "name": "Windwalker",
+                "role": "DPS",
+                "backgroundImage": "bg-monk-battledancer",
+                "icon": "spell_monk_windwalker_spec",
+                "description": "A martial artist without peer who pummels foes with hands and fists.",
+                "order": 2
+            },
+            "guild": "Placeholder",
+            "guildRealm": "Illidan"
+        },
+        "rank": 8
+    }, {
+        "character": {
+            "name": "Pvannha",
+            "realm": "Illidan",
+            "battlegroup": "Rampage",
+            "class": 8,
+            "race": 8,
+            "gender": 0,
+            "level": 90,
+            "achievementPoints": 3465,
+            "thumbnail": "illidan/20/113367316-avatar.jpg",
+            "spec": {
+                "name": "Arcane",
+                "role": "DPS",
+                "backgroundImage": "bg-mage-arcane",
+                "icon": "spell_holy_magicalsentry",
+                "description": "Manipulate the arcane, destroying enemies with overwhelming power.",
+                "order": 0
+            },
+            "guild": "Placeholder",
+            "guildRealm": "Illidan"
+        },
+        "rank": 6
+    }, {
+        "character": {
+            "name": "Automata",
+            "realm": "Illidan",
+            "battlegroup": "Rampage",
+            "class": 4,
+            "race": 8,
+            "gender": 0,
+            "level": 90,
+            "achievementPoints": 5640,
+            "thumbnail": "illidan/225/113531617-avatar.jpg",
+            "spec": {
+                "name": "Assassination",
+                "role": "DPS",
+                "backgroundImage": "bg-rogue-assassination",
+                "icon": "ability_rogue_eviscerate",
+                "description": "A deadly master of poisons who dispatches victims with vicious dagger strikes.",
+                "order": 0
+            },
+            "guild": "Placeholder",
+            "guildRealm": "Illidan"
+        },
+        "rank": 7
+    }, {
+        "character": {
+            "name": "Citizennappa",
+            "realm": "Illidan",
+            "battlegroup": "Rampage",
+            "class": 3,
+            "race": 2,
+            "gender": 0,
+            "level": 90,
+            "achievementPoints": 10535,
+            "thumbnail": "illidan/117/113645173-avatar.jpg",
+            "spec": {
+                "name": "Survival",
+                "role": "DPS",
+                "backgroundImage": "bg-hunter-survival",
+                "icon": "ability_hunter_camouflage",
+                "description": "A rugged tracker who favors using animal venom, explosives and traps as deadly weapons.",
+                "order": 2
+            },
+            "guild": "Placeholder",
+            "guildRealm": "Illidan"
+        },
+        "rank": 8
+    }, {
+        "character": {
+            "name": "Magicnachos",
+            "realm": "Illidan",
+            "battlegroup": "Rampage",
+            "class": 8,
+            "race": 5,
+            "gender": 1,
+            "level": 90,
+            "achievementPoints": 7865,
+            "thumbnail": "illidan/66/113670210-avatar.jpg",
+            "spec": {
+                "name": "Frost",
+                "role": "DPS",
+                "backgroundImage": "bg-mage-frost",
+                "icon": "spell_frost_frostbolt02",
+                "description": "Freezes enemies in their tracks and shatters them with Frost magic.",
+                "order": 2
+            },
+            "guild": "Placeholder",
+            "guildRealm": "Illidan"
+        },
+        "rank": 7
+    }, {
+        "character": {
+            "name": "Majinvejeta",
+            "realm": "Illidan",
+            "battlegroup": "Rampage",
+            "class": 9,
+            "race": 8,
+            "gender": 0,
+            "level": 90,
+            "achievementPoints": 7925,
+            "thumbnail": "illidan/118/113671542-avatar.jpg",
+            "spec": {
+                "name": "Destruction",
+                "role": "DPS",
+                "backgroundImage": "bg-warlock-destruction",
+                "icon": "spell_shadow_rainoffire",
+                "description": "A master of chaos who calls down fire to burn and demolish enemies.",
+                "order": 2
+            },
+            "guild": "Placeholder",
+            "guildRealm": "Illidan"
+        },
+        "rank": 8
+    }, {
+        "character": {
+            "name": "Niagarra",
+            "realm": "Illidan",
+            "battlegroup": "Rampage",
+            "class": 8,
+            "race": 26,
+            "gender": 1,
+            "level": 90,
+            "achievementPoints": 1880,
+            "thumbnail": "illidan/71/113740103-avatar.jpg",
+            "spec": {
+                "name": "Frost",
+                "role": "DPS",
+                "backgroundImage": "bg-mage-frost",
+                "icon": "spell_frost_frostbolt02",
+                "description": "Freezes enemies in their tracks and shatters them with Frost magic.",
+                "order": 2
+            },
+            "guild": "Placeholder",
+            "guildRealm": "Illidan"
+        },
+        "rank": 7
+    }, {
+        "character": {
+            "name": "Zeeromang",
+            "realm": "Illidan",
+            "battlegroup": "Rampage",
+            "class": 4,
+            "race": 26,
+            "gender": 0,
+            "level": 90,
+            "achievementPoints": 5570,
+            "thumbnail": "illidan/164/113807780-avatar.jpg",
+            "spec": {
+                "name": "Combat",
+                "role": "DPS",
+                "backgroundImage": "bg-rogue-combat",
+                "icon": "ability_backstab",
+                "description": "A swashbuckler who uses agility and guile to stand toe-to-toe with enemies.",
+                "order": 1
+            },
+            "guild": "Placeholder",
+            "guildRealm": "Illidan"
+        },
+        "rank": 6
+    }, {
+        "character": {
+            "name": "Dumbassy",
+            "realm": "Illidan",
+            "battlegroup": "Rampage",
+            "class": 11,
+            "race": 8,
+            "gender": 1,
+            "level": 45,
+            "achievementPoints": 3790,
+            "thumbnail": "illidan/246/113827318-avatar.jpg",
+            "spec": {
+                "name": "Feral",
+                "role": "DPS",
+                "backgroundImage": "bg-druid-cat",
+                "icon": "ability_druid_catform",
+                "description": "Takes on the form of a great cat to deal damage with bleeds and bites.",
+                "order": 1
+            },
+            "guild": "Placeholder",
+            "guildRealm": "Illidan"
+        },
+        "rank": 8
+    }, {
+        "character": {
+            "name": "Zloudd",
+            "realm": "Illidan",
+            "battlegroup": "Rampage",
+            "class": 5,
+            "race": 9,
+            "gender": 0,
+            "level": 90,
+            "achievementPoints": 6150,
+            "thumbnail": "illidan/218/113827802-avatar.jpg",
+            "spec": {
+                "name": "Holy",
+                "role": "HEALING",
+                "backgroundImage": "bg-priest-holy",
+                "icon": "spell_holy_guardianspirit",
+                "description": "A versatile healer who can reverse damage on individuals or groups and even heal from beyond the grave.",
+                "order": 1
+            },
+            "guild": "Placeholder",
+            "guildRealm": "Illidan"
+        },
+        "rank": 7
+    }, {
+        "character": {
+            "name": "Worldbest",
+            "realm": "Illidan",
+            "battlegroup": "Rampage",
+            "class": 4,
+            "race": 2,
+            "gender": 0,
+            "level": 90,
+            "achievementPoints": 9335,
+            "thumbnail": "illidan/76/113983564-avatar.jpg",
+            "spec": {
+                "name": "Subtlety",
+                "role": "DPS",
+                "backgroundImage": "bg-rogue-subtlety",
+                "icon": "ability_stealth",
+                "description": "A dark stalker who leaps from the shadows to ambush her unsuspecting prey.",
+                "order": 2
+            },
+            "guild": "Placeholder",
+            "guildRealm": "Illidan"
+        },
+        "rank": 6
+    }, {
+        "character": {
+            "name": "Shrugz",
+            "realm": "Illidan",
+            "battlegroup": "Rampage",
+            "class": 8,
+            "race": 5,
+            "gender": 0,
+            "level": 90,
+            "achievementPoints": 7935,
+            "thumbnail": "illidan/10/114127114-avatar.jpg",
+            "spec": {
+                "name": "Frost",
+                "role": "DPS",
+                "backgroundImage": "bg-mage-frost",
+                "icon": "spell_frost_frostbolt02",
+                "description": "Freezes enemies in their tracks and shatters them with Frost magic.",
+                "order": 2
+            },
+            "guild": "Placeholder",
+            "guildRealm": "Illidan"
+        },
+        "rank": 6
+    }, {
+        "character": {
+            "name": "Worgs",
+            "realm": "Illidan",
+            "battlegroup": "Rampage",
+            "class": 11,
+            "race": 6,
+            "gender": 0,
+            "level": 90,
+            "achievementPoints": 2875,
+            "thumbnail": "illidan/3/114129667-avatar.jpg",
+            "spec": {
+                "name": "Restoration",
+                "role": "HEALING",
+                "backgroundImage": "bg-druid-restoration",
+                "icon": "spell_nature_healingtouch",
+                "description": "Uses heal-over-time Nature spells to keep allies alive.",
+                "order": 3
+            },
+            "guild": "Placeholder",
+            "guildRealm": "Illidan"
+        },
+        "rank": 7
+    }, {
+        "character": {
+            "name": "Healamang",
+            "realm": "Illidan",
+            "battlegroup": "Rampage",
+            "class": 2,
+            "race": 10,
+            "gender": 1,
+            "level": 84,
+            "achievementPoints": 7080,
+            "thumbnail": "illidan/180/114138548-avatar.jpg",
+            "spec": {
+                "name": "Protection",
+                "role": "TANK",
+                "backgroundImage": "bg-paladin-protection",
+                "icon": "ability_paladin_shieldofthetemplar",
+                "description": "Uses Holy magic to shield herself and defend allies from attackers.",
+                "order": 1
+            },
+            "guild": "Placeholder",
+            "guildRealm": "Illidan"
+        },
+        "rank": 8
+    }, {
+        "character": {
+            "name": "Pellywilly",
+            "realm": "Illidan",
+            "battlegroup": "Rampage",
+            "class": 8,
+            "race": 10,
+            "gender": 0,
+            "level": 86,
+            "achievementPoints": 5120,
+            "thumbnail": "illidan/64/114273856-avatar.jpg",
+            "spec": {
+                "name": "Frost",
+                "role": "DPS",
+                "backgroundImage": "bg-mage-frost",
+                "icon": "spell_frost_frostbolt02",
+                "description": "Freezes enemies in their tracks and shatters them with Frost magic.",
+                "order": 2
+            },
+            "guild": "Placeholder",
+            "guildRealm": "Illidan"
+        },
+        "rank": 8
+    }, {
+        "character": {
+            "name": "Zeizz",
+            "realm": "Illidan",
+            "battlegroup": "Rampage",
+            "class": 9,
+            "race": 9,
+            "gender": 0,
+            "level": 90,
+            "achievementPoints": 4370,
+            "thumbnail": "illidan/5/114367749-avatar.jpg",
+            "spec": {
+                "name": "Destruction",
+                "role": "DPS",
+                "backgroundImage": "bg-warlock-destruction",
+                "icon": "spell_shadow_rainoffire",
+                "description": "A master of chaos who calls down fire to burn and demolish enemies.",
+                "order": 2
+            },
+            "guild": "Placeholder",
+            "guildRealm": "Illidan"
+        },
+        "rank": 7
+    }, {
+        "character": {
+            "name": "Lihboorok",
+            "realm": "Illidan",
+            "battlegroup": "Rampage",
+            "class": 8,
+            "race": 9,
+            "gender": 0,
+            "level": 53,
+            "achievementPoints": 8740,
+            "thumbnail": "illidan/12/114394892-avatar.jpg",
+            "spec": {
+                "name": "Frost",
+                "role": "DPS",
+                "backgroundImage": "bg-mage-frost",
+                "icon": "spell_frost_frostbolt02",
+                "description": "Freezes enemies in their tracks and shatters them with Frost magic.",
+                "order": 2
+            },
+            "guild": "Placeholder",
+            "guildRealm": "Illidan"
+        },
+        "rank": 8
+    }, {
+        "character": {
+            "name": "Douchesmash",
+            "realm": "Illidan",
+            "battlegroup": "Rampage",
+            "class": 6,
+            "race": 10,
+            "gender": 0,
+            "level": 69,
+            "achievementPoints": 2235,
+            "thumbnail": "illidan/59/114853691-avatar.jpg",
+            "spec": {
+                "name": "Unholy",
+                "role": "DPS",
+                "backgroundImage": "bg-deathknight-unholy",
+                "icon": "spell_deathknight_unholypresence",
+                "description": "A master of death and decay, spreading infection and controlling undead minions to do her bidding.",
+                "order": 2
+            },
+            "guild": "Placeholder",
+            "guildRealm": "Illidan"
+        },
+        "rank": 8
+    }, {
+        "character": {
+            "name": "Belemont",
+            "realm": "Illidan",
+            "battlegroup": "Rampage",
+            "class": 4,
+            "race": 5,
+            "gender": 0,
+            "level": 90,
+            "achievementPoints": 5450,
+            "thumbnail": "illidan/158/115345310-avatar.jpg",
+            "spec": {
+                "name": "Subtlety",
+                "role": "DPS",
+                "backgroundImage": "bg-rogue-subtlety",
+                "icon": "ability_stealth",
+                "description": "A dark stalker who leaps from the shadows to ambush her unsuspecting prey.",
+                "order": 2
+            },
+            "guild": "Placeholder",
+            "guildRealm": "Illidan"
+        },
+        "rank": 8
+    }, {
+        "character": {
+            "name": "Dnastyz",
+            "realm": "Illidan",
+            "battlegroup": "Rampage",
+            "class": 8,
+            "race": 10,
+            "gender": 0,
+            "level": 90,
+            "achievementPoints": 2675,
+            "thumbnail": "illidan/51/115381555-avatar.jpg",
+            "spec": {
+                "name": "Frost",
+                "role": "DPS",
+                "backgroundImage": "bg-mage-frost",
+                "icon": "spell_frost_frostbolt02",
+                "description": "Freezes enemies in their tracks and shatters them with Frost magic.",
+                "order": 2
+            },
+            "guild": "Placeholder",
+            "guildRealm": "Illidan"
+        },
+        "rank": 7
+    }, {
+        "character": {
+            "name": "Aeowinn",
+            "realm": "Illidan",
+            "battlegroup": "Rampage",
+            "class": 1,
+            "race": 10,
+            "gender": 0,
+            "level": 90,
+            "achievementPoints": 2445,
+            "thumbnail": "illidan/47/115578927-avatar.jpg",
+            "spec": {
+                "name": "Fury",
+                "role": "DPS",
+                "backgroundImage": "bg-warrior-fury",
+                "icon": "ability_warrior_innerrage",
+                "description": "A furious berserker wielding a weapon in each hand, unleashing a flurry of attacks to carve her opponents to pieces.",
+                "order": 1
+            },
+            "guild": "Placeholder",
+            "guildRealm": "Illidan"
+        },
+        "rank": 7
+    }, {
+        "character": {
+            "name": "Medgiya",
+            "realm": "Illidan",
+            "battlegroup": "Rampage",
+            "class": 8,
+            "race": 10,
+            "gender": 1,
+            "level": 41,
+            "achievementPoints": 4245,
+            "thumbnail": "illidan/65/115591489-avatar.jpg",
+            "spec": {
+                "name": "Frost",
+                "role": "DPS",
+                "backgroundImage": "bg-mage-frost",
+                "icon": "spell_frost_frostbolt02",
+                "description": "Freezes enemies in their tracks and shatters them with Frost magic.",
+                "order": 2
+            },
+            "guild": "Placeholder",
+            "guildRealm": "Illidan"
+        },
+        "rank": 8
+    }, {
+        "character": {
+            "name": "Shazzygato",
+            "realm": "Illidan",
+            "battlegroup": "Rampage",
+            "class": 11,
+            "race": 8,
+            "gender": 0,
+            "level": 83,
+            "achievementPoints": 7970,
+            "thumbnail": "illidan/45/115634477-avatar.jpg",
+            "spec": {
+                "name": "Restoration",
+                "role": "HEALING",
+                "backgroundImage": "bg-druid-restoration",
+                "icon": "spell_nature_healingtouch",
+                "description": "Uses heal-over-time Nature spells to keep allies alive.",
+                "order": 3
+            },
+            "guild": "Placeholder",
+            "guildRealm": "Illidan"
+        },
+        "rank": 8
+    }, {
+        "character": {
+            "name": "Poisy",
+            "realm": "Illidan",
+            "battlegroup": "Rampage",
+            "class": 9,
+            "race": 9,
+            "gender": 1,
+            "level": 69,
+            "achievementPoints": 4490,
+            "thumbnail": "illidan/241/116377585-avatar.jpg",
+            "spec": {
+                "name": "Affliction",
+                "role": "DPS",
+                "backgroundImage": "bg-warlock-affliction",
+                "icon": "spell_shadow_deathcoil",
+                "description": "A master of shadow magic who specializes in drains and damage-over-time spells.",
+                "order": 0
+            },
+            "guild": "Placeholder",
+            "guildRealm": "Illidan"
+        },
+        "rank": 8
+    }, {
+        "character": {
+            "name": "Hèrmione",
+            "realm": "Illidan",
+            "battlegroup": "Rampage",
+            "class": 7,
+            "race": 8,
+            "gender": 1,
+            "level": 90,
+            "achievementPoints": 6245,
+            "thumbnail": "illidan/225/117152225-avatar.jpg",
+            "spec": {
+                "name": "Elemental",
+                "role": "DPS",
+                "backgroundImage": "bg-shaman-elemental",
+                "icon": "spell_nature_lightning",
+                "description": "A spellcaster who harnesses the destructive forces of nature and the elements.",
+                "order": 0
+            },
+            "guild": "Placeholder",
+            "guildRealm": "Illidan"
+        },
+        "rank": 8
+    }, {
+        "character": {
+            "name": "Excuseu",
+            "realm": "Illidan",
+            "battlegroup": "Rampage",
+            "class": 11,
+            "race": 8,
+            "gender": 1,
+            "level": 90,
+            "achievementPoints": 6830,
+            "thumbnail": "illidan/26/117244186-avatar.jpg",
+            "spec": {
+                "name": "Restoration",
+                "role": "HEALING",
+                "backgroundImage": "bg-druid-restoration",
+                "icon": "spell_nature_healingtouch",
+                "description": "Uses heal-over-time Nature spells to keep allies alive.",
+                "order": 3
+            },
+            "guild": "Placeholder",
+            "guildRealm": "Illidan"
+        },
+        "rank": 6
+    }, {
+        "character": {
+            "name": "Howlandreed",
+            "realm": "Illidan",
+            "battlegroup": "Rampage",
+            "class": 5,
+            "race": 9,
+            "gender": 0,
+            "level": 90,
+            "achievementPoints": 7110,
+            "thumbnail": "illidan/249/117418745-avatar.jpg",
+            "spec": {
+                "name": "Discipline",
+                "role": "HEALING",
+                "backgroundImage": "bg-priest-discipline",
+                "icon": "spell_holy_powerwordshield",
+                "description": "Uses magic to shield allies from taking damage as well as heal their wounds.",
+                "order": 0
+            },
+            "guild": "Placeholder",
+            "guildRealm": "Illidan"
+        },
+        "rank": 6
+    }, {
+        "character": {
+            "name": "Àres",
+            "realm": "Illidan",
+            "battlegroup": "Rampage",
+            "class": 1,
+            "race": 10,
+            "gender": 0,
+            "level": 63,
+            "achievementPoints": 8365,
+            "thumbnail": "illidan/236/117429740-avatar.jpg",
+            "spec": {
+                "name": "Fury",
+                "role": "DPS",
+                "backgroundImage": "bg-warrior-fury",
+                "icon": "ability_warrior_innerrage",
+                "description": "A furious berserker wielding a weapon in each hand, unleashing a flurry of attacks to carve her opponents to pieces.",
+                "order": 1
+            },
+            "guild": "Placeholder",
+            "guildRealm": "Illidan"
+        },
+        "rank": 7
+    }, {
+        "character": {
+            "name": "Stripee",
+            "realm": "Illidan",
+            "battlegroup": "Rampage",
+            "class": 10,
+            "race": 2,
+            "gender": 0,
+            "level": 41,
+            "achievementPoints": 0,
+            "thumbnail": "illidan/252/118429692-avatar.jpg",
+            "guild": "Placeholder",
+            "guildRealm": "Illidan"
+        },
+        "rank": 8
+    }, {
+        "character": {
+            "name": "Hammerzilla",
+            "realm": "Illidan",
+            "battlegroup": "Rampage",
+            "class": 2,
+            "race": 10,
+            "gender": 0,
+            "level": 67,
+            "achievementPoints": 1260,
+            "thumbnail": "illidan/130/118519938-avatar.jpg",
+            "spec": {
+                "name": "Protection",
+                "role": "TANK",
+                "backgroundImage": "bg-paladin-protection",
+                "icon": "ability_paladin_shieldofthetemplar",
+                "description": "Uses Holy magic to shield herself and defend allies from attackers.",
+                "order": 1
+            },
+            "guild": "Placeholder",
+            "guildRealm": "Illidan"
+        },
+        "rank": 8
+    }, {
+        "character": {
+            "name": "Neltharek",
+            "realm": "Illidan",
+            "battlegroup": "Rampage",
+            "class": 7,
+            "race": 2,
+            "gender": 0,
+            "level": 90,
+            "achievementPoints": 2740,
+            "thumbnail": "illidan/51/119025459-avatar.jpg",
+            "spec": {
+                "name": "Elemental",
+                "role": "DPS",
+                "backgroundImage": "bg-shaman-elemental",
+                "icon": "spell_nature_lightning",
+                "description": "A spellcaster who harnesses the destructive forces of nature and the elements.",
+                "order": 0
+            },
+            "guild": "Placeholder",
+            "guildRealm": "Illidan"
+        },
+        "rank": 8
+    }, {
+        "character": {
+            "name": "Hellbunny",
+            "realm": "Illidan",
+            "battlegroup": "Rampage",
+            "class": 5,
+            "race": 10,
+            "gender": 1,
+            "level": 90,
+            "achievementPoints": 7430,
+            "thumbnail": "illidan/2/119168002-avatar.jpg",
+            "spec": {
+                "name": "Holy",
+                "role": "HEALING",
+                "backgroundImage": "bg-priest-holy",
+                "icon": "spell_holy_guardianspirit",
+                "description": "A versatile healer who can reverse damage on individuals or groups and even heal from beyond the grave.",
+                "order": 1
+            },
+            "guild": "Placeholder",
+            "guildRealm": "Illidan"
+        },
+        "rank": 7
+    }, {
+        "character": {
+            "name": "Naèblis",
+            "realm": "Illidan",
+            "battlegroup": "Rampage",
+            "class": 6,
+            "race": 6,
+            "gender": 0,
+            "level": 78,
+            "achievementPoints": 2125,
+            "thumbnail": "illidan/94/119305822-avatar.jpg",
+            "spec": {
+                "name": "Unholy",
+                "role": "DPS",
+                "backgroundImage": "bg-deathknight-unholy",
+                "icon": "spell_deathknight_unholypresence",
+                "description": "A master of death and decay, spreading infection and controlling undead minions to do her bidding.",
+                "order": 2
+            },
+            "guild": "Placeholder",
+            "guildRealm": "Illidan"
+        },
+        "rank": 8
+    }, {
+        "character": {
+            "name": "Khlee",
+            "realm": "Illidan",
+            "battlegroup": "Rampage",
+            "class": 5,
+            "race": 8,
+            "gender": 0,
+            "level": 90,
+            "achievementPoints": 180,
+            "thumbnail": "illidan/224/119382752-avatar.jpg",
+            "spec": {
+                "name": "Holy",
+                "role": "HEALING",
+                "backgroundImage": "bg-priest-holy",
+                "icon": "spell_holy_guardianspirit",
+                "description": "A versatile healer who can reverse damage on individuals or groups and even heal from beyond the grave.",
+                "order": 1
+            },
+            "guild": "Placeholder",
+            "guildRealm": "Illidan"
+        },
+        "rank": 7
+    }, {
+        "character": {
+            "name": "Tigø",
+            "realm": "Illidan",
+            "battlegroup": "Rampage",
+            "class": 3,
+            "race": 9,
+            "gender": 0,
+            "level": 90,
+            "achievementPoints": 9720,
+            "thumbnail": "illidan/74/119928650-avatar.jpg",
+            "spec": {
+                "name": "Marksmanship",
+                "role": "DPS",
+                "backgroundImage": "bg-hunter-marksman",
+                "icon": "ability_hunter_focusedaim",
+                "description": "A master archer or sharpshooter who excels in bringing down enemies from afar.",
+                "order": 1
+            },
+            "guild": "Placeholder",
+            "guildRealm": "Illidan"
+        },
+        "rank": 6
+    }, {
+        "character": {
+            "name": "Chrisdk",
+            "realm": "Illidan",
+            "battlegroup": "Rampage",
+            "class": 6,
+            "race": 10,
+            "gender": 0,
+            "level": 90,
+            "achievementPoints": 3085,
+            "thumbnail": "illidan/121/120355449-avatar.jpg",
+            "spec": {
+                "name": "Blood",
+                "role": "TANK",
+                "backgroundImage": "bg-deathknight-blood",
+                "icon": "spell_deathknight_bloodpresence",
+                "description": "A dark guardian who manipulates and corrupts life energy to sustain herself in the face of an enemy onslaught.",
+                "order": 0
+            },
+            "guild": "Placeholder",
+            "guildRealm": "Illidan"
+        },
+        "rank": 8
+    }, {
+        "character": {
+            "name": "Monkmang",
+            "realm": "Illidan",
+            "battlegroup": "Rampage",
+            "class": 10,
+            "race": 26,
+            "gender": 0,
+            "level": 78,
+            "achievementPoints": 5695,
+            "thumbnail": "illidan/198/120646342-avatar.jpg",
+            "spec": {
+                "name": "Brewmaster",
+                "role": "TANK",
+                "backgroundImage": "bg-monk-brewmaster",
+                "icon": "spell_monk_brewmaster_spec",
+                "description": "A sturdy brawler who uses liquid fortification and unpredictable movement to avoid damage and protect allies.",
+                "order": 0
+            },
+            "guild": "Placeholder",
+            "guildRealm": "Illidan"
+        },
+        "rank": 8
+    }, {
+        "character": {
+            "name": "Questris",
+            "realm": "Illidan",
+            "battlegroup": "Rampage",
+            "class": 4,
+            "race": 10,
+            "gender": 1,
+            "level": 90,
+            "achievementPoints": 11460,
+            "thumbnail": "illidan/148/120715668-avatar.jpg",
+            "spec": {
+                "name": "Subtlety",
+                "role": "DPS",
+                "backgroundImage": "bg-rogue-subtlety",
+                "icon": "ability_stealth",
+                "description": "A dark stalker who leaps from the shadows to ambush her unsuspecting prey.",
+                "order": 2
+            },
+            "guild": "Placeholder",
+            "guildRealm": "Illidan"
+        },
+        "rank": 6
+    }, {
+        "character": {
+            "name": "Wrapped",
+            "realm": "Illidan",
+            "battlegroup": "Rampage",
+            "class": 11,
+            "race": 8,
+            "gender": 0,
+            "level": 90,
+            "achievementPoints": 9025,
+            "thumbnail": "illidan/205/120800717-avatar.jpg",
+            "spec": {
+                "name": "Feral",
+                "role": "DPS",
+                "backgroundImage": "bg-druid-cat",
+                "icon": "ability_druid_catform",
+                "description": "Takes on the form of a great cat to deal damage with bleeds and bites.",
+                "order": 1
+            },
+            "guild": "Placeholder",
+            "guildRealm": "Illidan"
+        },
+        "rank": 6
+    }, {
+        "character": {
+            "name": "Surreal",
+            "realm": "Illidan",
+            "battlegroup": "Rampage",
+            "class": 4,
+            "race": 10,
+            "gender": 1,
+            "level": 90,
+            "achievementPoints": 9050,
+            "thumbnail": "illidan/172/120801196-avatar.jpg",
+            "spec": {
+                "name": "Combat",
+                "role": "DPS",
+                "backgroundImage": "bg-rogue-combat",
+                "icon": "ability_backstab",
+                "description": "A swashbuckler who uses agility and guile to stand toe-to-toe with enemies.",
+                "order": 1
+            },
+            "guild": "Placeholder",
+            "guildRealm": "Illidan"
+        },
+        "rank": 6
+    }, {
+        "character": {
+            "name": "Curtshotgg",
+            "realm": "Illidan",
+            "battlegroup": "Rampage",
+            "class": 3,
+            "race": 2,
+            "gender": 0,
+            "level": 42,
+            "achievementPoints": 8070,
+            "thumbnail": "illidan/53/120804149-avatar.jpg",
+            "spec": {
+                "name": "Survival",
+                "role": "DPS",
+                "backgroundImage": "bg-hunter-survival",
+                "icon": "ability_hunter_camouflage",
+                "description": "A rugged tracker who favors using animal venom, explosives and traps as deadly weapons.",
+                "order": 2
+            },
+            "guild": "Placeholder",
+            "guildRealm": "Illidan"
+        },
+        "rank": 8
+    }, {
+        "character": {
+            "name": "Galadrile",
+            "realm": "Illidan",
+            "battlegroup": "Rampage",
+            "class": 2,
+            "race": 10,
+            "gender": 1,
+            "level": 90,
+            "achievementPoints": 4510,
+            "thumbnail": "illidan/175/120807599-avatar.jpg",
+            "spec": {
+                "name": "Retribution",
+                "role": "DPS",
+                "backgroundImage": "bg-paladin-retribution",
+                "icon": "spell_holy_auraoflight",
+                "description": "A righteous crusader who judges and punishes opponents with weapons and Holy magic.",
+                "order": 2
+            },
+            "guild": "Placeholder",
+            "guildRealm": "Illidan"
+        },
+        "rank": 6
+    }, {
+        "character": {
+            "name": "Lopal",
+            "realm": "Illidan",
+            "battlegroup": "Rampage",
+            "class": 10,
+            "race": 26,
+            "gender": 1,
+            "level": 85,
+            "achievementPoints": 11100,
+            "thumbnail": "illidan/174/120866478-avatar.jpg",
+            "spec": {
+                "name": "Brewmaster",
+                "role": "TANK",
+                "backgroundImage": "bg-monk-brewmaster",
+                "icon": "spell_monk_brewmaster_spec",
+                "description": "A sturdy brawler who uses liquid fortification and unpredictable movement to avoid damage and protect allies.",
+                "order": 0
+            },
+            "guild": "Placeholder",
+            "guildRealm": "Illidan"
+        },
+        "rank": 8
+    }, {
+        "character": {
+            "name": "Bloóming",
+            "realm": "Illidan",
+            "battlegroup": "Rampage",
+            "class": 11,
+            "race": 6,
+            "gender": 0,
+            "level": 94,
+            "achievementPoints": 5535,
+            "thumbnail": "illidan/21/120874773-avatar.jpg",
+            "spec": {
+                "name": "Balance",
+                "role": "DPS",
+                "backgroundImage": "bg-druid-balance",
+                "icon": "spell_nature_starfall",
+                "description": "Can take on the form of a powerful Moonkin, balancing the power of Arcane and Nature magic to destroy enemies at a distance.",
+                "order": 0
+            },
+            "guild": "Placeholder",
+            "guildRealm": "Illidan"
+        },
+        "rank": 7
+    }, {
+        "character": {
+            "name": "Wîngzero",
+            "realm": "Illidan",
+            "battlegroup": "Rampage",
+            "class": 1,
+            "race": 2,
+            "gender": 0,
+            "level": 60,
+            "achievementPoints": 9690,
+            "thumbnail": "illidan/64/120894528-avatar.jpg",
+            "spec": {
+                "name": "Protection",
+                "role": "TANK",
+                "backgroundImage": "bg-warrior-protection",
+                "icon": "ability_warrior_defensivestance",
+                "description": "A stalwart protector who uses a shield to safeguard herself and her allies.",
+                "order": 2
+            },
+            "guild": "Placeholder",
+            "guildRealm": "Illidan"
+        },
+        "rank": 8
+    }, {
+        "character": {
+            "name": "Ragakill",
+            "realm": "Illidan",
+            "battlegroup": "Rampage",
+            "class": 6,
+            "race": 2,
+            "gender": 0,
+            "level": 90,
+            "achievementPoints": 1130,
+            "thumbnail": "illidan/148/120940692-avatar.jpg",
+            "spec": {
+                "name": "Frost",
+                "role": "DPS",
+                "backgroundImage": "bg-deathknight-frost",
+                "icon": "spell_deathknight_frostpresence",
+                "description": "An icy harbinger of doom, channeling runic power and delivering vicious weapon strikes.",
+                "order": 1
+            },
+            "guild": "Placeholder",
+            "guildRealm": "Illidan"
+        },
+        "rank": 7
+    }, {
+        "character": {
+            "name": "Macgrim",
+            "realm": "Illidan",
+            "battlegroup": "Rampage",
+            "class": 6,
+            "race": 8,
+            "gender": 0,
+            "level": 90,
+            "achievementPoints": 5770,
+            "thumbnail": "illidan/202/121022410-avatar.jpg",
+            "spec": {
+                "name": "Frost",
+                "role": "DPS",
+                "backgroundImage": "bg-deathknight-frost",
+                "icon": "spell_deathknight_frostpresence",
+                "description": "An icy harbinger of doom, channeling runic power and delivering vicious weapon strikes.",
+                "order": 1
+            },
+            "guild": "Placeholder",
+            "guildRealm": "Illidan"
+        },
+        "rank": 8
+    }, {
+        "character": {
+            "name": "Abharnaraaga",
+            "realm": "Illidan",
+            "battlegroup": "Rampage",
+            "class": 1,
+            "race": 6,
+            "gender": 0,
+            "level": 100,
+            "achievementPoints": 5930,
+            "thumbnail": "illidan/138/121024394-avatar.jpg",
+            "spec": {
+                "name": "Protection",
+                "role": "TANK",
+                "backgroundImage": "bg-warrior-protection",
+                "icon": "ability_warrior_defensivestance",
+                "description": "A stalwart protector who uses a shield to safeguard herself and her allies.",
+                "order": 2
+            },
+            "guild": "Placeholder",
+            "guildRealm": "Illidan"
+        },
+        "rank": 7
+    }, {
+        "character": {
+            "name": "Sniickërs",
+            "realm": "Illidan",
+            "battlegroup": "Rampage",
+            "class": 9,
+            "race": 8,
+            "gender": 0,
+            "level": 90,
+            "achievementPoints": 9025,
+            "thumbnail": "illidan/11/121150219-avatar.jpg",
+            "spec": {
+                "name": "Affliction",
+                "role": "DPS",
+                "backgroundImage": "bg-warlock-affliction",
+                "icon": "spell_shadow_deathcoil",
+                "description": "A master of shadow magic who specializes in drains and damage-over-time spells.",
+                "order": 0
+            },
+            "guild": "Placeholder",
+            "guildRealm": "Illidan"
+        },
+        "rank": 7
+    }, {
+        "character": {
+            "name": "Autogolirn",
+            "realm": "Illidan",
+            "battlegroup": "Rampage",
+            "class": 6,
+            "race": 6,
+            "gender": 0,
+            "level": 57,
+            "achievementPoints": 8985,
+            "thumbnail": "illidan/205/121159885-avatar.jpg",
+            "spec": {
+                "name": "Frost",
+                "role": "DPS",
+                "backgroundImage": "bg-deathknight-frost",
+                "icon": "spell_deathknight_frostpresence",
+                "description": "An icy harbinger of doom, channeling runic power and delivering vicious weapon strikes.",
+                "order": 1
+            },
+            "guild": "Placeholder",
+            "guildRealm": "Illidan"
+        },
+        "rank": 8
+    }, {
+        "character": {
+            "name": "Momaekia",
+            "realm": "Illidan",
+            "battlegroup": "Rampage",
+            "class": 6,
+            "race": 6,
+            "gender": 0,
+            "level": 55,
+            "achievementPoints": 0,
+            "thumbnail": "illidan/70/122153030-avatar.jpg",
+            "guild": "Placeholder",
+            "guildRealm": "Illidan"
+        },
+        "rank": 8
+    }, {
+        "character": {
+            "name": "Shiftsaken",
+            "realm": "Illidan",
+            "battlegroup": "Rampage",
+            "class": 10,
+            "race": 10,
+            "gender": 1,
+            "level": 90,
+            "achievementPoints": 10885,
+            "thumbnail": "illidan/62/122156606-avatar.jpg",
+            "spec": {
+                "name": "Brewmaster",
+                "role": "TANK",
+                "backgroundImage": "bg-monk-brewmaster",
+                "icon": "spell_monk_brewmaster_spec",
+                "description": "A sturdy brawler who uses liquid fortification and unpredictable movement to avoid damage and protect allies.",
+                "order": 0
+            },
+            "guild": "Placeholder",
+            "guildRealm": "Illidan"
+        },
+        "rank": 7
+    }, {
+        "character": {
+            "name": "Kolossvs",
+            "realm": "Illidan",
+            "battlegroup": "Rampage",
+            "class": 11,
+            "race": 8,
+            "gender": 0,
+            "level": 90,
+            "achievementPoints": 6105,
+            "thumbnail": "illidan/26/122197018-avatar.jpg",
+            "spec": {
+                "name": "Feral",
+                "role": "DPS",
+                "backgroundImage": "bg-druid-cat",
+                "icon": "ability_druid_catform",
+                "description": "Takes on the form of a great cat to deal damage with bleeds and bites.",
+                "order": 1
+            },
+            "guild": "Placeholder",
+            "guildRealm": "Illidan"
+        },
+        "rank": 7
+    }, {
+        "character": {
+            "name": "Zraad",
+            "realm": "Illidan",
+            "battlegroup": "Rampage",
+            "class": 6,
+            "race": 9,
+            "gender": 0,
+            "level": 55,
+            "achievementPoints": 0,
+            "thumbnail": "illidan/254/122205950-avatar.jpg",
+            "guild": "Placeholder",
+            "guildRealm": "Illidan"
+        },
+        "rank": 8
+    }, {
+        "character": {
+            "name": "Zeaume",
+            "realm": "Illidan",
+            "battlegroup": "Rampage",
+            "class": 2,
+            "race": 10,
+            "gender": 0,
+            "level": 90,
+            "achievementPoints": 0,
+            "thumbnail": "illidan/169/122226601-avatar.jpg",
+            "guild": "Placeholder",
+            "guildRealm": "Illidan"
+        },
+        "rank": 7
+    }, {
+        "character": {
+            "name": "Spoñtañeous",
+            "realm": "Illidan",
+            "battlegroup": "Rampage",
+            "class": 6,
+            "race": 2,
+            "gender": 0,
+            "level": 90,
+            "achievementPoints": 0,
+            "thumbnail": "illidan/76/122317388-avatar.jpg",
+            "guild": "Placeholder",
+            "guildRealm": "Illidan"
+        },
+        "rank": 7
+    }, {
+        "character": {
+            "name": "Aliphese",
+            "realm": "Illidan",
+            "battlegroup": "Rampage",
+            "class": 5,
+            "race": 10,
+            "gender": 1,
+            "level": 55,
+            "achievementPoints": 425,
+            "thumbnail": "illidan/118/122344566-avatar.jpg",
+            "spec": {
+                "name": "Discipline",
+                "role": "HEALING",
+                "backgroundImage": "bg-priest-discipline",
+                "icon": "spell_holy_powerwordshield",
+                "description": "Uses magic to shield allies from taking damage as well as heal their wounds.",
+                "order": 0
+            },
+            "guild": "Placeholder",
+            "guildRealm": "Illidan"
+        },
+        "rank": 8
+    }, {
+        "character": {
+            "name": "Epiône",
+            "realm": "Illidan",
+            "battlegroup": "Rampage",
+            "class": 5,
+            "race": 10,
+            "gender": 1,
+            "level": 87,
+            "achievementPoints": 0,
+            "thumbnail": "illidan/170/122685866-avatar.jpg",
+            "guild": "Placeholder",
+            "guildRealm": "Illidan"
+        },
+        "rank": 8
+    }, {
+        "character": {
+            "name": "Tessmann",
+            "realm": "Illidan",
+            "battlegroup": "Rampage",
+            "class": 7,
+            "race": 6,
+            "gender": 0,
+            "level": 86,
+            "achievementPoints": 0,
+            "thumbnail": "illidan/176/122686128-avatar.jpg",
+            "guild": "Placeholder",
+            "guildRealm": "Illidan"
+        },
+        "rank": 8
+    }, {
+        "character": {
+            "name": "Angelicfury",
+            "realm": "Illidan",
+            "battlegroup": "Rampage",
+            "class": 2,
+            "race": 10,
+            "gender": 1,
+            "level": 35,
+            "achievementPoints": 9640,
+            "thumbnail": "illidan/49/122699569-avatar.jpg",
+            "spec": {
+                "name": "Retribution",
+                "role": "DPS",
+                "backgroundImage": "bg-paladin-retribution",
+                "icon": "spell_holy_auraoflight",
+                "description": "A righteous crusader who judges and punishes opponents with weapons and Holy magic.",
+                "order": 2
+            },
+            "guild": "Placeholder",
+            "guildRealm": "Illidan"
+        },
+        "rank": 8
+    }, {
+        "character": {
+            "name": "Steadyyeti",
+            "realm": "Illidan",
+            "battlegroup": "Rampage",
+            "class": 6,
+            "race": 6,
+            "gender": 0,
+            "level": 68,
+            "achievementPoints": 0,
+            "thumbnail": "illidan/10/122952458-avatar.jpg",
+            "guild": "Placeholder",
+            "guildRealm": "Illidan"
+        },
+        "rank": 8
+    }, {
+        "character": {
+            "name": "Mcwhopper",
+            "realm": "Illidan",
+            "battlegroup": "Rampage",
+            "class": 6,
+            "race": 2,
+            "gender": 0,
+            "level": 58,
+            "achievementPoints": 4425,
+            "thumbnail": "illidan/103/123331175-avatar.jpg",
+            "spec": {
+                "name": "Frost",
+                "role": "DPS",
+                "backgroundImage": "bg-deathknight-frost",
+                "icon": "spell_deathknight_frostpresence",
+                "description": "An icy harbinger of doom, channeling runic power and delivering vicious weapon strikes.",
+                "order": 1
+            },
+            "guild": "Placeholder",
+            "guildRealm": "Illidan"
+        },
+        "rank": 8
+    }, {
+        "character": {
+            "name": "Padazzle",
+            "realm": "Illidan",
+            "battlegroup": "Rampage",
+            "class": 6,
+            "race": 2,
+            "gender": 0,
+            "level": 80,
+            "achievementPoints": 10635,
+            "thumbnail": "illidan/123/123331195-avatar.jpg",
+            "spec": {
+                "name": "Frost",
+                "role": "DPS",
+                "backgroundImage": "bg-deathknight-frost",
+                "icon": "spell_deathknight_frostpresence",
+                "description": "An icy harbinger of doom, channeling runic power and delivering vicious weapon strikes.",
+                "order": 1
+            },
+            "guild": "Placeholder",
+            "guildRealm": "Illidan"
+        },
+        "rank": 8
+    }, {
+        "character": {
+            "name": "Padazzlejr",
+            "realm": "Illidan",
+            "battlegroup": "Rampage",
+            "class": 6,
+            "race": 2,
+            "gender": 0,
+            "level": 80,
+            "achievementPoints": 7885,
+            "thumbnail": "illidan/133/123331205-avatar.jpg",
+            "spec": {
+                "name": "Frost",
+                "role": "DPS",
+                "backgroundImage": "bg-deathknight-frost",
+                "icon": "spell_deathknight_frostpresence",
+                "description": "An icy harbinger of doom, channeling runic power and delivering vicious weapon strikes.",
+                "order": 1
+            },
+            "guild": "Placeholder",
+            "guildRealm": "Illidan"
+        },
+        "rank": 8
+    }, {
+        "character": {
+            "name": "Nadamyth",
+            "realm": "Illidan",
+            "battlegroup": "Rampage",
+            "class": 7,
+            "race": 8,
+            "gender": 0,
+            "level": 90,
+            "achievementPoints": 12235,
+            "thumbnail": "illidan/94/123331422-avatar.jpg",
+            "spec": {
+                "name": "Elemental",
+                "role": "DPS",
+                "backgroundImage": "bg-shaman-elemental",
+                "icon": "spell_nature_lightning",
+                "description": "A spellcaster who harnesses the destructive forces of nature and the elements.",
+                "order": 0
+            },
+            "guild": "Placeholder",
+            "guildRealm": "Illidan"
+        },
+        "rank": 6
+    }, {
+        "character": {
+            "name": "Shazmang",
+            "realm": "Illidan",
+            "battlegroup": "Rampage",
+            "class": 7,
+            "race": 26,
+            "gender": 0,
+            "level": 69,
+            "achievementPoints": 8440,
+            "thumbnail": "illidan/63/123351359-avatar.jpg",
+            "spec": {
+                "name": "Restoration",
+                "role": "HEALING",
+                "backgroundImage": "bg-shaman-restoration",
+                "icon": "spell_nature_magicimmunity",
+                "description": "A healer who calls upon ancestral spirits and the cleansing power of water to mend allies' wounds.",
+                "order": 2
+            },
+            "guild": "Placeholder",
+            "guildRealm": "Illidan"
+        },
+        "rank": 8
+    }, {
+        "character": {
+            "name": "Ztrike",
+            "realm": "Illidan",
+            "battlegroup": "Rampage",
+            "class": 7,
+            "race": 26,
+            "gender": 0,
+            "level": 42,
+            "achievementPoints": 4675,
+            "thumbnail": "illidan/19/123351571-avatar.jpg",
+            "spec": {
+                "name": "Enhancement",
+                "role": "DPS",
+                "backgroundImage": "bg-shaman-enhancement",
+                "icon": "spell_shaman_improvedstormstrike",
+                "description": "A totemic warrior who strikes foes with weapons imbued with elemental power.",
+                "order": 1
+            },
+            "guild": "Placeholder",
+            "guildRealm": "Illidan"
+        },
+        "rank": 8
+    }, {
+        "character": {
+            "name": "Ghalakronde",
+            "realm": "Illidan",
+            "battlegroup": "Rampage",
+            "class": 6,
+            "race": 2,
+            "gender": 0,
+            "level": 90,
+            "achievementPoints": 2740,
+            "thumbnail": "illidan/192/123372992-avatar.jpg",
+            "spec": {
+                "name": "Blood",
+                "role": "TANK",
+                "backgroundImage": "bg-deathknight-blood",
+                "icon": "spell_deathknight_bloodpresence",
+                "description": "A dark guardian who manipulates and corrupts life energy to sustain herself in the face of an enemy onslaught.",
+                "order": 0
+            },
+            "guild": "Placeholder",
+            "guildRealm": "Illidan"
+        },
+        "rank": 7
+    }, {
+        "character": {
+            "name": "Hëliosa",
+            "realm": "Illidan",
+            "battlegroup": "Rampage",
+            "class": 7,
+            "race": 6,
+            "gender": 0,
+            "level": 90,
+            "achievementPoints": 3815,
+            "thumbnail": "illidan/174/123454638-avatar.jpg",
+            "spec": {
+                "name": "Restoration",
+                "role": "HEALING",
+                "backgroundImage": "bg-shaman-restoration",
+                "icon": "spell_nature_magicimmunity",
+                "description": "A healer who calls upon ancestral spirits and the cleansing power of water to mend allies' wounds.",
+                "order": 2
+            },
+            "guild": "Placeholder",
+            "guildRealm": "Illidan"
+        },
+        "rank": 8
+    }, {
+        "character": {
+            "name": "Vallard",
+            "realm": "Illidan",
+            "battlegroup": "Rampage",
+            "class": 7,
+            "race": 2,
+            "gender": 0,
+            "level": 90,
+            "achievementPoints": 6340,
+            "thumbnail": "illidan/171/123459755-avatar.jpg",
+            "spec": {
+                "name": "Restoration",
+                "role": "HEALING",
+                "backgroundImage": "bg-shaman-restoration",
+                "icon": "spell_nature_magicimmunity",
+                "description": "A healer who calls upon ancestral spirits and the cleansing power of water to mend allies' wounds.",
+                "order": 2
+            },
+            "guild": "Placeholder",
+            "guildRealm": "Illidan"
+        },
+        "rank": 7
+    }, {
+        "character": {
+            "name": "Patarex",
+            "realm": "Illidan",
+            "battlegroup": "Rampage",
+            "class": 7,
+            "race": 8,
+            "gender": 0,
+            "level": 90,
+            "achievementPoints": 5585,
+            "thumbnail": "illidan/83/123460179-avatar.jpg",
+            "spec": {
+                "name": "Elemental",
+                "role": "DPS",
+                "backgroundImage": "bg-shaman-elemental",
+                "icon": "spell_nature_lightning",
+                "description": "A spellcaster who harnesses the destructive forces of nature and the elements.",
+                "order": 0
+            },
+            "guild": "Placeholder",
+            "guildRealm": "Illidan"
+        },
+        "rank": 7
+    }, {
+        "character": {
+            "name": "Ludatricks",
+            "realm": "Illidan",
+            "battlegroup": "Rampage",
+            "class": 9,
+            "race": 5,
+            "gender": 0,
+            "level": 90,
+            "achievementPoints": 7835,
+            "thumbnail": "illidan/79/123462479-avatar.jpg",
+            "spec": {
+                "name": "Destruction",
+                "role": "DPS",
+                "backgroundImage": "bg-warlock-destruction",
+                "icon": "spell_shadow_rainoffire",
+                "description": "A master of chaos who calls down fire to burn and demolish enemies.",
+                "order": 2
+            },
+            "guild": "Placeholder",
+            "guildRealm": "Illidan"
+        },
+        "rank": 7
+    }, {
+        "character": {
+            "name": "Nicolejk",
+            "realm": "Illidan",
+            "battlegroup": "Rampage",
+            "class": 1,
+            "race": 6,
+            "gender": 0,
+            "level": 90,
+            "achievementPoints": 0,
+            "thumbnail": "illidan/160/123462816-avatar.jpg",
+            "guild": "Placeholder",
+            "guildRealm": "Illidan"
+        },
+        "rank": 7
+    }, {
+        "character": {
+            "name": "Velandrasha",
+            "realm": "Illidan",
+            "battlegroup": "Rampage",
+            "class": 9,
+            "race": 10,
+            "gender": 1,
+            "level": 90,
+            "achievementPoints": 0,
+            "thumbnail": "illidan/40/123463720-avatar.jpg",
+            "guild": "Placeholder",
+            "guildRealm": "Illidan"
+        },
+        "rank": 7
+    }, {
+        "character": {
+            "name": "Eazyduzìt",
+            "realm": "Illidan",
+            "battlegroup": "Rampage",
+            "class": 2,
+            "race": 10,
+            "gender": 0,
+            "level": 90,
+            "achievementPoints": 5970,
+            "thumbnail": "illidan/44/123463724-avatar.jpg",
+            "spec": {
+                "name": "Protection",
+                "role": "TANK",
+                "backgroundImage": "bg-paladin-protection",
+                "icon": "ability_paladin_shieldofthetemplar",
+                "description": "Uses Holy magic to shield herself and defend allies from attackers.",
+                "order": 1
+            },
+            "guild": "Placeholder",
+            "guildRealm": "Illidan"
+        },
+        "rank": 7
+    }, {
+        "character": {
+            "name": "Atting",
+            "realm": "Illidan",
+            "battlegroup": "Rampage",
+            "class": 9,
+            "race": 5,
+            "gender": 0,
+            "level": 90,
+            "achievementPoints": 12190,
+            "thumbnail": "illidan/95/123464287-avatar.jpg",
+            "spec": {
+                "name": "Destruction",
+                "role": "DPS",
+                "backgroundImage": "bg-warlock-destruction",
+                "icon": "spell_shadow_rainoffire",
+                "description": "A master of chaos who calls down fire to burn and demolish enemies.",
+                "order": 2
+            },
+            "guild": "Placeholder",
+            "guildRealm": "Illidan"
+        },
+        "rank": 6
+    }, {
+        "character": {
+            "name": "Giantheal",
+            "realm": "Illidan",
+            "battlegroup": "Rampage",
+            "class": 5,
+            "race": 10,
+            "gender": 1,
+            "level": 90,
+            "achievementPoints": 0,
+            "thumbnail": "illidan/180/123467188-avatar.jpg",
+            "guild": "Placeholder",
+            "guildRealm": "Illidan"
+        },
+        "rank": 7
+    }, {
+        "character": {
+            "name": "Dàndy",
+            "realm": "Illidan",
+            "battlegroup": "Rampage",
+            "class": 5,
+            "race": 5,
+            "gender": 0,
+            "level": 90,
+            "achievementPoints": 1795,
+            "thumbnail": "illidan/204/123467212-avatar.jpg",
+            "spec": {
+                "name": "Holy",
+                "role": "HEALING",
+                "backgroundImage": "bg-priest-holy",
+                "icon": "spell_holy_guardianspirit",
+                "description": "A versatile healer who can reverse damage on individuals or groups and even heal from beyond the grave.",
+                "order": 1
+            },
+            "guild": "Placeholder",
+            "guildRealm": "Illidan"
+        },
+        "rank": 7
+    }, {
+        "character": {
+            "name": "Wármfuzzies",
+            "realm": "Illidan",
+            "battlegroup": "Rampage",
+            "class": 7,
+            "race": 2,
+            "gender": 0,
+            "level": 90,
+            "achievementPoints": 10025,
+            "thumbnail": "illidan/112/123467376-avatar.jpg",
+            "spec": {
+                "name": "Restoration",
+                "role": "HEALING",
+                "backgroundImage": "bg-shaman-restoration",
+                "icon": "spell_nature_magicimmunity",
+                "description": "A healer who calls upon ancestral spirits and the cleansing power of water to mend allies' wounds.",
+                "order": 2
+            },
+            "guild": "Placeholder",
+            "guildRealm": "Illidan"
+        },
+        "rank": 7
+    }, {
+        "character": {
+            "name": "Stankytoes",
+            "realm": "Illidan",
+            "battlegroup": "Rampage",
+            "class": 5,
+            "race": 5,
+            "gender": 1,
+            "level": 90,
+            "achievementPoints": 8475,
+            "thumbnail": "illidan/170/123468202-avatar.jpg",
+            "spec": {
+                "name": "Discipline",
+                "role": "HEALING",
+                "backgroundImage": "bg-priest-discipline",
+                "icon": "spell_holy_powerwordshield",
+                "description": "Uses magic to shield allies from taking damage as well as heal their wounds.",
+                "order": 0
+            },
+            "guild": "Placeholder",
+            "guildRealm": "Illidan"
+        },
+        "rank": 6
+    }, {
+        "character": {
+            "name": "Tekiboy",
+            "realm": "Illidan",
+            "battlegroup": "Rampage",
+            "class": 7,
+            "race": 8,
+            "gender": 1,
+            "level": 90,
+            "achievementPoints": 7710,
+            "thumbnail": "illidan/17/123468561-avatar.jpg",
+            "spec": {
+                "name": "Elemental",
+                "role": "DPS",
+                "backgroundImage": "bg-shaman-elemental",
+                "icon": "spell_nature_lightning",
+                "description": "A spellcaster who harnesses the destructive forces of nature and the elements.",
+                "order": 0
+            },
+            "guild": "Placeholder",
+            "guildRealm": "Illidan"
+        },
+        "rank": 7
+    }, {
+        "character": {
+            "name": "Tutto",
+            "realm": "Illidan",
+            "battlegroup": "Rampage",
+            "class": 10,
+            "race": 5,
+            "gender": 1,
+            "level": 90,
+            "achievementPoints": 3380,
+            "thumbnail": "illidan/113/123469425-avatar.jpg",
+            "spec": {
+                "name": "Windwalker",
+                "role": "DPS",
+                "backgroundImage": "bg-monk-battledancer",
+                "icon": "spell_monk_windwalker_spec",
+                "description": "A martial artist without peer who pummels foes with hands and fists.",
+                "order": 2
+            },
+            "guild": "Placeholder",
+            "guildRealm": "Illidan"
+        },
+        "rank": 7
+    }, {
+        "character": {
+            "name": "Randomamer",
+            "realm": "Illidan",
+            "battlegroup": "Rampage",
+            "class": 9,
+            "race": 2,
+            "gender": 0,
+            "level": 90,
+            "achievementPoints": 9335,
+            "thumbnail": "illidan/76/123469900-avatar.jpg",
+            "spec": {
+                "name": "Destruction",
+                "role": "DPS",
+                "backgroundImage": "bg-warlock-destruction",
+                "icon": "spell_shadow_rainoffire",
+                "description": "A master of chaos who calls down fire to burn and demolish enemies.",
+                "order": 2
+            },
+            "guild": "Placeholder",
+            "guildRealm": "Illidan"
+        },
+        "rank": 7
+    }, {
+        "character": {
+            "name": "Toxicchaos",
+            "realm": "Illidan",
+            "battlegroup": "Rampage",
+            "class": 9,
+            "race": 2,
+            "gender": 1,
+            "level": 90,
+            "achievementPoints": 6600,
+            "thumbnail": "illidan/80/123469904-avatar.jpg",
+            "spec": {
+                "name": "Destruction",
+                "role": "DPS",
+                "backgroundImage": "bg-warlock-destruction",
+                "icon": "spell_shadow_rainoffire",
+                "description": "A master of chaos who calls down fire to burn and demolish enemies.",
+                "order": 2
+            },
+            "guild": "Placeholder",
+            "guildRealm": "Illidan"
+        },
+        "rank": 7
+    }, {
+        "character": {
+            "name": "Tarkash",
+            "realm": "Illidan",
+            "battlegroup": "Rampage",
+            "class": 10,
+            "race": 26,
+            "gender": 1,
+            "level": 90,
+            "achievementPoints": 8865,
+            "thumbnail": "illidan/8/123470856-avatar.jpg",
+            "spec": {
+                "name": "Mistweaver",
+                "role": "HEALING",
+                "backgroundImage": "bg-monk-mistweaver",
+                "icon": "spell_monk_mistweaver_spec",
+                "description": "A healer who mixes traditional herbal medicine with Pandaren martial arts.",
+                "order": 1
+            },
+            "guild": "Placeholder",
+            "guildRealm": "Illidan"
+        },
+        "rank": 7
+    }, {
+        "character": {
+            "name": "Serlissa",
+            "realm": "Illidan",
+            "battlegroup": "Rampage",
+            "class": 9,
+            "race": 8,
+            "gender": 1,
+            "level": 90,
+            "achievementPoints": 7150,
+            "thumbnail": "illidan/101/123470949-avatar.jpg",
+            "spec": {
+                "name": "Destruction",
+                "role": "DPS",
+                "backgroundImage": "bg-warlock-destruction",
+                "icon": "spell_shadow_rainoffire",
+                "description": "A master of chaos who calls down fire to burn and demolish enemies.",
+                "order": 2
+            },
+            "guild": "Placeholder",
+            "guildRealm": "Illidan"
+        },
+        "rank": 7
+    }, {
+        "character": {
+            "name": "Lilenergy",
+            "realm": "Illidan",
+            "battlegroup": "Rampage",
+            "class": 10,
+            "race": 2,
+            "gender": 0,
+            "level": 90,
+            "achievementPoints": 3790,
+            "thumbnail": "illidan/185/123471545-avatar.jpg",
+            "spec": {
+                "name": "Mistweaver",
+                "role": "HEALING",
+                "backgroundImage": "bg-monk-mistweaver",
+                "icon": "spell_monk_mistweaver_spec",
+                "description": "A healer who mixes traditional herbal medicine with Pandaren martial arts.",
+                "order": 1
+            },
+            "guild": "Placeholder",
+            "guildRealm": "Illidan"
+        },
+        "rank": 7
+    }, {
+        "character": {
+            "name": "Hetbekkal",
+            "realm": "Illidan",
+            "battlegroup": "Rampage",
+            "class": 10,
+            "race": 8,
+            "gender": 0,
+            "level": 90,
+            "achievementPoints": 10020,
+            "thumbnail": "illidan/6/123471878-avatar.jpg",
+            "spec": {
+                "name": "Windwalker",
+                "role": "DPS",
+                "backgroundImage": "bg-monk-battledancer",
+                "icon": "spell_monk_windwalker_spec",
+                "description": "A martial artist without peer who pummels foes with hands and fists.",
+                "order": 2
+            },
+            "guild": "Placeholder",
+            "guildRealm": "Illidan"
+        },
+        "rank": 6
+    }, {
+        "character": {
+            "name": "Bohdisatva",
+            "realm": "Illidan",
+            "battlegroup": "Rampage",
+            "class": 6,
+            "race": 5,
+            "gender": 0,
+            "level": 90,
+            "achievementPoints": 5740,
+            "thumbnail": "illidan/138/123472522-avatar.jpg",
+            "spec": {
+                "name": "Frost",
+                "role": "DPS",
+                "backgroundImage": "bg-deathknight-frost",
+                "icon": "spell_deathknight_frostpresence",
+                "description": "An icy harbinger of doom, channeling runic power and delivering vicious weapon strikes.",
+                "order": 1
+            },
+            "guild": "Placeholder",
+            "guildRealm": "Illidan"
+        },
+        "rank": 7
+    }, {
+        "character": {
+            "name": "Bakkusutabu",
+            "realm": "Illidan",
+            "battlegroup": "Rampage",
+            "class": 4,
+            "race": 8,
+            "gender": 0,
+            "level": 90,
+            "achievementPoints": 9075,
+            "thumbnail": "illidan/94/123472734-avatar.jpg",
+            "spec": {
+                "name": "Combat",
+                "role": "DPS",
+                "backgroundImage": "bg-rogue-combat",
+                "icon": "ability_backstab",
+                "description": "A swashbuckler who uses agility and guile to stand toe-to-toe with enemies.",
+                "order": 1
+            },
+            "guild": "Placeholder",
+            "guildRealm": "Illidan"
+        },
+        "rank": 6
+    }, {
+        "character": {
+            "name": "Nytros",
+            "realm": "Illidan",
+            "battlegroup": "Rampage",
+            "class": 4,
+            "race": 9,
+            "gender": 0,
+            "level": 90,
+            "achievementPoints": 9740,
+            "thumbnail": "illidan/238/123476462-avatar.jpg",
+            "spec": {
+                "name": "Combat",
+                "role": "DPS",
+                "backgroundImage": "bg-rogue-combat",
+                "icon": "ability_backstab",
+                "description": "A swashbuckler who uses agility and guile to stand toe-to-toe with enemies.",
+                "order": 1
+            },
+            "guild": "Placeholder",
+            "guildRealm": "Illidan"
+        },
+        "rank": 6
+    }, {
+        "character": {
+            "name": "Tàriç",
+            "realm": "Illidan",
+            "battlegroup": "Rampage",
+            "class": 2,
+            "race": 10,
+            "gender": 0,
+            "level": 90,
+            "achievementPoints": 4360,
+            "thumbnail": "illidan/106/123477866-avatar.jpg",
+            "spec": {
+                "name": "Retribution",
+                "role": "DPS",
+                "backgroundImage": "bg-paladin-retribution",
+                "icon": "spell_holy_auraoflight",
+                "description": "A righteous crusader who judges and punishes opponents with weapons and Holy magic.",
+                "order": 2
+            },
+            "guild": "Placeholder",
+            "guildRealm": "Illidan"
+        },
+        "rank": 8
+    }, {
+        "character": {
+            "name": "Xsinister",
+            "realm": "Illidan",
+            "battlegroup": "Rampage",
+            "class": 3,
+            "race": 8,
+            "gender": 0,
+            "level": 90,
+            "achievementPoints": 12560,
+            "thumbnail": "illidan/222/123481310-avatar.jpg",
+            "spec": {
+                "name": "Beast Mastery",
+                "role": "DPS",
+                "backgroundImage": "bg-hunter-beastmaster",
+                "icon": "ability_hunter_bestialdiscipline",
+                "description": "A master of the wild who can tame a wide variety of beasts to assist her in combat.",
+                "order": 0
+            },
+            "guild": "Placeholder",
+            "guildRealm": "Illidan"
+        },
+        "rank": 7
+    }, {
+        "character": {
+            "name": "Zaltia",
+            "realm": "Illidan",
+            "battlegroup": "Rampage",
+            "class": 8,
+            "race": 2,
+            "gender": 1,
+            "level": 90,
+            "achievementPoints": 8605,
+            "thumbnail": "illidan/102/123481446-avatar.jpg",
+            "spec": {
+                "name": "Arcane",
+                "role": "DPS",
+                "backgroundImage": "bg-mage-arcane",
+                "icon": "spell_holy_magicalsentry",
+                "description": "Manipulate the arcane, destroying enemies with overwhelming power.",
+                "order": 0
+            },
+            "guild": "Placeholder",
+            "guildRealm": "Illidan"
+        },
+        "rank": 7
+    }, {
+        "character": {
+            "name": "Mäxx",
+            "realm": "Illidan",
+            "battlegroup": "Rampage",
+            "class": 4,
+            "race": 9,
+            "gender": 0,
+            "level": 90,
+            "achievementPoints": 6455,
+            "thumbnail": "illidan/155/123482011-avatar.jpg",
+            "spec": {
+                "name": "Subtlety",
+                "role": "DPS",
+                "backgroundImage": "bg-rogue-subtlety",
+                "icon": "ability_stealth",
+                "description": "A dark stalker who leaps from the shadows to ambush her unsuspecting prey.",
+                "order": 2
+            },
+            "guild": "Placeholder",
+            "guildRealm": "Illidan"
+        },
+        "rank": 8
+    }, {
+        "character": {
+            "name": "Brokenwithen",
+            "realm": "Illidan",
+            "battlegroup": "Rampage",
+            "class": 9,
+            "race": 10,
+            "gender": 1,
+            "level": 90,
+            "achievementPoints": 11550,
+            "thumbnail": "illidan/0/123482624-avatar.jpg",
+            "spec": {
+                "name": "Destruction",
+                "role": "DPS",
+                "backgroundImage": "bg-warlock-destruction",
+                "icon": "spell_shadow_rainoffire",
+                "description": "A master of chaos who calls down fire to burn and demolish enemies.",
+                "order": 2
+            },
+            "guild": "Placeholder",
+            "guildRealm": "Illidan"
+        },
+        "rank": 7
+    }, {
+        "character": {
+            "name": "Healzndps",
+            "realm": "Illidan",
+            "battlegroup": "Rampage",
+            "class": 7,
+            "race": 8,
+            "gender": 1,
+            "level": 90,
+            "achievementPoints": 10750,
+            "thumbnail": "illidan/155/123483803-avatar.jpg",
+            "spec": {
+                "name": "Enhancement",
+                "role": "DPS",
+                "backgroundImage": "bg-shaman-enhancement",
+                "icon": "spell_shaman_improvedstormstrike",
+                "description": "A totemic warrior who strikes foes with weapons imbued with elemental power.",
+                "order": 1
+            },
+            "guild": "Placeholder",
+            "guildRealm": "Illidan"
+        },
+        "rank": 6
+    }, {
+        "character": {
+            "name": "Kitanä",
+            "realm": "Illidan",
+            "battlegroup": "Rampage",
+            "class": 10,
+            "race": 10,
+            "gender": 1,
+            "level": 90,
+            "achievementPoints": 6560,
+            "thumbnail": "illidan/206/123484110-avatar.jpg",
+            "spec": {
+                "name": "Windwalker",
+                "role": "DPS",
+                "backgroundImage": "bg-monk-battledancer",
+                "icon": "spell_monk_windwalker_spec",
+                "description": "A martial artist without peer who pummels foes with hands and fists.",
+                "order": 2
+            },
+            "guild": "Placeholder",
+            "guildRealm": "Illidan"
+        },
+        "rank": 6
+    }, {
+        "character": {
+            "name": "Betterdays",
+            "realm": "Illidan",
+            "battlegroup": "Rampage",
+            "class": 5,
+            "race": 8,
+            "gender": 0,
+            "level": 90,
+            "achievementPoints": 3755,
+            "thumbnail": "illidan/230/123485414-avatar.jpg",
+            "spec": {
+                "name": "Discipline",
+                "role": "HEALING",
+                "backgroundImage": "bg-priest-discipline",
+                "icon": "spell_holy_powerwordshield",
+                "description": "Uses magic to shield allies from taking damage as well as heal their wounds.",
+                "order": 0
+            },
+            "guild": "Placeholder",
+            "guildRealm": "Illidan"
+        },
+        "rank": 7
+    }, {
+        "character": {
+            "name": "Frostednip",
+            "realm": "Illidan",
+            "battlegroup": "Rampage",
+            "class": 8,
+            "race": 5,
+            "gender": 1,
+            "level": 90,
+            "achievementPoints": 7850,
+            "thumbnail": "illidan/50/123496498-avatar.jpg",
+            "spec": {
+                "name": "Arcane",
+                "role": "DPS",
+                "backgroundImage": "bg-mage-arcane",
+                "icon": "spell_holy_magicalsentry",
+                "description": "Manipulate the arcane, destroying enemies with overwhelming power.",
+                "order": 0
+            },
+            "guild": "Placeholder",
+            "guildRealm": "Illidan"
+        },
+        "rank": 6
+    }, {
+        "character": {
+            "name": "Muzïk",
+            "realm": "Illidan",
+            "battlegroup": "Rampage",
+            "class": 6,
+            "race": 5,
+            "gender": 1,
+            "level": 90,
+            "achievementPoints": 1610,
+            "thumbnail": "illidan/246/123523062-avatar.jpg",
+            "spec": {
+                "name": "Blood",
+                "role": "TANK",
+                "backgroundImage": "bg-deathknight-blood",
+                "icon": "spell_deathknight_bloodpresence",
+                "description": "A dark guardian who manipulates and corrupts life energy to sustain herself in the face of an enemy onslaught.",
+                "order": 0
+            },
+            "guild": "Placeholder",
+            "guildRealm": "Illidan"
+        },
+        "rank": 8
+    }, {
+        "character": {
+            "name": "Gulfnarirnah",
+            "realm": "Illidan",
+            "battlegroup": "Rampage",
+            "class": 11,
+            "race": 6,
+            "gender": 0,
+            "level": 85,
+            "achievementPoints": 610,
+            "thumbnail": "illidan/12/123541772-avatar.jpg",
+            "spec": {
+                "name": "Guardian",
+                "role": "TANK",
+                "backgroundImage": "bg-druid-bear",
+                "icon": "ability_racial_bearform",
+                "description": "Takes on the form of a mighty bear to absorb damage and protect allies.",
+                "order": 2
+            },
+            "guild": "Placeholder",
+            "guildRealm": "Illidan"
+        },
+        "rank": 8
+    }, {
+        "character": {
+            "name": "Cèrealmage",
+            "realm": "Illidan",
+            "battlegroup": "Rampage",
+            "class": 8,
+            "race": 2,
+            "gender": 0,
+            "level": 90,
+            "achievementPoints": 4375,
+            "thumbnail": "illidan/172/124407980-avatar.jpg",
+            "spec": {
+                "name": "Frost",
+                "role": "DPS",
+                "backgroundImage": "bg-mage-frost",
+                "icon": "spell_frost_frostbolt02",
+                "description": "Freezes enemies in their tracks and shatters them with Frost magic.",
+                "order": 2
+            },
+            "guild": "Placeholder",
+            "guildRealm": "Illidan"
+        },
+        "rank": 7
+    }, {
+        "character": {
+            "name": "Arturoo",
+            "realm": "Illidan",
+            "battlegroup": "Rampage",
+            "class": 1,
+            "race": 6,
+            "gender": 0,
+            "level": 90,
+            "achievementPoints": 1485,
+            "thumbnail": "illidan/153/124419481-avatar.jpg",
+            "spec": {
+                "name": "Protection",
+                "role": "TANK",
+                "backgroundImage": "bg-warrior-protection",
+                "icon": "ability_warrior_defensivestance",
+                "description": "A stalwart protector who uses a shield to safeguard herself and her allies.",
+                "order": 2
+            },
+            "guild": "Placeholder",
+            "guildRealm": "Illidan"
+        },
+        "rank": 7
+    }, {
+        "character": {
+            "name": "Shimasaki",
+            "realm": "Illidan",
+            "battlegroup": "Rampage",
+            "class": 1,
+            "race": 10,
+            "gender": 1,
+            "level": 90,
+            "achievementPoints": 1360,
+            "thumbnail": "illidan/210/124462802-avatar.jpg",
+            "spec": {
+                "name": "Fury",
+                "role": "DPS",
+                "backgroundImage": "bg-warrior-fury",
+                "icon": "ability_warrior_innerrage",
+                "description": "A furious berserker wielding a weapon in each hand, unleashing a flurry of attacks to carve her opponents to pieces.",
+                "order": 1
+            },
+            "guild": "Placeholder",
+            "guildRealm": "Illidan"
+        },
+        "rank": 7
+    }, {
+        "character": {
+            "name": "Aìzen",
+            "realm": "Illidan",
+            "battlegroup": "Rampage",
+            "class": 9,
+            "race": 9,
+            "gender": 0,
+            "level": 90,
+            "achievementPoints": 0,
+            "thumbnail": "illidan/247/124463607-avatar.jpg",
+            "guild": "Placeholder",
+            "guildRealm": "Illidan"
+        },
+        "rank": 7
+    }, {
+        "character": {
+            "name": "Warym",
+            "realm": "Illidan",
+            "battlegroup": "Rampage",
+            "class": 1,
+            "race": 5,
+            "gender": 0,
+            "level": 90,
+            "achievementPoints": 6935,
+            "thumbnail": "illidan/15/124490511-avatar.jpg",
+            "spec": {
+                "name": "Arms",
+                "role": "DPS",
+                "backgroundImage": "bg-warrior-arms",
+                "icon": "ability_warrior_savageblow",
+                "description": "A battle-hardened master of two-handed weapons, using mobility and overpowering attacks to strike her opponents down.",
+                "order": 0
+            },
+            "guild": "Placeholder",
+            "guildRealm": "Illidan"
+        },
+        "rank": 6
+    }, {
+        "character": {
+            "name": "Ironey",
+            "realm": "Illidan",
+            "battlegroup": "Rampage",
+            "class": 5,
+            "race": 5,
+            "gender": 0,
+            "level": 90,
+            "achievementPoints": 5300,
+            "thumbnail": "illidan/171/124500395-avatar.jpg",
+            "spec": {
+                "name": "Discipline",
+                "role": "HEALING",
+                "backgroundImage": "bg-priest-discipline",
+                "icon": "spell_holy_powerwordshield",
+                "description": "Uses magic to shield allies from taking damage as well as heal their wounds.",
+                "order": 0
+            },
+            "guild": "Placeholder",
+            "guildRealm": "Illidan"
+        },
+        "rank": 7
+    }, {
+        "character": {
+            "name": "Elauric",
+            "realm": "Illidan",
+            "battlegroup": "Rampage",
+            "class": 9,
+            "race": 2,
+            "gender": 0,
+            "level": 90,
+            "achievementPoints": 5045,
+            "thumbnail": "illidan/200/124503496-avatar.jpg",
+            "spec": {
+                "name": "Destruction",
+                "role": "DPS",
+                "backgroundImage": "bg-warlock-destruction",
+                "icon": "spell_shadow_rainoffire",
+                "description": "A master of chaos who calls down fire to burn and demolish enemies.",
+                "order": 2
+            },
+            "guild": "Placeholder",
+            "guildRealm": "Illidan"
+        },
+        "rank": 6
+    }, {
+        "character": {
+            "name": "Mckuee",
+            "realm": "Illidan",
+            "battlegroup": "Rampage",
+            "class": 11,
+            "race": 6,
+            "gender": 0,
+            "level": 90,
+            "achievementPoints": 3050,
+            "thumbnail": "illidan/170/124528298-avatar.jpg",
+            "spec": {
+                "name": "Balance",
+                "role": "DPS",
+                "backgroundImage": "bg-druid-balance",
+                "icon": "spell_nature_starfall",
+                "description": "Can take on the form of a powerful Moonkin, balancing the power of Arcane and Nature magic to destroy enemies at a distance.",
+                "order": 0
+            },
+            "guild": "Placeholder",
+            "guildRealm": "Illidan"
+        },
+        "rank": 7
+    }, {
+        "character": {
+            "name": "Wakeupman",
+            "realm": "Illidan",
+            "battlegroup": "Rampage",
+            "class": 8,
+            "race": 5,
+            "gender": 0,
+            "level": 90,
+            "achievementPoints": 2795,
+            "thumbnail": "illidan/32/124541728-avatar.jpg",
+            "spec": {
+                "name": "Arcane",
+                "role": "DPS",
+                "backgroundImage": "bg-mage-arcane",
+                "icon": "spell_holy_magicalsentry",
+                "description": "Manipulate the arcane, destroying enemies with overwhelming power.",
+                "order": 0
+            },
+            "guild": "Placeholder",
+            "guildRealm": "Illidan"
+        },
+        "rank": 7
+    }, {
+        "character": {
+            "name": "Zertror",
+            "realm": "Illidan",
+            "battlegroup": "Rampage",
+            "class": 8,
+            "race": 8,
+            "gender": 1,
+            "level": 90,
+            "achievementPoints": 590,
+            "thumbnail": "illidan/189/124547773-avatar.jpg",
+            "spec": {
+                "name": "Arcane",
+                "role": "DPS",
+                "backgroundImage": "bg-mage-arcane",
+                "icon": "spell_holy_magicalsentry",
+                "description": "Manipulate the arcane, destroying enemies with overwhelming power.",
+                "order": 0
+            },
+            "guild": "Placeholder",
+            "guildRealm": "Illidan"
+        },
+        "rank": 7
+    }, {
+        "character": {
+            "name": "Tomaetoe",
+            "realm": "Illidan",
+            "battlegroup": "Rampage",
+            "class": 7,
+            "race": 8,
+            "gender": 0,
+            "level": 90,
+            "achievementPoints": 5925,
+            "thumbnail": "illidan/8/124591880-avatar.jpg",
+            "spec": {
+                "name": "Elemental",
+                "role": "DPS",
+                "backgroundImage": "bg-shaman-elemental",
+                "icon": "spell_nature_lightning",
+                "description": "A spellcaster who harnesses the destructive forces of nature and the elements.",
+                "order": 0
+            },
+            "guild": "Placeholder",
+            "guildRealm": "Illidan"
+        },
+        "rank": 7
+    }, {
+        "character": {
+            "name": "Hordekille",
+            "realm": "Illidan",
+            "battlegroup": "Rampage",
+            "class": 5,
+            "race": 10,
+            "gender": 1,
+            "level": 90,
+            "achievementPoints": 4685,
+            "thumbnail": "illidan/252/126432508-avatar.jpg",
+            "spec": {
+                "name": "Discipline",
+                "role": "HEALING",
+                "backgroundImage": "bg-priest-discipline",
+                "icon": "spell_holy_powerwordshield",
+                "description": "Uses magic to shield allies from taking damage as well as heal their wounds.",
+                "order": 0
+            },
+            "guild": "Placeholder",
+            "guildRealm": "Illidan"
+        },
+        "rank": 2
+    }, {
+        "character": {
+            "name": "Huizhangbaba",
+            "realm": "Illidan",
+            "battlegroup": "Rampage",
+            "class": 11,
+            "race": 6,
+            "gender": 0,
+            "level": 90,
+            "achievementPoints": 4705,
+            "thumbnail": "illidan/99/126654819-avatar.jpg",
+            "spec": {
+                "name": "Feral",
+                "role": "DPS",
+                "backgroundImage": "bg-druid-cat",
+                "icon": "ability_druid_catform",
+                "description": "Takes on the form of a great cat to deal damage with bleeds and bites.",
+                "order": 1
+            },
+            "guild": "Placeholder",
+            "guildRealm": "Illidan"
+        },
+        "rank": 0
+    }, {
+        "character": {
+            "name": "Chrismillèr",
+            "realm": "Illidan",
+            "battlegroup": "Rampage",
+            "class": 11,
+            "race": 8,
+            "gender": 0,
+            "level": 60,
+            "achievementPoints": 7830,
+            "thumbnail": "illidan/85/126841429-avatar.jpg",
+            "spec": {
+                "name": "Restoration",
+                "role": "HEALING",
+                "backgroundImage": "bg-druid-restoration",
+                "icon": "spell_nature_healingtouch",
+                "description": "Uses heal-over-time Nature spells to keep allies alive.",
+                "order": 3
+            },
+            "guild": "Placeholder",
+            "guildRealm": "Illidan"
+        },
+        "rank": 5
+    }, {
+        "character": {
+            "name": "Shadowryhme",
+            "realm": "Illidan",
+            "battlegroup": "Rampage",
+            "class": 4,
+            "race": 5,
+            "gender": 0,
+            "level": 100,
+            "achievementPoints": 4635,
+            "thumbnail": "illidan/150/126864022-avatar.jpg",
+            "spec": {
+                "name": "Subtlety",
+                "role": "DPS",
+                "backgroundImage": "bg-rogue-subtlety",
+                "icon": "ability_stealth",
+                "description": "A dark stalker who leaps from the shadows to ambush her unsuspecting prey.",
+                "order": 2
+            },
+            "guild": "Placeholder",
+            "guildRealm": "Illidan"
+        },
+        "rank": 2
+    }, {
+        "character": {
+            "name": "Vanillacoffe",
+            "realm": "Illidan",
+            "battlegroup": "Rampage",
+            "class": 7,
+            "race": 26,
+            "gender": 0,
+            "level": 90,
+            "achievementPoints": 3335,
+            "thumbnail": "illidan/1/126864897-avatar.jpg",
+            "spec": {
+                "name": "Restoration",
+                "role": "HEALING",
+                "backgroundImage": "bg-shaman-restoration",
+                "icon": "spell_nature_magicimmunity",
+                "description": "A healer who calls upon ancestral spirits and the cleansing power of water to mend allies' wounds.",
+                "order": 2
+            },
+            "guild": "Placeholder",
+            "guildRealm": "Illidan"
+        },
+        "rank": 8
+    }, {
+        "character": {
+            "name": "Domgodlike",
+            "realm": "Illidan",
+            "battlegroup": "Rampage",
+            "class": 2,
+            "race": 10,
+            "gender": 0,
+            "level": 90,
+            "achievementPoints": 1325,
+            "thumbnail": "illidan/149/126878869-avatar.jpg",
+            "spec": {
+                "name": "Retribution",
+                "role": "DPS",
+                "backgroundImage": "bg-paladin-retribution",
+                "icon": "spell_holy_auraoflight",
+                "description": "A righteous crusader who judges and punishes opponents with weapons and Holy magic.",
+                "order": 2
+            },
+            "guild": "Placeholder",
+            "guildRealm": "Illidan"
+        },
+        "rank": 1
+    }, {
+        "character": {
+            "name": "Toxinbee",
+            "realm": "Illidan",
+            "battlegroup": "Rampage",
+            "class": 9,
+            "race": 5,
+            "gender": 0,
+            "level": 54,
+            "achievementPoints": 3025,
+            "thumbnail": "illidan/37/127257381-avatar.jpg",
+            "spec": {
+                "name": "Destruction",
+                "role": "DPS",
+                "backgroundImage": "bg-warlock-destruction",
+                "icon": "spell_shadow_rainoffire",
+                "description": "A master of chaos who calls down fire to burn and demolish enemies.",
+                "order": 2
+            },
+            "guild": "Placeholder",
+            "guildRealm": "Illidan"
+        },
+        "rank": 2
+    }, {
+        "character": {
+            "name": "Ammaenlord",
+            "realm": "Illidan",
+            "battlegroup": "Rampage",
+            "class": 5,
+            "race": 10,
+            "gender": 0,
+            "level": 90,
+            "achievementPoints": 4420,
+            "thumbnail": "illidan/174/127316398-avatar.jpg",
+            "spec": {
+                "name": "Shadow",
+                "role": "DPS",
+                "backgroundImage": "bg-priest-shadow",
+                "icon": "spell_shadow_shadowwordpain",
+                "description": "Uses sinister Shadow magic, especially damage-over-time spells, to eradicate enemies.",
+                "order": 2
+            },
+            "guild": "Placeholder",
+            "guildRealm": "Illidan"
+        },
+        "rank": 2
+    }, {
+        "character": {
+            "name": "Domglory",
+            "realm": "Illidan",
+            "battlegroup": "Rampage",
+            "class": 9,
+            "race": 10,
+            "gender": 0,
+            "level": 54,
+            "achievementPoints": 1235,
+            "thumbnail": "illidan/219/127316955-avatar.jpg",
+            "spec": {
+                "name": "Destruction",
+                "role": "DPS",
+                "backgroundImage": "bg-warlock-destruction",
+                "icon": "spell_shadow_rainoffire",
+                "description": "A master of chaos who calls down fire to burn and demolish enemies.",
+                "order": 2
+            },
+            "guild": "Placeholder",
+            "guildRealm": "Illidan"
+        },
+        "rank": 8
+    }, {
+        "character": {
+            "name": "Inorihime",
+            "realm": "Illidan",
+            "battlegroup": "Rampage",
+            "class": 6,
+            "race": 10,
+            "gender": 1,
+            "level": 58,
+            "achievementPoints": 4195,
+            "thumbnail": "illidan/76/127598412-avatar.jpg",
+            "spec": {
+                "name": "Blood",
+                "role": "TANK",
+                "backgroundImage": "bg-deathknight-blood",
+                "icon": "spell_deathknight_bloodpresence",
+                "description": "A dark guardian who manipulates and corrupts life energy to sustain herself in the face of an enemy onslaught.",
+                "order": 0
+            },
+            "guild": "Placeholder",
+            "guildRealm": "Illidan"
+        },
+        "rank": 8
+    }, {
+        "character": {
+            "name": "Blackjohn",
+            "realm": "Illidan",
+            "battlegroup": "Rampage",
+            "class": 7,
+            "race": 6,
+            "gender": 1,
+            "level": 1,
+            "achievementPoints": 0,
+            "thumbnail": "illidan/131/127653251-avatar.jpg",
+            "guild": "Placeholder",
+            "guildRealm": "Illidan"
+        },
+        "rank": 8
+    }, {
+        "character": {
+            "name": "Abraktou",
+            "realm": "Illidan",
+            "battlegroup": "Rampage",
+            "class": 11,
+            "race": 6,
+            "gender": 0,
+            "level": 90,
+            "achievementPoints": 7895,
+            "thumbnail": "illidan/105/127655785-avatar.jpg",
+            "spec": {
+                "name": "Restoration",
+                "role": "HEALING",
+                "backgroundImage": "bg-druid-restoration",
+                "icon": "spell_nature_healingtouch",
+                "description": "Uses heal-over-time Nature spells to keep allies alive.",
+                "order": 3
+            },
+            "guild": "Placeholder",
+            "guildRealm": "Illidan"
+        },
+        "rank": 6
+    }, {
+        "character": {
+            "name": "Domzj",
+            "realm": "Illidan",
+            "battlegroup": "Rampage",
+            "class": 11,
+            "race": 6,
+            "gender": 0,
+            "level": 90,
+            "achievementPoints": 1235,
+            "thumbnail": "illidan/24/127656472-avatar.jpg",
+            "spec": {
+                "name": "Feral",
+                "role": "DPS",
+                "backgroundImage": "bg-druid-cat",
+                "icon": "ability_druid_catform",
+                "description": "Takes on the form of a great cat to deal damage with bleeds and bites.",
+                "order": 1
+            },
+            "guild": "Placeholder",
+            "guildRealm": "Illidan"
+        },
+        "rank": 6
+    }, {
+        "character": {
+            "name": "Alaskahusky",
+            "realm": "Illidan",
+            "battlegroup": "Rampage",
+            "class": 3,
+            "race": 8,
+            "gender": 0,
+            "level": 90,
+            "achievementPoints": 3335,
+            "thumbnail": "illidan/230/127701990-avatar.jpg",
+            "spec": {
+                "name": "Beast Mastery",
+                "role": "DPS",
+                "backgroundImage": "bg-hunter-beastmaster",
+                "icon": "ability_hunter_bestialdiscipline",
+                "description": "A master of the wild who can tame a wide variety of beasts to assist her in combat.",
+                "order": 0
+            },
+            "guild": "Placeholder",
+            "guildRealm": "Illidan"
+        },
+        "rank": 8
+    }, {
+        "character": {
+            "name": "Siberiahusky",
+            "realm": "Illidan",
+            "battlegroup": "Rampage",
+            "class": 7,
+            "race": 2,
+            "gender": 0,
+            "level": 90,
+            "achievementPoints": 4645,
+            "thumbnail": "illidan/27/127702043-avatar.jpg",
+            "spec": {
+                "name": "Enhancement",
+                "role": "DPS",
+                "backgroundImage": "bg-shaman-enhancement",
+                "icon": "spell_shaman_improvedstormstrike",
+                "description": "A totemic warrior who strikes foes with weapons imbued with elemental power.",
+                "order": 1
+            },
+            "guild": "Placeholder",
+            "guildRealm": "Illidan"
+        },
+        "rank": 2
+    }, {
+        "character": {
+            "name": "Hononohime",
+            "realm": "Illidan",
+            "battlegroup": "Rampage",
+            "class": 8,
+            "race": 10,
+            "gender": 1,
+            "level": 10,
+            "achievementPoints": 4195,
+            "thumbnail": "illidan/64/127750464-avatar.jpg",
+            "spec": {
+                "name": "Fire",
+                "role": "DPS",
+                "backgroundImage": "bg-mage-fire",
+                "icon": "spell_fire_firebolt02",
+                "description": "Ignite enemies with balls of fire and combustive flames.",
+                "order": 1
+            },
+            "guild": "Placeholder",
+            "guildRealm": "Illidan"
+        },
+        "rank": 8
+    }, {
+        "character": {
+            "name": "Caleuche",
+            "realm": "Illidan",
+            "battlegroup": "Rampage",
+            "class": 5,
+            "race": 10,
+            "gender": 0,
+            "level": 40,
+            "achievementPoints": 1405,
+            "thumbnail": "illidan/92/127752284-avatar.jpg",
+            "spec": {
+                "name": "Discipline",
+                "role": "HEALING",
+                "backgroundImage": "bg-priest-discipline",
+                "icon": "spell_holy_powerwordshield",
+                "description": "Uses magic to shield allies from taking damage as well as heal their wounds.",
+                "order": 0
+            },
+            "guild": "Placeholder",
+            "guildRealm": "Illidan"
+        },
+        "rank": 8
+    }, {
+        "character": {
+            "name": "Zhangteng",
+            "realm": "Illidan",
+            "battlegroup": "Rampage",
+            "class": 9,
+            "race": 2,
+            "gender": 0,
+            "level": 54,
+            "achievementPoints": 4685,
+            "thumbnail": "illidan/181/127918261-avatar.jpg",
+            "spec": {
+                "name": "Affliction",
+                "role": "DPS",
+                "backgroundImage": "bg-warlock-affliction",
+                "icon": "spell_shadow_deathcoil",
+                "description": "A master of shadow magic who specializes in drains and damage-over-time spells.",
+                "order": 0
+            },
+            "guild": "Placeholder",
+            "guildRealm": "Illidan"
+        },
+        "rank": 1
+    }, {
+        "character": {
+            "name": "Bloodeer",
+            "realm": "Illidan",
+            "battlegroup": "Rampage",
+            "class": 6,
+            "race": 2,
+            "gender": 0,
+            "level": 100,
+            "achievementPoints": 2190,
+            "thumbnail": "illidan/182/133112758-avatar.jpg",
+            "spec": {
+                "name": "Frost",
+                "role": "DPS",
+                "backgroundImage": "bg-deathknight-frost",
+                "icon": "spell_deathknight_frostpresence",
+                "description": "An icy harbinger of doom, channeling runic power and delivering vicious weapon strikes.",
+                "order": 1
+            },
+            "guild": "Placeholder",
+            "guildRealm": "Illidan"
+        },
+        "rank": 8
+    }],
+    "emblem": {
+        "icon": 9,
+        "iconColor": "ffdfa55a",
+        "border": 0,
+        "borderColor": "fff9cc30",
+        "backgroundColor": "ff4f2300"
+    }
+}

@@ -97,6 +97,14 @@ module Armory
         end
       end
 
+      def insert_fields_value(options, field_value)
+        # insert field_value into options: :fields, unless it's already there
+        fields = options.fetch(:fields) {||""}
+        merged_fields = Set.new(fields.split(',')).merge(field_value.split(',')).to_a.join(",")
+        options[:fields] = merged_fields
+      end
+
+
     end
   end
 end
