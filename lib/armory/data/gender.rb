@@ -6,10 +6,21 @@ module Armory
     class Gender < Armory::Identity
       include Memoizable
 
+      MALE = 0
+      FEMALE = 1
+
       def name
-          @attrs[:id]==0 ? "Male" : "Female"
+          male? ? "Male" : "Female"
       end
       memoize :name
+
+      def male?
+        @attrs[:id]==MALE
+      end
+
+      def female?
+        @attrs[:id]==FEMALE
+      end
       
     end
   end

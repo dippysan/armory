@@ -30,6 +30,11 @@ module Armory
         guild(realm_slug, guild_name, options)
       end
 
+      def guild_members(realm_slug, guild_name, options = {})
+        insert_fields_value(options, "members")
+        guild(realm_slug, guild_name, options)
+      end
+
     end
   end
 end

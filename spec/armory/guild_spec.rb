@@ -104,8 +104,8 @@ describe Armory::Guild do
         expect(@item.realm.name).to eq("Ravencrest")
         expect(@item.battlegroup).to be_a String
         expect(@item.battlegroup).to eq("Rampage")
-        expect(@item.members).to be_a Integer
-        expect(@item.members).to eq(352)
+        expect(@item.member_count).to be_a Integer
+        expect(@item.member_count).to eq(352)
         expect(@item.achievement_points).to be_a Integer
         expect(@item.achievement_points).to eq(2210)
         expect(@item.emblem).to be_a Armory::Data::Emblem
