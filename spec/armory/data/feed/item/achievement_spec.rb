@@ -1,7 +1,7 @@
 # coding: utf-8
 require 'helper'
 
-describe Armory::Character::Feed::Item::Achievement do
+describe Armory::Data::Feed::Item::Achievement do
 
   before do
     @bosskill = {
@@ -9,9 +9,10 @@ describe Armory::Character::Feed::Item::Achievement do
         timestamp: 1416294000000,
         achievement: { id: 9107 },
         featOfStrength: true,
+        character: "Coheed",  # Used in Guild::News
     }
 
-    @feed_item = Armory::Character::Feed::Item.create(@bosskill)
+    @feed_item = Armory::Data::Feed::Item.create(@bosskill)
   end
 
   describe '#attrs' do
@@ -21,14 +22,15 @@ describe Armory::Character::Feed::Item::Achievement do
   end
 
   describe '#create' do
-    it 'returns Armory::Character::Feed::Item::Achievement with the correct data' do
-      expect(@feed_item).to be_a Armory::Character::Feed::Item::Achievement
+    it 'returns Armory::Data::Feed::Item::Achievement with the correct data' do
+      expect(@feed_item).to be_a Armory::Data::Feed::Item::Achievement
       expect(@feed_item.type).to be_a String
       expect(@feed_item.type).to eq("ACHIEVEMENT")
       expect(@feed_item.timestamp).to be_a Time
       expect(@feed_item.timestamp).to eq(Time.at(1416294000000/1000))
       expect(@feed_item.feat_of_strength?).to be_a TrueClass
       expect(@feed_item.achievement).to be_a Armory::Data::Achievement
+      expect(@feed_item.character).to eq("Coheed")
     end
 
     it '#achievement returns Armory::Data::Achievement with id and timestamp inherited from Item' do

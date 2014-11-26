@@ -1,15 +1,18 @@
 require 'armory/meta_methods'
 require 'armory/timestamp'
 
-ITEM_CRITERIA    = "CRITERIA"
-ITEM_ACHIEVEMENT = "ACHIEVEMENT"
-ITEM_BOSSKILL    = "BOSSKILL"
-ITEM_LOOT        = "LOOT"
-
 module Armory
-  class Character::Feed; end
-  class Character::Feed::Item < Armory::MetaMethods
+  class Data::Feed; end
+  class Data::Feed::Item < Armory::MetaMethods
     include Timestamp
+
+    # For guild news feed
+    attr_reader :character
+
+    ITEM_CRITERIA    = "CRITERIA"
+    ITEM_ACHIEVEMENT = "ACHIEVEMENT"
+    ITEM_BOSSKILL    = "BOSSKILL"
+    ITEM_LOOT        = "LOOT"
 
     def self.create(attrs = {})
       case attrs.fetch(:type)

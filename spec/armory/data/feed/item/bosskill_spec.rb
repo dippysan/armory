@@ -1,7 +1,7 @@
 # coding: utf-8
 require 'helper'
 
-describe Armory::Character::Feed::Item::BossKill do
+describe Armory::Data::Feed::Item::BossKill do
 
   before do
     @bosskill = {        
@@ -14,7 +14,7 @@ describe Armory::Character::Feed::Item::BossKill do
               criteria: { id: 2 }
             }
 
-    @feed_item = Armory::Character::Feed::Item.create(@bosskill)
+    @feed_item = Armory::Data::Feed::Item.create(@bosskill)
   end
 
   describe '#attrs' do
@@ -24,8 +24,8 @@ describe Armory::Character::Feed::Item::BossKill do
   end
 
   describe '#create' do
-    it 'returns Armory::Character::Feed::Item::BossKill with the correct data' do
-      expect(@feed_item).to be_a Armory::Character::Feed::Item::BossKill
+    it 'returns Armory::Data::Feed::Item::BossKill with the correct data' do
+      expect(@feed_item).to be_a Armory::Data::Feed::Item::BossKill
       expect(@feed_item.type).to be_a String
       expect(@feed_item.type).to eq("BOSSKILL")
       expect(@feed_item.timestamp).to be_a Time

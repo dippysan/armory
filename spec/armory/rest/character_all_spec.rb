@@ -43,15 +43,15 @@ describe Armory::REST::Character do
 
     it '#character_feed' do
       expect(@character.feed).to be_a Array
-      expect(@character.feed.first).to be_a Armory::Character::Feed::Item::Achievement
+      expect(@character.feed.first).to be_a Armory::Data::Feed::Item::Achievement
       expect(@character.feed.first.achievement.id).to eq(8891)
       expect(@character.feed.first.achievement.icon).to eq("achievement_challengemode_upperbrspire_hourglass")
       
-      expect(@character.feed[1]).to be_a Armory::Character::Feed::Item::Criteria
+      expect(@character.feed[1]).to be_a Armory::Data::Feed::Item::Criteria
       expect(@character.feed[1].timestamp).to eq(Time.at(1416785437000/1000))
       expect(@character.feed[1].achievement.criteria.first.id).to eq(25623)
       
-      expect(@character.feed.last).to be_a Armory::Character::Feed::Item::BossKill
+      expect(@character.feed.last).to be_a Armory::Data::Feed::Item::BossKill
       expect(@character.feed.last.achievement.id).to eq(9269)
       expect(@character.feed.last.feat_of_strength?).to eq(false)
       expect(@character.feed.last.quantity).to eq(3)

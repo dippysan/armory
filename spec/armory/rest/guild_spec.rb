@@ -56,6 +56,81 @@ describe Armory::REST::Guild do
     end
   end
 
+  describe '#guild_members' do
+    before do
+      stub_get('/wow/guild/Illidan/Blood Legion', {fields:"members"})
+        .to_return(:body => fixture('guild_members.json'),
+                   :headers => {:content_type => 'application/json; charset=utf-8'})
+    end
+    it 'returns valid data' do
+      guild = @client.guild_members('Illidan','Blood Legion')
+      expect(guild.members).to be_a Array
+
+      first_member = guild.members.first
+      expect(first_member).to be_a Armory::Character
+      expect(first_member.rank).to eq(7)  # Imported from guild members data
+      expect(first_member.name).to eq("Puddy")
+      expect(first_member.realm).to be_a Armory::BasicRealm
+      expect(first_member.realm.name).to eq("Illidan")
+      expect(first_member.battlegroup).to eq("Rampage")
+      expect(first_member.level).to eq(63)
+      expect(first_member.guild_realm).to eq("Illidan")
+
+      secondlast_member = guild.members[-2]
+      expect(secondlast_member).to be_a Armory::Character
+      expect(secondlast_member.rank).to eq(7)  # Imported from guild members data
+      expect(secondlast_member.name).to eq("Milkspec")
+      expect(secondlast_member.spec).to be_a Armory::Data::Spec
+      expect(secondlast_member.spec.name).to eq("Feral")
+      expect(secondlast_member.class).to be_a Armory::Data::ToonClass
+      expect(secondlast_member.class.id).to eq(11)
+      expect(secondlast_member.gender.male?).to eq(false)
+      
+    end
+  end
+
+  describe '#guild_news' do
+    before do
+      stub_get('/wow/guild/Illidan/Encore', {fields:"news"})
+        .to_return(:body => fixture('guild_news.json'),
+                   :headers => {:content_type => 'application/json; charset=utf-8'})
+      @guild = @client.guild_news('Illidan','Encore')
+    end
+    it 'returns valid data' do
+      expect(@guild).to be_a Armory::Guild
+      expect(@guild.news).to be_a Array
+    end
+    it 'returns valid player achievement data' do
+      item = @guild.news.first
+      expect(item).to be_a Armory::Data::Feed::Item
+      expect(item).to be_a Armory::Data::Feed::Item::Achievement
+      expect(item.character).to eq("Mephî")
+      expect(item.achievement).to be_a Armory::Data::Achievement
+      expect(item.achievement.id).to eq(6193)
+    end
+    it 'returns valid item loot data' do
+      item = @guild.news[1]
+      expect(item).to be_a Armory::Data::Feed::Item
+      expect(item).to be_a Armory::Data::Feed::Item::Loot
+      expect(item.character).to eq("Veryhordy")
+      expect(item.item_id).to eq(112261)
+    end
+    it 'returns valid guild achievement data' do
+      item = @guild.news[7]
+      expect(item).to be_a Armory::Data::Feed::Item
+      expect(item).to be_a Armory::Data::Feed::Item::Achievement
+      expect(item.character).to eq("Jellosdk")
+      expect(item.achievement).to be_a Armory::Data::Achievement
+      expect(item.achievement.id).to eq(5056)
+    end
+    it 'returns valid item purchase data' do
+      item = @guild.news[2]
+      expect(item).to be_a Armory::Data::Feed::Item
+      expect(item).to be_a Armory::Data::Feed::Item::Loot
+      expect(item.character).to eq("Gerith")
+      expect(item.item_id).to eq(71068)
+    end
+  end
 
 
 end

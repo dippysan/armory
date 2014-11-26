@@ -1,7 +1,7 @@
-require 'armory/character/feed/item'
+require 'armory/data/feed/item'
 
 module Armory
-  class Character::Feed::Item::Achievement < Character::Feed::Item
+  class Data::Feed::Item::Achievement < Data::Feed::Item
 
     predicate_attr_reader_with_alias :featOfStrength, :feat_of_strength
 

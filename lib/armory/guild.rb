@@ -16,6 +16,7 @@ module Armory
     alias_method :faction, :side
 
     object_attr_reader :'Data::Achievements', :achievements
+    object_attr_reader_as_array :'Data::Feed::News', :news
     
     def members
       @collection

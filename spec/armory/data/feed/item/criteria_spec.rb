@@ -1,7 +1,7 @@
 # coding: utf-8
 require 'helper'
 
-describe Armory::Character::Feed::Item::Criteria do
+describe Armory::Data::Feed::Item::Criteria do
 
   before do
     @criteria = {        
@@ -15,14 +15,14 @@ describe Armory::Character::Feed::Item::Criteria do
               criteria: { id: 2 },
             }
 
-    @feed_item = Armory::Character::Feed::Item.create(@criteria)
+    @feed_item = Armory::Data::Feed::Item.create(@criteria)
   end
 
   it "returns correct class according to type" do
-    expect(Armory::Character::Feed::Item.create({type: "ACHIEVEMENT"})).to be_a Armory::Character::Feed::Item::Achievement
-    expect(Armory::Character::Feed::Item.create({type: "BOSSKILL"})).to be_a Armory::Character::Feed::Item::BossKill
-    expect(Armory::Character::Feed::Item.create({type: "CRITERIA"})).to be_a Armory::Character::Feed::Item::Criteria
-    expect(Armory::Character::Feed::Item.create({type: "LOOT"})).to be_a Armory::Character::Feed::Item::Loot
+    expect(Armory::Data::Feed::Item.create({type: "ACHIEVEMENT"})).to be_a Armory::Data::Feed::Item::Achievement
+    expect(Armory::Data::Feed::Item.create({type: "BOSSKILL"})).to be_a Armory::Data::Feed::Item::BossKill
+    expect(Armory::Data::Feed::Item.create({type: "CRITERIA"})).to be_a Armory::Data::Feed::Item::Criteria
+    expect(Armory::Data::Feed::Item.create({type: "LOOT"})).to be_a Armory::Data::Feed::Item::Loot
   end
 
   describe '#attrs' do
@@ -32,8 +32,8 @@ describe Armory::Character::Feed::Item::Criteria do
   end
 
   describe '#create' do
-    it 'returns Armory::Character::Feed::Item::BossKill with the correct data' do
-      expect(@feed_item).to be_a Armory::Character::Feed::Item::BossKill
+    it 'returns Armory::Data::Feed::Item::BossKill with the correct data' do
+      expect(@feed_item).to be_a Armory::Data::Feed::Item::BossKill
       expect(@feed_item.type).to be_a String
       expect(@feed_item.type).to eq("BOSSKILL")
       expect(@feed_item.timestamp).to be_a Time

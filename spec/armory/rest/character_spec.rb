@@ -78,7 +78,7 @@ describe Armory::REST::Character do
       character = @client.character_feed('middleearth','frodo')
       expect(character).to be_a Armory::Character
       expect(character.feed).to be_a Array
-      expect(character.feed.first).to be_a Armory::Character::Feed::Item
+      expect(character.feed.first).to be_a Armory::Data::Feed::Item
       expect(character.feed.first.achievement.id).to eq(9407)
     end
   end
