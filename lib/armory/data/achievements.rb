@@ -36,6 +36,15 @@ module Armory
         @criteria
       end
 
+      def achievements_hash
+        @collection_hash
+      end
+      alias_method :completed_hash, :achievements_hash
+
+      def achievement_criteria_hash
+        @criteria_hash
+      end
+
 
       def initialize(attrs = {})
         super
@@ -46,6 +55,10 @@ module Armory
         @criteria = criteria_array.collect do |data|
           Data::AchievementCriteria.new(data)
         end
+
+        # Create hash keyed on achievement id
+        @collection_hash = Hash[@collection.map {|a| [ a.id, a ] }]
+        @criteria_hash = Hash[@criteria.map {|a| [ a.id, a ] }]
       end
 
     private

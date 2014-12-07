@@ -65,6 +65,18 @@ describe Armory::Data::Achievements do
       expect(completed.first.timestamp).to eq(i_to_time(1516270000000))
     end
 
+    it '.achievements_hash returns hash of Armory::Data::Achievement, keyed on id' do
+      completed = @achievements.completed_hash
+      expect(completed).to be_a Hash
+      expect(completed.keys.count).to eq(3)
+      expect(completed[9141]).to be_a Armory::Data::Achievement
+      expect(completed[9141].id).to eq(9141)
+      expect(completed[9141].timestamp).to eq(i_to_time(1516270000000))
+      expect(completed[9618]).to be_a Armory::Data::Achievement
+      expect(completed[9618].id).to eq(9618)
+      expect(completed[9618].timestamp).to eq(i_to_time(1716290000000))
+    end
+
     it '.achievement_criteria returns array of Armory::Data::AchievementCriteria' do
       criteria = @achievements.achievement_criteria
       expect(criteria).to be_an Array
@@ -73,6 +85,17 @@ describe Armory::Data::Achievements do
       expect(criteria.first.quantity).to eq(1)
       expect(criteria.first.timestamp).to eq(i_to_time(1416313545000))
       expect(criteria.first.created).to eq(i_to_time(1416313542000))
+    end
+
+    it '.achievement_criteria_hash returns hash of Armory::Data::AchievementCriteria' do
+      criteria = @achievements.achievement_criteria_hash
+      expect(criteria).to be_an Hash
+      expect(criteria.keys.count).to eq(4)
+      expect(criteria[26801]).to be_a Armory::Data::AchievementCriteria
+      expect(criteria[26801].id).to eq(26801)
+      expect(criteria[26801].quantity).to eq(12)
+      expect(criteria[26801].timestamp).to eq(i_to_time(1516313546000))
+      expect(criteria[26801].created).to eq(nil)
     end
   end
 
