@@ -14,6 +14,7 @@ module Armory
       #
       # @param options [Hash] A customizable set of options.
       def achievement_data(options = {})
+        options = options.dup
         perform_with_objects(:get, '/wow/data/character/achievements', options, Armory::Achievement::Category, :achievements)
       end
 

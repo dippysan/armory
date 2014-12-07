@@ -17,6 +17,7 @@ module Armory
       # @param options [Hash] A customizable set of options.
       #  - realms : list of realms to limit to
       def realm_status(options = {})
+        options = options.dup
         perform_with_objects(:get, '/wow/realm/status', options, Armory::Realm, :realms)
       end
 

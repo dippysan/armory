@@ -21,6 +21,7 @@ module Armory
       # @param options [Hash] A customizable set of options.
       #  - realms : list of realms to limit to
       def auction(realm_slug, options = {})
+        options = options.dup
         perform_with_object(:get, "/wow/auction/data/#{extract_slug(realm_slug)}", options, Armory::Auction)
       end
 

@@ -13,6 +13,7 @@ module Armory
       # @return [Array of Armory::Data::ToonClass] Character Information
       # @param options [Hash] A customizable set of options.
       def talent_data(options = {})
+        options = options.dup
         #perform_with_objects(:get, '/wow/data/talents', options, Armory::Data::ToonClass)
         talent_data = new_request(:get, '/wow/data/talents', options).perform
         talent_array = map_class_names_into_data_as_id(talent_data)

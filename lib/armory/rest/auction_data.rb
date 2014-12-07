@@ -16,6 +16,7 @@ module Armory
       # - [Addressable::URI] Auction file location
       def auctiondata(auction_url, options = {})
         # TODO Call URL without api_key in parameter
+        options = options.dup
         perform_bare_with_object(:get, extract_url(auction_url), options, Armory::AuctionData)
       end
 

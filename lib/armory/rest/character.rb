@@ -21,57 +21,58 @@ module Armory
       # @param options [Hash] A customizable set of options.
       #  - fields: the dataset to retrieve
       def character(realm_slug, character_name, options = {})
+        options = options.dup
         perform_with_object(:get, "/wow/character/#{extract_slug(realm_slug)}/#{character_name}",
           options, Armory::Character)
       end
 
       def character_achievements(realm_slug, character_name, options = {})
-        insert_fields_value(options, "achievements")
+        options = insert_fields_value(options.dup, "achievements")
         character(realm_slug, character_name, options)
       end
 
       def character_appearance(realm_slug, character_name, options = {})
-        insert_fields_value(options, "appearance")
+        options = insert_fields_value(options.dup, "appearance")
         character(realm_slug, character_name, options)
       end
 
       def character_feed(realm_slug, character_name, options = {})
-        insert_fields_value(options, "feed")
+        options = insert_fields_value(options.dup, "feed")
         character(realm_slug, character_name, options)
       end
 
       def character_guild(realm_slug, character_name, options = {})
-        insert_fields_value(options, "guild")
+        options = insert_fields_value(options.dup, "guild")
         character(realm_slug, character_name, options)
       end
 
       def character_items(realm_slug, character_name, options = {})
-        insert_fields_value(options, "items")
+        options = insert_fields_value(options.dup, "items")
         character(realm_slug, character_name, options)
       end
 
       def character_mounts(realm_slug, character_name, options = {})
-        insert_fields_value(options, "mounts")
+        options = insert_fields_value(options.dup, "mounts")
         character(realm_slug, character_name, options)
       end
 
       def character_pets(realm_slug, character_name, options = {})
-        insert_fields_value(options, "pets")
+        options = insert_fields_value(options.dup, "pets")
         character(realm_slug, character_name, options)
       end
 
       def character_progression(realm_slug, character_name, options = {})
-        insert_fields_value(options, "progression")
+        options = insert_fields_value(options.dup, "progression")
         character(realm_slug, character_name, options)
       end
 
       def character_pvp(realm_slug, character_name, options = {})
-        insert_fields_value(options, "pvp")
+        options = insert_fields_value(options.dup, "pvp")
         character(realm_slug, character_name, options)
       end
 
       def character_talents(realm_slug, character_name, options = {})
-        insert_fields_value(options, "talents")
+        options = insert_fields_value(options.dup, "talents")
         character(realm_slug, character_name, options)
       end
 

@@ -21,22 +21,23 @@ module Armory
       # @param options [Hash] A customizable set of options.
       #  - fields: the dataset to retrieve
       def guild(realm_slug, guild_name, options = {})
+        options = options.dup
         perform_with_object(:get, URI.escape("/wow/guild/#{extract_slug(realm_slug)}/#{guild_name}"),
           options, Armory::Guild)
       end
 
       def guild_achievements(realm_slug, guild_name, options = {})
-        insert_fields_value(options, "achievements")
+        options = insert_fields_value(options.dup, "achievements")
         guild(realm_slug, guild_name, options)
       end
 
       def guild_members(realm_slug, guild_name, options = {})
-        insert_fields_value(options, "members")
+        options = insert_fields_value(options.dup, "members")
         guild(realm_slug, guild_name, options)
       end
 
       def guild_news(realm_slug, guild_name, options = {})
-        insert_fields_value(options, "news")
+        options = insert_fields_value(options.dup, "news")
         guild(realm_slug, guild_name, options)
       end
 
