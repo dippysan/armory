@@ -13,12 +13,19 @@ module Armory
       end
       memoize :bosses
 
+      def bosses_hash
+        @collection_hash
+      end
+      memoize :bosses_hash
+
       def initialize(attrs = {})
         super
 
         @collection = attrs.fetch(:bosses, []).collect do |data|
           Armory::Data::RaidBoss.new(data)
         end
+        # Create hash keyed on achievement id
+        @collection_hash = Hash[@collection.map {|a| [ a.id, a ] }]
         
       end
 

@@ -16,6 +16,11 @@ describe Armory::Data::Raid do
                 name: "Ragnaros",
                 normalKills: 15,
                 normalTimestamp: 1416635189000
+            },{
+                id: 11503,
+                name: "Blackhand",
+                normalKills: 20,
+                normalTimestamp: 1516635189000
             }]
         }
     @item = Armory::Data::Raid.new(@data)
@@ -57,6 +62,25 @@ describe Armory::Data::Raid do
       expect(@item.bosses.first.normal_kills).to eq(15)
       expect(@item.bosses.first.normal_timestamp).to be_a Time
       expect(@item.bosses.first.normal_timestamp).to eq(Time.at(1416635189000/1000))
+    end
+
+    it 'returns hash of Armory::Data::RaidBoss keyed on id' do
+
+      expect(@item.bosses_hash).to be_a Hash
+      expect(@item.bosses_hash[11502]).to be_a Armory::Data::RaidBoss
+      expect(@item.bosses_hash[11502].id).to be_a Integer
+      expect(@item.bosses_hash[11502].id).to eq(11502)
+      expect(@item.bosses_hash[11502].name).to be_a String
+      expect(@item.bosses_hash[11502].name).to eq("Ragnaros")
+      expect(@item.bosses_hash[11502].normal_kills).to be_a Integer
+      expect(@item.bosses_hash[11502].normal_kills).to eq(15)
+      expect(@item.bosses_hash[11502].normal_timestamp).to be_a Time
+      expect(@item.bosses_hash[11502].normal_timestamp).to eq(Time.at(1416635189000/1000))
+      expect(@item.bosses_hash[11503]).to be_a Armory::Data::RaidBoss
+      expect(@item.bosses_hash[11503].id).to be_a Integer
+      expect(@item.bosses_hash[11503].id).to eq(11503)
+      expect(@item.bosses_hash[11503].name).to be_a String
+      expect(@item.bosses_hash[11503].name).to eq("Blackhand")
     end
 
     it 'enumerates bosses' do

@@ -3,34 +3,23 @@ require 'helper'
 
 describe Armory::Character do
 
-before do
-    @old_stderr = $stderr
-    $stderr = StringIO.new
-
-    @characterexample = {
-      lastModified: 1416305354000,
-      name: "Frodo",
-      realm: "MiddleEarth",
-      battlegroup: "Rampage",
-      class: 11,
-      race: 4,
-      gender: 0,
-      level: 100,
-      achievementPoints: 7280,
-      thumbnail: "middleearth/94/4209397-avatar.jpg",
-      calcClass: "U",
-      totalHonorableKills: 849,
-      rank: 1  # guild rank added by guild.members
-    }
-  end
-
-  after do
-    $stderr = @old_stderr
-  end
-
   describe '#characters' do
     it 'returns an Armory::Character with the correct data' do
-      character_data = @characterexample
+      character_data = {
+        lastModified: 1416305354000,
+        name: "Frodo",
+        realm: "MiddleEarth",
+        battlegroup: "Rampage",
+        class: 11,
+        race: 4,
+        gender: 0,
+        level: 100,
+        achievementPoints: 7280,
+        thumbnail: "middleearth/94/4209397-avatar.jpg",
+        calcClass: "U",
+        totalHonorableKills: 849,
+        rank: 1  # guild rank added by guild.members
+      }
       character = Armory::Character.new('US', character_data)
       expect(character).to be_a Armory::Character
       expect(character.name).to be_a String
@@ -58,6 +47,42 @@ before do
       expect(character.rank).to be_a Integer
       expect(character.rank).to eq(1)
     end
+
+
+    it 'returns hash with progression raids' do
+      character_data = {
+        lastModified: 1416305354000,
+        name: "Frodo",
+        realm: "MiddleEarth",
+        progression: {
+          raids: [ {
+            name: "Highmaul",
+            lfr: 0,
+            normal: 0,
+            heroic: 2,
+            mythic: 0,
+            id: 6996,
+            bosses: []
+          }, {
+            name: "Blackrock Foundry",
+            lfr: 0,
+            normal: 0,
+            heroic: 0,
+            mythic: 0,
+            id: 6967,
+            bosses: []
+          }]}}
+      character = Armory::Character.new('US', character_data)
+      expect(character).to be_a Armory::Character
+      expect(character.name).to be_a String
+      expect(character.name).to eq('Frodo')
+      expect(character.progression_hash).to be_a Hash
+      expect(character.progression_hash[6996]).to be_a Armory::Data::Raid
+      expect(character.progression_hash[6996].name).to eq("Highmaul")
+      expect(character.progression_hash[6967]).to be_a Armory::Data::Raid
+      expect(character.progression_hash[6967].name).to eq("Blackrock Foundry")
+    end
+
   end
 
 

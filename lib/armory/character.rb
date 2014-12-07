@@ -29,12 +29,34 @@ module Armory
     object_attr_reader :'Character::Items', :items
     object_attr_reader :'Character::Mounts', :mounts
     object_attr_reader :'Character::Pets', :pets
-    object_attr_reader_as_array :'Data::Raid', :progression, extra_key: :raids
     object_attr_reader :'Character::PvP', :pvp, extra_key: :brackets
     object_attr_reader_as_array :'Character::Talents', :talents
     
     # loaded from Guild
     object_attr_reader :'Data::Spec', :spec
+
+    # object_attr_reader_as_array :'Data::Raid', :progression, extra_key: :raids - replaced by below
+    def progression
+      @collection
+    end
+    memoize :progression
+
+    def progression_hash
+      @collection_hash
+    end
+    memoize :progression_hash
+
+    def initialize(region, attrs = {})
+      super
+
+      if @attrs.fetch(:progression,{}).fetch(:raids,[]).count > 0
+        @collection = @attrs[:progression][:raids].collect do |data|
+          Data::Raid.new(data)
+        end
+        # Create hash keyed on achievement id
+        @collection_hash = Hash[@collection.map {|a| [ a.id, a ] }]
+      end
+    end
 
   end
 end
