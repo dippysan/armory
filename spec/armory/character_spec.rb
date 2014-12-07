@@ -19,7 +19,8 @@ before do
       achievementPoints: 7280,
       thumbnail: "middleearth/94/4209397-avatar.jpg",
       calcClass: "U",
-      totalHonorableKills: 849
+      totalHonorableKills: 849,
+      rank: 1  # guild rank added by guild.members
     }
   end
 
@@ -54,6 +55,8 @@ before do
       expect(character.calc_class).to eq('U')
       expect(character.total_honorable_kills).to be_a Integer
       expect(character.total_honorable_kills).to eq(849)
+      expect(character.rank).to be_a Integer
+      expect(character.rank).to eq(1)
     end
   end
 
