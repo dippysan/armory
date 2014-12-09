@@ -44,6 +44,7 @@ module Armory
       def achievement_criteria_hash
         @criteria_hash
       end
+      alias_method :criteria_hash, :achievement_criteria_hash
 
 
       def initialize(attrs = {})
