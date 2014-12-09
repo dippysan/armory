@@ -113,7 +113,7 @@ module Armory
       # @param extra_key [Symbol] - down an extra level. IE progression: { raids: [...] }
       def define_attribute_method(key1, klass = nil, method_alias: key1, target_alias: nil, include_keys: nil, extra_key: nil)
         define_method(method_alias) do ||
-          target = extra_key.nil? ? @attrs[key1] : @attrs[key1][extra_key]
+          target = extra_key.nil? ? @attrs[key1] : @attrs[key1].nil? ? nil : @attrs[key1][extra_key]
           if target.nil?
             nil
           else
