@@ -22,7 +22,7 @@ module Armory
       #  - fields: the dataset to retrieve
       def character(realm_slug, character_name, options = {})
         options = options.dup
-        perform_with_object(:get, "/wow/character/#{extract_slug(realm_slug)}/#{character_name}",
+        perform_with_object(:get, URI.escape("/wow/character/#{extract_slug(realm_slug)}/#{character_name}"),
           options, Armory::Character)
       end
 
