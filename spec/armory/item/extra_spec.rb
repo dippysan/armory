@@ -7,6 +7,7 @@ describe Armory::Item::Extra do
     @data = {
                 gem0: 76626,
                 gem1: 76627,
+                gem2: 76628,
                 enchant: 5331,
                 transmogItem: 71779,
                 tinker: 4897
@@ -27,6 +28,8 @@ describe Armory::Item::Extra do
       expect(@item.gem0).to eq(76626)
       expect(@item.gem1).to be_a Integer
       expect(@item.gem1).to eq(76627)
+      expect(@item.gem2).to be_a Integer
+      expect(@item.gem2).to eq(76628)
       expect(@item.enchant).to be_a Integer
       expect(@item.enchant).to eq(5331)
       expect(@item.transmog_item).to be_a Armory::Item
