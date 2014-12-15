@@ -22,6 +22,11 @@ module Armory
         end
       end
 
+      def talent_data_json(options = {})
+        options = options.dup
+        new_request(:get, '/wow/data/talents', options).perform
+      end
+
       private
 
       def map_class_names_into_data_as_id(hsh)

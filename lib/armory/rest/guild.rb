@@ -26,6 +26,12 @@ module Armory
           options, Armory::Guild)
       end
 
+      def guild_json(realm_slug, guild_name, options = {})
+        options = options.dup
+        perform(:get, URI.escape("/wow/guild/#{extract_slug(realm_slug)}/#{guild_name}"),
+          options)
+      end
+
       def guild_achievements(realm_slug, guild_name, options = {})
         options = insert_fields_value(options.dup, "achievements")
         guild(realm_slug, guild_name, options)

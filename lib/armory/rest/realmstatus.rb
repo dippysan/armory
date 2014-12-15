@@ -21,6 +21,11 @@ module Armory
         perform_with_objects(:get, '/wow/realm/status', options, Armory::Realm, :realms)
       end
 
+      def realm_status_json(options = {})
+        options = options.dup
+        perform(:get, '/wow/realm/status', options)
+      end
+
       alias_method :status, :realm_status
     end
   end

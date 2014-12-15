@@ -32,6 +32,10 @@ describe Armory::REST::Guild do
       expect(guild.side.horde?).to eq(true)
       expect(guild.side.alliance?).to eq(false)
     end
+    it 'json returns original data' do
+      guild = @client.guild_json('Illidan','Blood Legion')
+      expect(guild).to eq(fixture_as_json('guild_basic.json'))
+    end
   end
 
   describe '#guild_achievements' do

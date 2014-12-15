@@ -21,6 +21,10 @@ describe Armory::REST::RealmStatus do
       expect(realms.first).to be_a Armory::Realm
       expect(realms.first.slug).to eq('aegwynn')
     end
+    it 'json returns bare data' do
+      expect(@client.realm_status_json()).to eq(fixture_as_json('realm_status.json'))
+    end
+
   end
 
 

@@ -26,6 +26,12 @@ module Armory
           options, Armory::Character)
       end
 
+      def character_json(realm_slug, character_name, options = {})
+        options = options.dup
+        perform(:get, URI.escape("/wow/character/#{extract_slug(realm_slug)}/#{character_name}"),
+          options)
+      end
+
       def character_achievements(realm_slug, character_name, options = {})
         options = insert_fields_value(options.dup, "achievements")
         character(realm_slug, character_name, options)

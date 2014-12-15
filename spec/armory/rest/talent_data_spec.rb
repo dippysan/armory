@@ -17,6 +17,10 @@ describe Armory::REST::TalentData do
       expect(a_get('/wow/data/talents')).to have_been_made
     end
 
+    it 'json returns bare data' do
+      expect(@client.talent_data_json()).to eq(fixture_as_json('talent_data.json'))
+    end
+
     describe "returns valid data" do
       before do
         @class_list = @client.talent_data()

@@ -68,6 +68,14 @@ module Armory
         request.perform_with_object(klass)
       end
 
+      # @param request_method [Symbol]
+      # @param path [String]
+      # @param options [Hash]
+      def perform(request_method, path, options)
+        request = new_request(request_method, path, options)
+        request.perform
+      end
+
       # Same as above, but uses RequestBare so not to include any locale or region
       def perform_bare_with_object(request_method, path, options, klass)
         request = Armory::RequestBare.new(self, request_method, path, options)

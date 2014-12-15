@@ -69,6 +69,10 @@ def fixture(file)
   File.new(fixture_path + '/' + file)
 end
 
+def fixture_as_json(file)
+  JSON.parse(fixture(file).read, :symbolize_names => true)
+end
+
 def capture_warning
   begin
     old_stderr = $stderr

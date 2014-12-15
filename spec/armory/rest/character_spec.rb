@@ -28,6 +28,11 @@ describe Armory::REST::Character do
       expect(character.name).to be_a String
       expect(character.name).to eq('Frodo')
     end
+
+    it 'json returns original data' do
+      character = @client.character_json('middleearth','frodo')
+      expect(character).to eq(fixture_as_json('character_basic.json'))
+    end
   end
 
   describe '#character_achievements' do
