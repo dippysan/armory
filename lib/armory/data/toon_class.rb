@@ -44,13 +44,16 @@ module Armory
         @talents_flatten = []
         @talents = @attrs.fetch(:talents,[]).collect do |tier|
           tier.collect do |column|
+            column_count = column.count
             column.select.with_index { |spec,i| armory_bug_remove_hunter_t6c1(spec,i) }
               .collect.with_index do |spec,i|
 
               # add spec to talent
               spec = spec.dup
-              spec[:spec] = @attrs[:specs][i]
-              spec[:spec][:id] = i
+              if column.count>1 # Add spec if different talent for each spec
+                spec[:spec] = @attrs[:specs][i] 
+                spec[:spec][:id] = i
+              end
               spec = Armory::Data::Talent.new(spec)
               @talents_flatten << spec
               spec

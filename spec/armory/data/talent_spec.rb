@@ -57,6 +57,17 @@ describe Armory::Data::Talent do
 
   end
 
+  describe '#new' do
+    it 'handles nil spec' do
+      # Spec is nil when no multiple specs for a class
+      @data.delete(:spec)
+      item_no_spec = Armory::Data::Talent.new(@data)
+      expect(item_no_spec).to be_a Armory::Data::Talent
+      expect(item_no_spec.spec).to eq(nil)
+    end
+  end
+
+
   describe '#==' do
     it 'returns true when tier and column are the same' do
       item1 = Armory::Data::Talent.new({ tier: 1, column: 1 })
