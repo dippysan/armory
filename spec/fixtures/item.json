@@ -1,0 +1,61 @@
+{
+    "id": 115806,
+    "description": "Matches any socket.",
+    "name": "Multistrike Taladite",
+    "icon": "inv_jewelcrafting_45",
+    "stackable": 20,
+    "itemBind": 0,
+    "bonusStats": [],
+    "itemSpells": [],
+    "buyPrice": 160000,
+    "itemClass": 3,
+    "itemSubClass": 8,
+    "containerSlots": 0,
+    "gemInfo": {
+        "bonus": {
+            "name": "+35 Multistrike",
+            "srcItemId": 115806,
+            "requiredSkillId": 0,
+            "requiredSkillRank": 0,
+            "minLevel": 0,
+            "itemLevel": 1
+        },
+        "type": {
+            "type": "PRISMATIC"
+        },
+        "minItemLevel": 600
+    },
+    "inventoryType": 0,
+    "equippable": false,
+    "itemLevel": 100,
+    "maxCount": 0,
+    "maxDurability": 0,
+    "minFactionId": 0,
+    "minReputation": 0,
+    "quality": 2,
+    "sellPrice": 40000,
+    "requiredSkill": 0,
+    "requiredLevel": 1,
+    "requiredSkillRank": 0,
+    "itemSource": {
+        "sourceId": 170722,
+        "sourceType": "CREATED_BY_SPELL"
+    },
+    "baseArmor": 0,
+    "hasSockets": false,
+    "isAuctionable": true,
+    "armor": 0,
+    "displayInfoId": 0,
+    "nameDescription": "",
+    "nameDescriptionColor": "000000",
+    "upgradable": true,
+    "heroicTooltip": false,
+    "context": "",
+    "bonusLists": [],
+    "availableContexts": [""],
+    "bonusSummary": {
+        "defaultBonusLists": [],
+        "chanceBonusLists": [],
+        "bonusChances": []
+    }
+}

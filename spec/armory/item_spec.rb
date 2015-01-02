@@ -10,14 +10,14 @@ describe Armory::Item do
             icon: "inv_crown_02",
             quality: 4,
             itemLevel: 640,
-            tooltipParams: {
+            tooltipParams: {  # From character items
                 gem0: 76626,
                 gem1: 76627,
                 enchant: 5331,
                 transmogItem: 71779,
                 tinker: 4897
             },
-            stats: [{
+            stats: [{  # From character items?
                 stat: 51,
                 amount: 63
             }, {
@@ -36,7 +36,62 @@ describe Armory::Item do
                 dps: 211.94444
             },
             context: "vendor",
-            bonusLists: [41, 524]
+            bonusLists: [41, 524],
+
+          # Returned from /wow/item/999
+          description: "Matches any socket.",
+          stackable: 20,
+          itemBind: 0,
+          bonusStats: [],
+          itemSpells: [],
+          buyPrice: 160000,
+          itemClass: 3,
+          itemSubClass: 8,
+          containerSlots: 0,
+          gemInfo: {
+              bonus: {
+                  name: "+35 Multistrike",
+                  srcItemId: 115806,
+                  requiredSkillId: 0,
+                  requiredSkillRank: 0,
+                  minLevel: 0,
+                  itemLevel: 1
+              },
+              type: {
+                  type: "PRISMATIC"
+              },
+              minItemLevel: 600
+          },
+          inventoryType: 0,
+          equippable: false,
+          maxCount: 0,
+          maxDurability: 0,
+          minFactionId: 0,
+          minReputation: 0,
+          sellPrice: 40000,
+          requiredSkill: 0,
+          requiredLevel: 1,
+          requiredSkillRank: 0,
+          itemSource: {
+              sourceId: 170722,
+              sourceType: "CREATED_BY_SPELL"
+          },
+          baseArmor: 0,
+          hasSockets: false,
+          isAuctionable: true,
+          displayInfoId: 0,
+          nameDescription: "",
+          nameDescriptionColor: "000000",
+          upgradable: true,
+          heroicTooltip: false,
+          availableContexts: [""],
+          bonusSummary: {
+              defaultBonusLists: [],
+              chanceBonusLists: [],
+              bonusChances: []
+          }
+
+
         }
     @item = Armory::Item.new(@data)
   end
@@ -63,6 +118,41 @@ describe Armory::Item do
       expect(@item.armor).to eq(114)
       expect(@item.context).to be_a String
       expect(@item.context).to eq("vendor")
+    end
+
+    it 'returns additional data from /wow/items call' do
+
+      expect(@item.description).to eq("Matches any socket.")
+      expect(@item.stackable).to eq(20)
+      expect(@item.item_bind).to eq(0)
+      expect(@item.bonus_stats).to eq([])
+      expect(@item.item_spells).to eq([])
+      expect(@item.buy_price).to eq(160000)
+      expect(@item.item_class).to eq(3)
+      expect(@item.item_sub_class).to eq(8)
+      expect(@item.container_slots).to eq(0)
+      #expect(@item.gem_info).to eq({})
+      expect(@item.inventory_type).to eq(0)
+      expect(@item.equippable?).to eq(false)
+      expect(@item.max_count).to eq(0)
+      expect(@item.max_durability).to eq(0)
+      expect(@item.min_faction_id).to eq(0)
+      expect(@item.min_reputation).to eq(0)
+      expect(@item.sell_price).to eq(40000)
+      expect(@item.required_skill).to eq(0)
+      expect(@item.required_level).to eq(1)
+      expect(@item.required_skill_rank).to eq(0)
+      expect(@item.item_source).to eq({sourceId: 170722,sourceType: "CREATED_BY_SPELL"})
+      expect(@item.base_armor).to eq(0)
+      expect(@item.sockets?).to eq(false)
+      expect(@item.auctionable?).to eq(true)
+      expect(@item.display_info_id).to eq(0)
+      expect(@item.name_description).to eq("")
+      expect(@item.name_description_color).to eq("000000")
+      expect(@item.upgradable?).to eq(true)
+      expect(@item.heroic_tooltip?).to eq(false)
+      expect(@item.available_contexts).to eq([""])
+      expect(@item.bonus_summary).to eq({defaultBonusLists: [],chanceBonusLists: [],bonusChances: []})
     end
 
     it 'returns extra data' do
