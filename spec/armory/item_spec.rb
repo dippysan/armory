@@ -131,7 +131,7 @@ describe Armory::Item do
       expect(@item.item_class).to eq(3)
       expect(@item.item_sub_class).to eq(8)
       expect(@item.container_slots).to eq(0)
-      #expect(@item.gem_info).to eq({})
+      expect(@item.gem_info).to be_a Armory::Data::GemInfo
       expect(@item.inventory_type).to eq(0)
       expect(@item.equippable?).to eq(false)
       expect(@item.max_count).to eq(0)
@@ -142,7 +142,7 @@ describe Armory::Item do
       expect(@item.required_skill).to eq(0)
       expect(@item.required_level).to eq(1)
       expect(@item.required_skill_rank).to eq(0)
-      expect(@item.item_source).to eq({sourceId: 170722,sourceType: "CREATED_BY_SPELL"})
+      expect(@item.item_source).to eq({sourceId: 170722, sourceType: "CREATED_BY_SPELL"})
       expect(@item.base_armor).to eq(0)
       expect(@item.sockets?).to eq(false)
       expect(@item.auctionable?).to eq(true)
@@ -152,7 +152,7 @@ describe Armory::Item do
       expect(@item.upgradable?).to eq(true)
       expect(@item.heroic_tooltip?).to eq(false)
       expect(@item.available_contexts).to eq([""])
-      expect(@item.bonus_summary).to eq({defaultBonusLists: [],chanceBonusLists: [],bonusChances: []})
+      expect(@item.bonus_summary).to eq({defaultBonusLists: [], chanceBonusLists: [], bonusChances: []})
     end
 
     it 'returns extra data' do

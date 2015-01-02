@@ -53,5 +53,7 @@ module Armory
     predicate_attr_reader_with_alias :heroicTooltip, :heroic_tooltip
     predicate_attr_reader_with_alias :hasSockets, :sockets
 
+    object_attr_reader :'Data::GemInfo', :gemInfo, method_alias: :gem_info
+
   end
 end
