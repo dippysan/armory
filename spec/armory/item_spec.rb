@@ -43,7 +43,21 @@ describe Armory::Item do
           stackable: 20,
           itemBind: 0,
           bonusStats: [],
-          itemSpells: [],
+          itemSpells: [
+            { spellId: 7418,
+              spell: {
+                id: 7418,
+                name: "Minor Health",
+                icon: "spell_holy_greaterheal",
+                description: "Permanently enchant bracers to increase health by 5. Cannot be applied to items higher than level 600.",
+                castTime: "1.5 sec cast"
+              },
+              nCharges: 1,
+              consumable: true,
+              categoryId: 0,
+              trigger: "ON_USE"
+            }
+          ],
           buyPrice: 160000,
           itemClass: 3,
           itemSubClass: 8,
@@ -126,7 +140,7 @@ describe Armory::Item do
       expect(@item.stackable).to eq(20)
       expect(@item.item_bind).to eq(0)
       expect(@item.bonus_stats).to eq([])
-      expect(@item.item_spells).to eq([])
+      expect(@item.spells).to be_a Array
       expect(@item.buy_price).to eq(160000)
       expect(@item.item_class).to eq(3)
       expect(@item.item_sub_class).to eq(8)
@@ -153,6 +167,35 @@ describe Armory::Item do
       expect(@item.heroic_tooltip?).to eq(false)
       expect(@item.available_contexts).to eq([""])
       expect(@item.bonus_summary).to eq({defaultBonusLists: [], chanceBonusLists: [], bonusChances: []})
+    end
+
+    it 'returns correct spell data' do
+      expect(@item.spells).to be_a Array
+      itemspell = @item.spells.first
+      expect(itemspell).to be_a Armory::Item::Spell
+      expect(itemspell.id).to be_a Integer
+      expect(itemspell.id).to eq(7418)
+      expect(itemspell.charges).to be_a Integer
+      expect(itemspell.charges).to eq(1)
+      expect(itemspell.consumable).to be_a TrueClass
+      expect(itemspell.consumable).to eq(true)
+      expect(itemspell.category_id).to be_a Integer
+      expect(itemspell.category_id).to eq(0)
+      expect(itemspell.trigger).to be_a String
+      expect(itemspell.trigger).to eq("ON_USE")
+
+      expect(itemspell.spell).to be_a Armory::Data::Spell
+      expect(itemspell.spell.id).to be_a Integer
+      expect(itemspell.spell.id).to eq(7418)
+      expect(itemspell.spell.name).to be_a String
+      expect(itemspell.spell.name).to eq("Minor Health")
+      expect(itemspell.spell.icon).to be_a String
+      expect(itemspell.spell.icon).to eq("spell_holy_greaterheal")
+      expect(itemspell.spell.description).to be_a String
+      expect(itemspell.spell.description).to eq("Permanently enchant bracers to increase health by 5. Cannot be applied to items higher than level 600.")
+      expect(itemspell.spell.cast_time).to be_a String
+      expect(itemspell.spell.cast_time).to eq("1.5 sec cast")
+
     end
 
     it 'returns extra data' do

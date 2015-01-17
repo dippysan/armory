@@ -6,7 +6,21 @@
     "stackable": 20,
     "itemBind": 0,
     "bonusStats": [],
-    "itemSpells": [],
+    "itemSpells": [
+      { "spellId": 7418,
+        "spell": {
+          "id": 7418,
+          "name": "Minor Health",
+          "icon": "spell_holy_greaterheal",
+          "description": "Permanently enchant bracers to increase health by 5. Cannot be applied to items higher than level 600.",
+          "castTime": "1.5 sec cast"
+        },
+        "nCharges": 1,
+        "consumable": true,
+        "categoryId": 0,
+        "trigger": "ON_USE"
+      }
+    ],
     "buyPrice": 160000,
     "itemClass": 3,
     "itemSubClass": 8,

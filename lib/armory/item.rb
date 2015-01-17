@@ -18,14 +18,15 @@ module Armory
     alias_method :extras, :extra
 
     # from /wow/item/999
-    attr_reader :description, :stackable, :itemBind, :bonusStats, :itemSpells, :buyPrice, :itemClass, :itemSubClass
+    attr_reader :description, :stackable, :itemBind, :bonusStats, :buyPrice, :itemClass, :itemSubClass
     attr_reader :containerSlots, :gemInfo, :inventoryType, :maxCount, :maxDurability, :minFactionId, :minReputation
     attr_reader :sellPrice, :requiredSkill, :requiredLevel, :requiredSkillRank, :itemSource, :baseArmor
     attr_reader :displayInfoId, :nameDescription, :nameDescriptionColor, :availableContexts, :bonusSummary
 
+    object_attr_reader_as_array :'Item::Spell', :itemSpells, method_alias: :spells
+
     alias_method :item_bind, :itemBind
     alias_method :bonus_stats, :bonusStats
-    alias_method :item_spells, :itemSpells
     alias_method :buy_price, :buyPrice
     alias_method :item_class, :itemClass
     alias_method :item_sub_class, :itemSubClass
