@@ -6,6 +6,7 @@ require 'armory/rest/achievement_data'
 require 'armory/rest/talent_data'
 require 'armory/rest/guild'
 require 'armory/rest/item'
+require 'armory/rest/spell'
 # require 'armory/rest/other-api-endpoints'
 
 module Armory
@@ -19,6 +20,7 @@ module Armory
       include Armory::REST::TalentData
       include Armory::REST::Guild
       include Armory::REST::Item
+      include Armory::REST::Spell
     end
   end
 end

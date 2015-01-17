@@ -1,0 +1,7 @@
+{
+    "id": 7418,
+    "name": "Minor Health",
+    "icon": "spell_holy_greaterheal",
+    "description": "Permanently enchant bracers to increase health by 5. Cannot be applied to items higher than level 600.",
+    "castTime": "1.5 sec cast"
+}
