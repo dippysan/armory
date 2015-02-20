@@ -101,5 +101,8 @@ module Armory
 
     # Raised when Armory returns the HTTP status code 504
     GatewayTimeout = Class.new(ServerError)
+
+    # Raised when Armory returns invalid JSON
+    InvalidJSON = Class.new(ServerError)
   end
 end

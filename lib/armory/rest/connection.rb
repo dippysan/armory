@@ -98,7 +98,7 @@ module Armory
         rescue Faraday::Error::TimeoutError, Timeout::Error => error
           raise(Armory::Error::RequestTimeout.new(error))
         rescue Faraday::Error::ClientError, JSON::ParserError => error
-          raise(Armory::Error.new(error))
+          raise(Armory::Error::InvalidJSON.new(error))
       end
 
       def update_headers
