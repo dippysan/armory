@@ -8,7 +8,9 @@ module Armory
     #
     # @return [Time]
     def last_modified
-      Time.at(@attrs[:lastModified]/1000) unless @attrs[:lastModified].nil?
+      return nil if @attrs[:lastModified].nil?
+      return nil if @attrs[:lastModified]==0
+      Time.at(@attrs[:lastModified]/1000)
     end
     memoize :last_modified
     alias_method :lastmodified, :last_modified
