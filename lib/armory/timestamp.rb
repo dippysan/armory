@@ -9,6 +9,11 @@ module Armory
     end
     memoize :timestamp
 
+    def seconds
+      @attrs[:timestamp]
+    end
+    memoize :seconds
+
   private
     def convert_to_time(seconds_times_thousand)
       return nil if seconds_times_thousand==0
