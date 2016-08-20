@@ -59,21 +59,6 @@ describe Armory::REST::TalentData do
         expect(talent.first.first.first.spell.name).to eq("Juggernaut")
       end
 
-      it 'flattened talent data for a class' do
-        talent = @warrior.talents_flatten
-        expect(talent).to be_a Array
-        expect(talent.count).to eq(27)
-        expect(talent.first).to be_a Armory::Data::Talent
-        expect(talent.first.spell.name).to eq("Juggernaut")
-        expect(talent.first.spec).to eq(nil)
-        expect(talent[7]).to be_a Armory::Data::Talent
-        expect(talent[7].spell.name).to eq("Furious Strikes")
-        expect(talent[7].spec).to be_a Armory::Data::Spec
-        expect(talent[7].spec.name).to eq("Fury")
-        expect(talent.last).to be_a Armory::Data::Talent
-        expect(talent.last.spell.name).to eq("Siegebreaker")
-      end
-
       it 'petspec data for hunter' do
         spec = @hunter.pet_specs
         expect(spec).to be_a Array

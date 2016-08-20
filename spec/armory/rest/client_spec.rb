@@ -100,11 +100,11 @@ describe Armory::REST::Client do
       
       it "handles Time and retuns as rfc2822" do
         @client.send(:request, :get, '/path', {param:1, last_modified: Time.at(1416305354).utc}, {header:2})
-        expect(@yield_passed).to eq({header:2, :'if-last-modified' => Time.at(1416305354).utc.rfc2822})
+        expect(@yield_passed).to eq({header:2, :'if-modified-since' => Time.at(1416305354).utc.rfc2822})
       end
       it "handles String and retuns unchanged" do
         @client.send(:request, :get, '/path', {param:1, last_modified: "time string"}, {header:2})
-        expect(@yield_passed).to eq({header:2, :'if-last-modified' => "time string"})
+        expect(@yield_passed).to eq({header:2, :'if-modified-since' => "time string"})
       end
       it "returns IncorrectLastUpdate when incorrect last modified date passed" do
         expect { @client.send(:request, :get, '/path', {param:1, last_modified: 123.45}, {header:2}) }
@@ -112,11 +112,11 @@ describe Armory::REST::Client do
       end
       it "accepts :lastmodified as key" do
         @client.send(:request, :get, '/path', {param:1, lastmodified: "time string"}, {header:2})
-        expect(@yield_passed).to eq({header:2, :'if-last-modified' => "time string"})
+        expect(@yield_passed).to eq({header:2, :'if-modified-since' => "time string"})
       end
       it "accepts :modified as key" do
         @client.send(:request, :get, '/path', {param:1, modified: "time string"}, {header:2})
-        expect(@yield_passed).to eq({header:2, :'if-last-modified' => "time string"})
+        expect(@yield_passed).to eq({header:2, :'if-modified-since' => "time string"})
       end
     end
   end

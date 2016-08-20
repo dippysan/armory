@@ -50,7 +50,25 @@ describe Armory::Data::ToonClass do
                                   icon: "ability_warrior_bullrush",
                                   description: "You can Charge every 12 sec instead of every 20 sec.",
                                   castTime: "Passive"
+                              },
+                              spec: {
+                                  name: "Fury",
+                                  role: "DPS",
+                                  backgroundImage: "bg-warrior-fury",
+                                  icon: "ability_warrior_innerrage",
+                                  description: "",
+                                  order: 1
                               }
+                          }, {
+
+                              tier: 0,
+                              column: 1,
+                              spell: {
+                                  id: 103827,
+                                  name: "Juggernaut2",
+                                  castTime: "Passive"
+                              },
+                              # No spec, which means default spell for this tier
                           }]]],
           :specs => [ { name: "Arms", role: "DPS", order: 0 } ],
           :petSpecs => [ { name: "Ferocity", order: 0 }, { name: "Tenacity", order: 1 } ],
@@ -85,16 +103,18 @@ describe Armory::Data::ToonClass do
         expect(first_talent.spell).to be_a Armory::Data::Spell
         expect(first_talent.spell.id).to eq(103826)
         expect(first_talent.spell.name).to eq("Juggernaut")
+        expect(first_talent.spec).to be_a Armory::Data::Spec
+        expect(first_talent.spec.name).to eq("Fury")
       end
 
-      it 'correctly flattens talents' do
-        expect(@data_class.talents_flatten).to be_a Array
-        expect(@data_class.talents_flatten.first).to be_a Armory::Data::Talent
-        expect(@data_class.talents_flatten.first.tier).to eq(0)
-        expect(@data_class.talents_flatten.first.column).to eq(1)
-        expect(@data_class.talents_flatten.first.spell).to be_a Armory::Data::Spell
-        expect(@data_class.talents_flatten.first.spell.id).to eq(103826)
-        expect(@data_class.talents_flatten.first.spell.name).to eq("Juggernaut")
+      it 'finds missing spec (ie default)' do
+        second_talent = @data_class.talents.first.first[1]
+        expect(second_talent).to be_a Armory::Data::Talent
+        expect(second_talent.tier).to eq(0)
+        expect(second_talent.column).to eq(1)
+        expect(second_talent.spell).to be_a Armory::Data::Spell
+        expect(second_talent.spell.id).to eq(103827)
+        expect(second_talent.spec).to eq(nil)
       end
 
       it 'correctly parses specs' do
@@ -127,64 +147,6 @@ describe Armory::Data::ToonClass do
     end
   end
 
-  describe "flattens talents into array" do
-
-    before do
-      @data = {
-          :id => 1,
-          :class => 'Warrior',
-          :specs => [ { name: "Spec 1", order: 0 }, { name: "Spec 2", order: 1 } ],
-          :talents => [
-                        [
-                          [{ tier: 0,  column: 0, }, { tier: 0,  column: 0, }],
-                          [{ tier: 0,  column: 1, }, { tier: 0,  column: 0, }],
-                          [{ tier: 0,  column: 2, }]
-                        ], [
-                          [{ tier: 1,  column: 0, }],
-                          [{ tier: 1,  column: 1, }],
-                          [{ tier: 1,  column: 2, }]
-                        ], [
-                          [{ tier: 2,  column: 0, }],
-                          [{ tier: 2,  column: 1, }],
-                          [{ tier: 2,  column: 2, }, { tier: 2,  column: 2 }]
-                        ]
-                      ]
-                    }
-
-      @data_class = Armory::Data::ToonClass.new(@data)
-    end
-
-    describe '#new' do
-      it 'returns valid class data' do
-        expect(@data_class).to be_a Armory::Data::ToonClass
-        expect(@data_class.classname).to be_a String
-        expect(@data_class.classname).to eq("Warrior")
-      end
-
-      it 'returns flattened talents' do
-        flattened_talents = @data_class.talents_flatten
-        expect(flattened_talents).to be_a Array
-        expect(flattened_talents.count).to eq(12)
-        expect(flattened_talents.first).to be_a Armory::Data::Talent
-        expect(flattened_talents.first.tier).to eq(0)
-        expect(flattened_talents.first.column).to eq(0)
-        expect(flattened_talents.last).to be_a Armory::Data::Talent
-        expect(flattened_talents.last.tier).to eq(2)
-        expect(flattened_talents.last.column).to eq(2)
-      end
-      it 'inserts specs into flattened talents' do
-        flattened_talents = @data_class.talents_flatten
-        expect(flattened_talents.first).to be_a Armory::Data::Talent
-        expect(flattened_talents.first.spec).to be_a Armory::Data::Spec
-        expect(flattened_talents.first.spec.id).to eq(0)
-        expect(flattened_talents.first.spec.name).to eq("Spec 1")
-        expect(flattened_talents.last).to be_a Armory::Data::Talent
-        expect(flattened_talents.last.spec).to be_a Armory::Data::Spec
-        expect(flattened_talents.last.spec.id).to eq(1)
-        expect(flattened_talents.last.spec.name).to eq("Spec 2")
-      end
-    end
-  end
 
 
 
