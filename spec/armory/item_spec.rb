@@ -103,9 +103,18 @@ describe Armory::Item do
               defaultBonusLists: [],
               chanceBonusLists: [],
               bonusChances: []
-          }
+          },
 
-
+          # Artifact Weapon
+              :artifactId => 48,
+    :artifactAppearanceId => 120,
+          :artifactTraits => [{:id => 1342, :rank => 1},
+                              {:id => 1186, :rank => 3},
+                              {:id => 972, :rank => 3}
+                             ],
+                  :relics => [{ :socket => 0, :itemId => 133006, :context => 11, :bonusLists => [768, 1525, 1809] },
+                              { :socket => 1, :itemId => 133058, :context => 11, :bonusLists => [1793, 1545, 1809] }
+                             ]
         }
     @item = Armory::Item.new(@data)
   end
@@ -167,6 +176,11 @@ describe Armory::Item do
       expect(@item.heroic_tooltip?).to eq(false)
       expect(@item.available_contexts).to eq([""])
       expect(@item.bonus_summary).to eq({defaultBonusLists: [], chanceBonusLists: [], bonusChances: []})
+    end
+
+    it 'returns artifact weapon data' do
+      expect(@item.artifact_id).to eq(48)
+      expect(@item.artifact_appearance_id).to eq(120)
     end
 
     it 'returns correct spell data' do
@@ -252,6 +266,22 @@ describe Armory::Item do
       expect(@item.weapon.damage.exact_max).to be_a Float
       expect(@item.weapon.damage.exact_max).to eq(458.0)
     end
+
+    it 'returns artifact extra data' do
+      expect(@item.artifact_traits).to be_a Array
+      expect(@item.artifact_traits.first).to be_a Armory::Item::ArtifactTraits
+      expect(@item.artifact_traits.first.id).to eq(1342)
+      expect(@item.artifact_traits.first.rank).to eq(1)
+      expect(@item.artifact_relics).to be_a Array
+      expect(@item.artifact_relics.first).to be_a Armory::Item::ArtifactRelics
+      expect(@item.artifact_relics.first.socket).to eq(0)
+      expect(@item.artifact_relics.first.item).to be_a Armory::Item
+      expect(@item.artifact_relics.first.item.id).to eq(133006)
+      expect(@item.artifact_relics.first.context).to eq(11)
+      expect(@item.artifact_relics.first.bonus_lists).to be_a Array
+      expect(@item.artifact_relics.first.bonus_lists).to eq([768, 1525, 1809])
+    end
+
 
   end
 

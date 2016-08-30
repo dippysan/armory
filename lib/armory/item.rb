@@ -56,5 +56,13 @@ module Armory
 
     object_attr_reader :'Data::GemInfo', :gemInfo, method_alias: :gem_info
 
+    # Artifact weapons
+    attr_reader :artifactId, :artifactAppearanceId
+    alias_method :artifact_id, :artifactId
+    alias_method :artifact_appearance_id, :artifactAppearanceId
+    object_attr_reader_as_array :'Item::ArtifactTraits', :artifactTraits, method_alias: :artifact_traits
+    object_attr_reader_as_array :'Item::ArtifactRelics', :relics, method_alias: :artifact_relics
+
+
   end
 end
