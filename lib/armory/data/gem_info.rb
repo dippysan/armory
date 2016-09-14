@@ -10,10 +10,14 @@ module Armory
       object_attr_reader :'Data::GemBonus', :bonus
 
       def type
-        @attrs[:type][:type]
+        @attrs.fetch(:type,{}).fetch(:type,nil)
       end
       memoize :type
 
+      def is_relic?
+        @attrs.fetch(:bonus,{}).fetch(:name,nil) == "Relic Enhancement"
+      end
+      memoize :is_relic?
 
     end
   end

@@ -63,6 +63,13 @@ module Armory
     object_attr_reader_as_array :'Item::ArtifactTraits', :artifactTraits, method_alias: :artifact_traits
     object_attr_reader_as_array :'Item::ArtifactRelics', :relics, method_alias: :artifact_relics
 
+    # Is this a relic item (fits in an artifact weapon)
+    def is_relic?
+      gem_info && gem_info.is_relic?
+    end
+    def relic_type
+      gem_info && gem_info.type
+    end
 
   end
 end

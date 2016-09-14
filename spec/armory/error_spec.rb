@@ -25,7 +25,6 @@ describe Armory::Error do
       before do
         body = "{\"#{key}\":\"Internal Server Error\"}" unless body.nil?
         stub_get('/wow/realm/status')
-          .with()
           .to_return(:status => 500, :body => body, :headers => {:content_type => 'application/json;charset=UTF-8'})
       end
       it 'raises an exception with the proper message' do
@@ -38,7 +37,6 @@ describe Armory::Error do
     context "when HTTP status is #{status}" do
       before do
         stub_get('/wow/realm/status')
-          .with()
           .to_return(:status => status, :body => '{}', :headers => {:content_type => 'application/json;charset=UTF-8'})
       end
       it "raises #{exception}" do

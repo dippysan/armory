@@ -141,6 +141,7 @@ describe Armory::Item do
       expect(@item.armor).to eq(114)
       expect(@item.context).to be_a String
       expect(@item.context).to eq("vendor")
+      expect(@item.is_relic?).to eq false
     end
 
     it 'returns additional data from /wow/items call' do
@@ -280,6 +281,33 @@ describe Armory::Item do
       expect(@item.artifact_relics.first.context).to eq(11)
       expect(@item.artifact_relics.first.bonus_lists).to be_a Array
       expect(@item.artifact_relics.first.bonus_lists).to eq([768, 1525, 1809])
+    end
+
+    describe "relic item" do
+      before do
+        # Replace gemdata with relic
+        @data[:gemInfo] = {
+                bonus: {
+                    name: "Relic Enhancement",
+                    srcItemId: 0,
+                    requiredSkillId: 0,
+                    requiredSkillRank: 0,
+                    minLevel: 0,
+                    itemLevel: 1
+                },
+                type: {
+                    type: "IRON"
+                },
+                minItemLevel: 0
+            }
+        @item = Armory::Item.new(@data)
+      end
+
+      it 'senses relic items' do
+        expect(@item.is_relic?).to eq true
+        expect(@item.relic_type).to eq "IRON"
+      end
+
     end
 
 

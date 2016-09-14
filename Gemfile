@@ -23,6 +23,7 @@ group :test do
   gem 'timecop', '0.6.1'
   gem 'webmock'
   gem 'yardstick'
+  gem 'autotest'
 end
 
 gemspec
