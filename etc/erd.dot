@@ -1,0 +1,189 @@
+digraph classes {
+	graph [rotate=0, rankdir="LR"]
+	node [fillcolor="#c4ddec", style="filled", fontname="Helvetica Neue"]
+	edge [color="#444444"]
+	ArgumentError [label="ArgumentError"]
+	Armory__Achievement [label="Armory::Achievement"]
+	Armory__Achievement__Category [label="Armory::Achievement::Category"]
+	Armory__Arguments [label="Armory::Arguments"]
+	Armory__Auction [label="Armory::Auction"]
+	Armory__AuctionData [label="Armory::AuctionData"]
+	Armory__AuctionItem [label="Armory::AuctionItem"]
+	Armory__AuctionRealm [label="Armory::AuctionRealm"]
+	Armory__Base [label="Armory::Base"]
+	Armory__BasicRealm [label="Armory::BasicRealm"]
+	Armory__Character [label="Armory::Character"]
+	Armory__Character__Appearance [label="Armory::Character::Appearance"]
+	Armory__Character__Glyphs [label="Armory::Character::Glyphs"]
+	Armory__Character__Items [label="Armory::Character::Items"]
+	Armory__Character__Mounts [label="Armory::Character::Mounts"]
+	Armory__Character__Pets [label="Armory::Character::Pets"]
+	Armory__Character__PvP [label="Armory::Character::PvP"]
+	Armory__Character__Talents [label="Armory::Character::Talents"]
+	Armory__Data__Achievement [label="Armory::Data::Achievement"]
+	Armory__Data__AchievementCriteria [label="Armory::Data::AchievementCriteria"]
+	Armory__Data__Achievements [label="Armory::Data::Achievements"]
+	Armory__Data__ArenaBracket [label="Armory::Data::ArenaBracket"]
+	Armory__Data__Emblem [label="Armory::Data::Emblem"]
+	Armory__Data__Faction [label="Armory::Data::Faction"]
+	Armory__Data__Feed [label="Armory::Data::Feed"]
+	Armory__Data__Feed__Item [label="Armory::Data::Feed::Item"]
+	Armory__Data__Feed__Item__Achievement [label="Armory::Data::Feed::Item::Achievement"]
+	Armory__Data__Feed__Item__BossKill [label="Armory::Data::Feed::Item::BossKill"]
+	Armory__Data__Feed__Item__Criteria [label="Armory::Data::Feed::Item::Criteria"]
+	Armory__Data__Feed__Item__Loot [label="Armory::Data::Feed::Item::Loot"]
+	Armory__Data__Feed__News [label="Armory::Data::Feed::News"]
+	Armory__Data__GemBonus [label="Armory::Data::GemBonus"]
+	Armory__Data__GemInfo [label="Armory::Data::GemInfo"]
+	Armory__Data__Gender [label="Armory::Data::Gender"]
+	Armory__Data__Glyph [label="Armory::Data::Glyph"]
+	Armory__Data__Mount [label="Armory::Data::Mount"]
+	Armory__Data__Pet [label="Armory::Data::Pet"]
+	Armory__Data__PetStats [label="Armory::Data::PetStats"]
+	Armory__Data__Race [label="Armory::Data::Race"]
+	Armory__Data__Raid [label="Armory::Data::Raid"]
+	Armory__Data__RaidBoss [label="Armory::Data::RaidBoss"]
+	Armory__Data__Spec [label="Armory::Data::Spec"]
+	Armory__Data__Spell [label="Armory::Data::Spell"]
+	Armory__Data__Talent [label="Armory::Data::Talent"]
+	Armory__Data__ToonClass [label="Armory::Data::ToonClass"]
+	Armory__Error [label="Armory::Error"]
+	Armory__Error__BadGateway [label="Armory::Error::BadGateway"]
+	Armory__Error__ClientError [label="Armory::Error::ClientError"]
+	Armory__Error__ConfigurationError [label="Armory::Error::ConfigurationError"]
+	Armory__Error__Forbidden [label="Armory::Error::Forbidden"]
+	Armory__Error__GatewayTimeout [label="Armory::Error::GatewayTimeout"]
+	Armory__Error__IncorrectAPIKey [label="Armory::Error::IncorrectAPIKey"]
+	Armory__Error__IncorrectLastUpdate [label="Armory::Error::IncorrectLastUpdate"]
+	Armory__Error__InternalServerError [label="Armory::Error::InternalServerError"]
+	Armory__Error__InvalidJSON [label="Armory::Error::InvalidJSON"]
+	Armory__Error__InvalidRealm [label="Armory::Error::InvalidRealm"]
+	Armory__Error__Maintenance [label="Armory::Error::Maintenance"]
+	Armory__Error__NotFound [label="Armory::Error::NotFound"]
+	Armory__Error__RateLimited [label="Armory::Error::RateLimited"]
+	Armory__Error__RegionMissing [label="Armory::Error::RegionMissing"]
+	Armory__Error__RequestTimeout [label="Armory::Error::RequestTimeout"]
+	Armory__Error__ServerError [label="Armory::Error::ServerError"]
+	Armory__Guild [label="Armory::Guild"]
+	Armory__Identity [label="Armory::Identity"]
+	Armory__IncludeKey [label="Armory::IncludeKey"]
+	Armory__Item [label="Armory::Item"]
+	Armory__Item__ArtifactRelics [label="Armory::Item::ArtifactRelics"]
+	Armory__Item__ArtifactTraits [label="Armory::Item::ArtifactTraits"]
+	Armory__Item__Extra [label="Armory::Item::Extra"]
+	Armory__Item__Spell [label="Armory::Item::Spell"]
+	Armory__Item__Stat [label="Armory::Item::Stat"]
+	Armory__Item__Weapon [label="Armory::Item::Weapon"]
+	Armory__Item__WeaponDamage [label="Armory::Item::WeaponDamage"]
+	Armory__MetaMethods [label="Armory::MetaMethods"]
+	Armory__NullObject [label="Armory::NullObject"]
+	Armory__REST__Client [label="Armory::REST::Client"]
+	Armory__REST__Connection [label="Armory::REST::Connection"]
+	Armory__REST__Response__ParseJson [label="Armory::REST::Response::ParseJson"]
+	Armory__REST__Response__RaiseError [label="Armory::REST::Response::RaiseError"]
+	Armory__Realm [label="Armory::Realm"]
+	Armory__Request [label="Armory::Request"]
+	Armory__RequestBare [label="Armory::RequestBare"]
+	Armory__URL [label="Armory::URL"]
+	Armory__Version [label="Armory::Version"]
+	Armory__WorldZone [label="Armory::WorldZone"]
+	Array [label="Array"]
+	Exception [label="Exception"]
+	Faraday__Middleware [label="Faraday::Middleware"]
+	Faraday__Response__Middleware [label="Faraday::Response::Middleware"]
+	Naught__BasicObject [label="Naught::BasicObject"]
+	Object [label="Object"]
+	StandardError [label="StandardError"]
+	ArgumentError -> StandardError
+	Armory__Achievement -> Object
+	Armory__Achievement__Category -> Armory__Identity
+	Armory__Arguments -> Array
+	Armory__Auction -> Armory__Base
+	Armory__AuctionData -> Armory__Base
+	Armory__AuctionItem -> Armory__Base
+	Armory__AuctionRealm -> Armory__Base
+	Armory__Base -> Armory__MetaMethods
+	Armory__BasicRealm -> Armory__Base
+	Armory__Character -> Armory__Base
+	Armory__Character__Appearance -> Armory__MetaMethods
+	Armory__Character__Glyphs -> Armory__MetaMethods
+	Armory__Character__Items -> Armory__MetaMethods
+	Armory__Character__Mounts -> Armory__MetaMethods
+	Armory__Character__Pets -> Armory__MetaMethods
+	Armory__Character__PvP -> Armory__MetaMethods
+	Armory__Character__Talents -> Armory__MetaMethods
+	Armory__Data__Achievement -> Armory__MetaMethods
+	Armory__Data__AchievementCriteria -> Armory__MetaMethods
+	Armory__Data__Achievements -> Armory__MetaMethods
+	Armory__Data__ArenaBracket -> Armory__MetaMethods
+	Armory__Data__Emblem -> Armory__MetaMethods
+	Armory__Data__Faction -> Armory__Identity
+	Armory__Data__Feed -> Object
+	Armory__Data__Feed__Item -> Armory__MetaMethods
+	Armory__Data__Feed__Item__Achievement -> Armory__Data__Feed__Item
+	Armory__Data__Feed__Item__BossKill -> Armory__Data__Feed__Item
+	Armory__Data__Feed__Item__Criteria -> Armory__Data__Feed__Item__Achievement
+	Armory__Data__Feed__Item__Loot -> Armory__Data__Feed__Item
+	Armory__Data__Feed__News -> Armory__MetaMethods
+	Armory__Data__GemBonus -> Armory__MetaMethods
+	Armory__Data__GemInfo -> Armory__MetaMethods
+	Armory__Data__Gender -> Armory__Identity
+	Armory__Data__Glyph -> Armory__MetaMethods
+	Armory__Data__Mount -> Armory__MetaMethods
+	Armory__Data__Pet -> Armory__MetaMethods
+	Armory__Data__PetStats -> Armory__MetaMethods
+	Armory__Data__Race -> Armory__Identity
+	Armory__Data__Raid -> Armory__Identity
+	Armory__Data__RaidBoss -> Armory__Identity
+	Armory__Data__Spec -> Armory__MetaMethods
+	Armory__Data__Spell -> Armory__Identity
+	Armory__Data__Talent -> Armory__MetaMethods
+	Armory__Data__ToonClass -> Armory__Identity
+	Armory__Error -> StandardError
+	Armory__Error__BadGateway -> Armory__Error__ServerError
+	Armory__Error__ClientError -> Armory__Error
+	Armory__Error__ConfigurationError -> ArgumentError
+	Armory__Error__Forbidden -> Armory__Error__ClientError
+	Armory__Error__GatewayTimeout -> Armory__Error__ServerError
+	Armory__Error__IncorrectAPIKey -> Armory__Error__Forbidden
+	Armory__Error__IncorrectLastUpdate -> ArgumentError
+	Armory__Error__InternalServerError -> Armory__Error__ServerError
+	Armory__Error__InvalidJSON -> Armory__Error__ServerError
+	Armory__Error__InvalidRealm -> Armory__Error__ClientError
+	Armory__Error__Maintenance -> Armory__Error__ServerError
+	Armory__Error__NotFound -> Armory__Error__ClientError
+	Armory__Error__RateLimited -> Armory__Error__ServerError
+	Armory__Error__RegionMissing -> Armory__Error__ClientError
+	Armory__Error__RequestTimeout -> Armory__Error__ClientError
+	Armory__Error__ServerError -> Armory__Error
+	Armory__Guild -> Armory__Base
+	Armory__Identity -> Armory__MetaMethods
+	Armory__IncludeKey -> Object
+	Armory__Item -> Armory__Identity
+	Armory__Item__ArtifactRelics -> Armory__MetaMethods
+	Armory__Item__ArtifactTraits -> Armory__Identity
+	Armory__Item__Extra -> Armory__MetaMethods
+	Armory__Item__Spell -> Armory__Identity
+	Armory__Item__Stat -> Armory__MetaMethods
+	Armory__Item__Weapon -> Armory__MetaMethods
+	Armory__Item__WeaponDamage -> Armory__MetaMethods
+	Armory__MetaMethods -> Object
+	Armory__NullObject -> Naught__BasicObject
+	Armory__REST__Client -> Armory__REST__Connection
+	Armory__REST__Connection -> Object
+	Armory__REST__Response__ParseJson -> Faraday__Response__Middleware
+	Armory__REST__Response__RaiseError -> Faraday__Response__Middleware
+	Armory__Realm -> Armory__BasicRealm
+	Armory__Request -> Armory__RequestBare
+	Armory__RequestBare -> Object
+	Armory__URL -> Armory__MetaMethods
+	Armory__Version -> Object
+	Armory__WorldZone -> Armory__MetaMethods
+	Array -> Object
+	Exception -> Object
+	Faraday__Middleware -> Object
+	Faraday__Response__Middleware -> Faraday__Middleware
+	Naught__BasicObject -> BasicObject
+	Object -> BasicObject
+	StandardError -> Exception
+}
