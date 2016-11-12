@@ -1,0 +1,16 @@
+{
+    "lastModified": 1416903598000,
+    "name": "Blood Legion",
+    "realm": "Illidan",
+    "battlegroup": "Rampage",
+    "level": 25,
+    "side": 1,
+    "achievementPoints": 2580,
+    "emblem": {
+        "icon": 38,
+        "iconColor": "ff101517",
+        "border": 4,
+        "borderColor": "ff0f1415",
+        "backgroundColor": "ffb1002e"
+    }
+}

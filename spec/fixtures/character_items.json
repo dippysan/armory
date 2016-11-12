@@ -1,0 +1,446 @@
+{
+    "lastModified": 1416710137000,
+    "name": "Sleight",
+    "realm": "Illidan",
+    "battlegroup": "Rampage",
+    "class": 4,
+    "race": 8,
+    "gender": 1,
+    "level": 100,
+    "achievementPoints": 19305,
+    "thumbnail": "illidan/203/103303883-avatar.jpg",
+    "calcClass": "c",
+    "items": {
+        "averageItemLevel": 629,
+        "averageItemLevelEquipped": 629,
+        "head": {
+            "id": 118941,
+            "name": "Crown of Woe",
+            "icon": "inv_crown_02",
+            "quality": 4,
+            "itemLevel": 640,
+            "tooltipParams": {},
+            "stats": [{
+                "stat": 51,
+                "amount": 63
+            }, {
+                "stat": 32,
+                "amount": 139
+            }, {
+                "stat": 73,
+                "amount": 184
+            }, {
+                "stat": 36,
+                "amount": 93
+            }, {
+                "stat": 7,
+                "amount": 275
+            }],
+            "armor": 114,
+            "context": "",
+            "bonusLists": []
+        },
+        "neck": {
+            "id": 119825,
+            "name": "Primal Combatant's Necklace of Prowess",
+            "icon": "inv_60pvp_neck1b",
+            "quality": 3,
+            "itemLevel": 620,
+            "tooltipParams": {
+                "enchant": 5294
+            },
+            "stats": [{
+                "stat": 49,
+                "amount": 53
+            }, {
+                "stat": 3,
+                "amount": 86
+            }, {
+                "stat": 36,
+                "amount": 61
+            }, {
+                "stat": 7,
+                "amount": 129
+            }],
+            "armor": 0,
+            "context": "vendor",
+            "bonusLists": []
+        },
+        "shoulder": {
+            "id": 109938,
+            "name": "Blackwater Spaulders",
+            "icon": "inv_leather_draenordungeon_c_01shoulder",
+            "quality": 3,
+            "itemLevel": 630,
+            "tooltipParams": {},
+            "stats": [{
+                "stat": 49,
+                "amount": 78
+            }, {
+                "stat": 32,
+                "amount": 87
+            }, {
+                "stat": 73,
+                "amount": 126
+            }, {
+                "stat": 7,
+                "amount": 189
+            }],
+            "armor": 100,
+            "context": "dungeon-heroic",
+            "bonusLists": [524]
+        },
+        "back": {
+            "id": 119961,
+            "name": "Primal Combatant's Cape of Prowess",
+            "icon": "inv_cape_draenorpvp_d_02_leather_blue",
+            "quality": 3,
+            "itemLevel": 626,
+            "tooltipParams": {
+                "enchant": 5302,
+                "tinker": 4897
+            },
+            "stats": [{
+                "stat": 49,
+                "amount": 65
+            }, {
+                "stat": 3,
+                "amount": 90
+            }, {
+                "stat": 36,
+                "amount": 56
+            }, {
+                "stat": 7,
+                "amount": 136
+            }],
+            "armor": 43,
+            "context": "pvp-unranked",
+            "bonusLists": [547]
+        },
+        "chest": {
+            "id": 119905,
+            "name": "Primal Combatant's Leather Tunic",
+            "icon": "inv_chest_mail_draenorhonor_c_01",
+            "quality": 3,
+            "itemLevel": 620,
+            "tooltipParams": {},
+            "stats": [{
+                "stat": 59,
+                "amount": 101
+            }, {
+                "stat": 49,
+                "amount": 101
+            }, {
+                "stat": 3,
+                "amount": 152
+            }, {
+                "stat": 7,
+                "amount": 228
+            }],
+            "armor": 127,
+            "context": "pvp-unranked",
+            "bonusLists": []
+        },
+        "shirt": {
+            "id": 52019,
+            "name": "Precious' Ribbon",
+            "icon": "inv_misc_ribbon_01",
+            "quality": 2,
+            "itemLevel": 1,
+            "tooltipParams": {},
+            "stats": [],
+            "armor": 0,
+            "context": "",
+            "bonusLists": []
+        },
+        "wrist": {
+            "id": 109869,
+            "name": "Bloodfeather Bracers",
+            "icon": "inv_leather_draenordungeon_c_01bracer",
+            "quality": 3,
+            "itemLevel": 630,
+            "tooltipParams": {},
+            "stats": [{
+                "stat": 40,
+                "amount": 63
+            }, {
+                "stat": 73,
+                "amount": 94
+            }, {
+                "stat": 36,
+                "amount": 63
+            }, {
+                "stat": 7,
+                "amount": 141
+            }],
+            "armor": 59,
+            "context": "dungeon-heroic",
+            "bonusLists": [524]
+        },
+        "hands": {
+            "id": 119906,
+            "name": "Primal Combatant's Leather Gloves",
+            "icon": "inv_glove_mail_draenorhonor_c_01",
+            "quality": 3,
+            "itemLevel": 620,
+            "tooltipParams": {},
+            "stats": [{
+                "stat": 59,
+                "amount": 76
+            }, {
+                "stat": 3,
+                "amount": 114
+            }, {
+                "stat": 36,
+                "amount": 76
+            }, {
+                "stat": 7,
+                "amount": 171
+            }],
+            "armor": 80,
+            "context": "pvp-unranked",
+            "bonusLists": []
+        },
+        "waist": {
+            "id": 109832,
+            "name": "Leafmender Girdle",
+            "icon": "inv_leather_draenordungeon_c_01belt",
+            "quality": 3,
+            "itemLevel": 630,
+            "tooltipParams": {
+                "tinker": 4223
+            },
+            "stats": [{
+                "stat": 40,
+                "amount": 76
+            }, {
+                "stat": 32,
+                "amount": 89
+            }, {
+                "stat": 63,
+                "amount": 72
+            }, {
+                "stat": 73,
+                "amount": 126
+            }, {
+                "stat": 7,
+                "amount": 189
+            }],
+            "armor": 75,
+            "context": "dungeon-heroic",
+            "bonusLists": [40, 524]
+        },
+        "legs": {
+            "id": 109823,
+            "name": "Blackwater Leggings",
+            "icon": "inv_leather_draenordungeon_c_01pant",
+            "quality": 3,
+            "itemLevel": 630,
+            "tooltipParams": {},
+            "stats": [{
+                "stat": 49,
+                "amount": 126
+            }, {
+                "stat": 32,
+                "amount": 87
+            }, {
+                "stat": 73,
+                "amount": 167
+            }, {
+                "stat": 7,
+                "amount": 251
+            }],
+            "armor": 117,
+            "context": "dungeon-heroic",
+            "bonusLists": [524]
+        },
+        "feet": {
+            "id": 119870,
+            "name": "Primal Combatant's Boots of Prowess",
+            "icon": "inv_boot_mail_draenorhonor_c_01",
+            "quality": 3,
+            "itemLevel": 620,
+            "tooltipParams": {},
+            "stats": [{
+                "stat": 59,
+                "amount": 71
+            }, {
+                "stat": 73,
+                "amount": 114
+            }, {
+                "stat": 36,
+                "amount": 82
+            }, {
+                "stat": 7,
+                "amount": 171
+            }],
+            "armor": 88,
+            "context": "vendor",
+            "bonusLists": []
+        },
+        "finger1": {
+            "id": 109760,
+            "name": "Ced's Chiming Circle",
+            "icon": "inv_60dungeon_ring5b",
+            "quality": 3,
+            "itemLevel": 630,
+            "tooltipParams": {
+                "enchant": 5301
+            },
+            "stats": [{
+                "stat": 32,
+                "amount": 67
+            }, {
+                "stat": 3,
+                "amount": 94
+            }, {
+                "stat": 36,
+                "amount": 55
+            }, {
+                "stat": 7,
+                "amount": 141
+            }],
+            "armor": 0,
+            "context": "dungeon-heroic",
+            "bonusLists": [524]
+        },
+        "finger2": {
+            "id": 118297,
+            "name": "Timeless Solium Band of the Assassin",
+            "icon": "inv_misc_6oring_redlv2",
+            "quality": 4,
+            "itemLevel": 680,
+            "tooltipParams": {
+                "enchant": 5301
+            },
+            "stats": [{
+                "stat": 40,
+                "amount": 93
+            }, {
+                "stat": 32,
+                "amount": 104
+            }, {
+                "stat": 3,
+                "amount": 150
+            }, {
+                "stat": 7,
+                "amount": 225
+            }],
+            "armor": 0,
+            "context": "quest-reward",
+            "bonusLists": []
+        },
+        "trinket1": {
+            "id": 119927,
+            "name": "Primal Combatant's Insignia of Conquest",
+            "icon": "inv_60pvp_trinket3c",
+            "quality": 3,
+            "itemLevel": 620,
+            "tooltipParams": {},
+            "stats": [{
+                "stat": 3,
+                "amount": 145
+            }],
+            "armor": 0,
+            "context": "pvp-unranked",
+            "bonusLists": []
+        },
+        "trinket2": {
+            "id": 109996,
+            "name": "Thundertower's Targeting Reticle",
+            "icon": "ability_hunter_mastermarksman",
+            "quality": 3,
+            "itemLevel": 630,
+            "tooltipParams": {},
+            "stats": [{
+                "stat": 3,
+                "amount": 159
+            }, {
+                "stat": 67,
+                "amount": 159
+            }],
+            "armor": 0,
+            "context": "dungeon-heroic",
+            "bonusLists": [524]
+        },
+        "mainHand": {
+            "id": 105684,
+            "name": "Hellscream's Razor",
+            "icon": "inv_knife_1h_pvphorde_a_01",
+            "quality": 7,
+            "itemLevel": 620,
+            "tooltipParams": {
+                "gem0": 76626,
+                "gem1": 76626,
+                "enchant": 5331,
+                "transmogItem": 45607
+            },
+            "stats": [{
+                "stat": 32,
+                "amount": 41
+            }, {
+                "stat": 3,
+                "amount": 57
+            }, {
+                "stat": 36,
+                "amount": 36
+            }, {
+                "stat": 7,
+                "amount": 98
+            }],
+            "armor": 0,
+            "weaponInfo": {
+                "damage": {
+                    "min": 267,
+                    "max": 496,
+                    "exactMin": 267.0,
+                    "exactMax": 496.0
+                },
+                "weaponSpeed": 1.8,
+                "dps": 211.94444
+            },
+            "context": "",
+            "bonusLists": []
+        },
+        "offHand": {
+            "id": 105684,
+            "name": "Hellscream's Razor",
+            "icon": "inv_knife_1h_pvphorde_a_01",
+            "quality": 7,
+            "itemLevel": 620,
+            "tooltipParams": {
+                "gem0": 76626,
+                "gem1": 76626,
+                "enchant": 5331,
+                "transmogItem": 45607
+            },
+            "stats": [{
+                "stat": 32,
+                "amount": 41
+            }, {
+                "stat": 3,
+                "amount": 57
+            }, {
+                "stat": 36,
+                "amount": 36
+            }, {
+                "stat": 7,
+                "amount": 98
+            }],
+            "armor": 0,
+            "weaponInfo": {
+                "damage": {
+                    "min": 267,
+                    "max": 496,
+                    "exactMin": 267.0,
+                    "exactMax": 496.0
+                },
+                "weaponSpeed": 1.8,
+                "dps": 211.94444
+            },
+            "context": "",
+            "bonusLists": []
+        }
+    },
+    "totalHonorableKills": 93665
+}

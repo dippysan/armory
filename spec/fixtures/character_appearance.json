@@ -1,0 +1,23 @@
+{
+    "lastModified": 1416454132000,
+    "name": "Trail",
+    "realm": "Ravencrest",
+    "battlegroup": "Rampage",
+    "class": 11,
+    "race": 4,
+    "gender": 0,
+    "level": 91,
+    "achievementPoints": 7285,
+    "thumbnail": "ravencrest/95/43890783-avatar.jpg",
+    "calcClass": "U",
+    "appearance": {
+        "faceVariation": 0,
+        "skinColor": 1,
+        "hairVariation": 3,
+        "hairColor": 3,
+        "featureVariation": 2,
+        "showHelm": false,
+        "showCloak": true
+    },
+    "totalHonorableKills": 849
+}

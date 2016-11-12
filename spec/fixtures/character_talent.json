@@ -1,0 +1,241 @@
+{
+    "lastModified": 1416307706000,
+    "name": "Zerosurv",
+    "realm": "Illidan",
+    "battlegroup": "Rampage",
+    "class": 1,
+    "race": 2,
+    "gender": 0,
+    "level": 100,
+    "achievementPoints": 13445,
+    "thumbnail": "illidan/59/123376443-avatar.jpg",
+    "calcClass": "Z",
+    "talents": [{
+        "talents": [{
+            "tier": 4,
+            "column": 2,
+            "spell": {
+                "id": 114030,
+                "name": "Vigilance",
+                "icon": "ability_warrior_vigilance",
+                "description": "Protect a party or raid member for 12 sec, reducing damage they take by 30% and allowing you to use Taunt with no cooldown.",
+                "range": "40 yd range",
+                "castTime": "Instant",
+                "cooldown": "2 min cooldown"
+            }
+        }, {
+            "tier": 1,
+            "column": 0,
+            "spell": {
+                "id": 55694,
+                "name": "Enraged Regeneration",
+                "icon": "ability_warrior_focusedrage",
+                "description": "Instantly heals you for 10% of your maximum health, and an additional 20% over 5 sec. Usable while stunned.",
+                "castTime": "Instant",
+                "cooldown": "1 min cooldown"
+            }
+        }, {
+            "tier": 0,
+            "column": 0,
+            "spell": {
+                "id": 103826,
+                "name": "Juggernaut",
+                "icon": "ability_warrior_bullrush",
+                "description": "You can Charge every 12 sec instead of every 20 sec.",
+                "castTime": "Passive"
+            }
+        }, {
+            "tier": 2,
+            "column": 0,
+            "spell": {
+                "id": 169680,
+                "name": "Heavy Repercussions",
+                "icon": "inv_shield_32",
+                "description": "Shield Slam deals 30% additional damage while Shield Block or Shield Charge is active.",
+                "castTime": "Passive"
+            }
+        }, {
+            "tier": 3,
+            "column": 0,
+            "spell": {
+                "id": 107570,
+                "name": "Storm Bolt",
+                "icon": "warrior_talent_icon_stormbolt",
+                "description": "Hurls your weapon at an enemy, causing 1,887 Physical damage and stunning for 4 sec.  Deals quadruple damage to targets permanently immune to stuns.",
+                "range": "30 yd range",
+                "castTime": "Instant",
+                "cooldown": "30 sec cooldown"
+            }
+        }, {
+            "tier": 5,
+            "column": 2,
+            "spell": {
+                "id": 46924,
+                "name": "Bladestorm",
+                "icon": "ability_warrior_bladestorm",
+                "description": "Become an unstoppable storm of destructive force, striking all targets within 8 yards for 5,033 Physical damage every 1 sec for 6 sec.  You are immune to movement impairing and loss of control effects, but can only use Taunt and other defensive abilities.",
+                "castTime": "Instant",
+                "cooldown": "1 min cooldown"
+            }
+        }],
+        "glyphs": {
+            "major": [{
+                "glyph": 502,
+                "item": 43425,
+                "name": "Glyph of Shield Slam",
+                "icon": "inv_shield_05"
+            }, {
+                "glyph": 508,
+                "item": 0,
+                "name": "Glyph of Victory Rush",
+                "icon": "ability_warrior_devastate"
+            }, {
+                "glyph": 931,
+                "item": 0,
+                "name": "Glyph of Bull Rush",
+                "icon": "achievement_character_tauren_male"
+            }],
+            "minor": [{
+                "glyph": 991,
+                "item": 80588,
+                "name": "Glyph of Burning Anger",
+                "icon": "spell_shadow_unholyfrenzy"
+            }, {
+                "glyph": 1020,
+                "item": 85221,
+                "name": "Glyph of the Blazing Trail",
+                "icon": "spell_fire_burningspeed"
+            }, {
+                "glyph": 765,
+                "item": 45794,
+                "name": "Glyph of Intimidating Shout",
+                "icon": "ability_golemthunderclap"
+            }]
+        },
+        "spec": {
+            "name": "Protection",
+            "role": "TANK",
+            "backgroundImage": "bg-warrior-protection",
+            "icon": "ability_warrior_defensivestance",
+            "description": "A stalwart protector who uses a shield to safeguard himself and his allies.",
+            "order": 2
+        },
+        "calcTalent": "000022.",
+        "calcSpec": "b",
+        "calcGlyph": "SjMpKO"
+    }, {
+        "selected": true,
+        "talents": [{
+            "tier": 2,
+            "column": 0,
+            "spell": {
+                "id": 169679,
+                "name": "Furious Strikes",
+                "icon": "warrior_talent_icon_furyintheblood",
+                "description": "Wild Strike costs 25 less Rage.",
+                "castTime": "Passive"
+            }
+        }, {
+            "tier": 4,
+            "column": 2,
+            "spell": {
+                "id": 114030,
+                "name": "Vigilance",
+                "icon": "ability_warrior_vigilance",
+                "description": "Protect a party or raid member for 12 sec, reducing damage they take by 30% and allowing you to use Taunt with no cooldown.",
+                "range": "40 yd range",
+                "castTime": "Instant",
+                "cooldown": "2 min cooldown"
+            }
+        }, {
+            "tier": 5,
+            "column": 2,
+            "spell": {
+                "id": 46924,
+                "name": "Bladestorm",
+                "icon": "ability_warrior_bladestorm",
+                "description": "Become an unstoppable storm of destructive force, striking all targets within 8 yards for 5,033 Physical damage every 1 sec for 6 sec.  You are immune to movement impairing and loss of control effects, but can only use Taunt and other defensive abilities.",
+                "castTime": "Instant",
+                "cooldown": "1 min cooldown"
+            }
+        }, {
+            "tier": 3,
+            "column": 0,
+            "spell": {
+                "id": 107570,
+                "name": "Storm Bolt",
+                "icon": "warrior_talent_icon_stormbolt",
+                "description": "Hurls your weapon at an enemy, causing 1,887 Physical damage and stunning for 4 sec.  Deals quadruple damage to targets permanently immune to stuns.",
+                "range": "30 yd range",
+                "castTime": "Instant",
+                "cooldown": "30 sec cooldown"
+            }
+        }, {
+            "tier": 1,
+            "column": 1,
+            "spell": {
+                "id": 29838,
+                "name": "Second Wind",
+                "icon": "ability_hunter_harass",
+                "description": "Whenever you are below 35% health, you gain 10% leech, healing yourself for a percentage of damage you deal.",
+                "castTime": "Passive"
+            }
+        }, {
+            "tier": 0,
+            "column": 1,
+            "spell": {
+                "id": 103827,
+                "name": "Double Time",
+                "icon": "inv_misc_horn_04",
+                "description": "You can use Charge twice in a row, but it can only grant Rage once every 12 sec. Each use has a 20 sec recharge time.",
+                "castTime": "Passive"
+            }
+        }],
+        "glyphs": {
+            "major": [{
+                "glyph": 487,
+                "item": 43399,
+                "name": "Glyph of Unending Rage",
+                "icon": "ability_warrior_intensifyrage"
+            }, {
+                "glyph": 931,
+                "item": 0,
+                "name": "Glyph of Bull Rush",
+                "icon": "achievement_character_tauren_male"
+            }, {
+                "glyph": 509,
+                "item": 43432,
+                "name": "Glyph of Raging Wind",
+                "icon": "ability_hunter_swiftstrike"
+            }],
+            "minor": [{
+                "glyph": 1020,
+                "item": 85221,
+                "name": "Glyph of the Blazing Trail",
+                "icon": "spell_fire_burningspeed"
+            }, {
+                "glyph": 991,
+                "item": 80588,
+                "name": "Glyph of Burning Anger",
+                "icon": "spell_shadow_unholyfrenzy"
+            }, {
+                "glyph": 765,
+                "item": 45794,
+                "name": "Glyph of Intimidating Shout",
+                "icon": "ability_golemthunderclap"
+            }]
+        },
+        "spec": {
+            "name": "Fury",
+            "role": "DPS",
+            "backgroundImage": "bg-warrior-fury",
+            "icon": "ability_warrior_innerrage",
+            "description": "A furious berserker wielding a weapon in each hand, unleashing a flurry of attacks to carve his opponents to pieces.",
+            "order": 1
+        },
+        "calcTalent": "110022.",
+        "calcSpec": "Z",
+        "calcGlyph": "cMQKpO"
+    }],
+    "totalHonorableKills": 36546
+}

@@ -1,0 +1,68 @@
+{
+    "lastModified": 1416307706000,
+    "name": "Zerosurv",
+    "realm": "Illidan",
+    "battlegroup": "Rampage",
+    "class": 1,
+    "race": 2,
+    "gender": 0,
+    "level": 100,
+    "achievementPoints": 13445,
+    "thumbnail": "illidan/59/123376443-avatar.jpg",
+    "calcClass": "Z",
+    "pvp": {
+        "brackets": {
+            "ARENA_BRACKET_2v2": {
+                "slug": "2v2",
+                "rating": 1945,
+                "weeklyPlayed": 0,
+                "weeklyWon": 0,
+                "weeklyLost": 0,
+                "seasonPlayed": 856,
+                "seasonWon": 438,
+                "seasonLost": 418
+            },
+            "ARENA_BRACKET_3v3": {
+                "slug": "3v3",
+                "rating": 2711,
+                "weeklyPlayed": 0,
+                "weeklyWon": 0,
+                "weeklyLost": 0,
+                "seasonPlayed": 252,
+                "seasonWon": 149,
+                "seasonLost": 103
+            },
+            "ARENA_BRACKET_5v5": {
+                "slug": "5v5",
+                "rating": 2041,
+                "weeklyPlayed": 0,
+                "weeklyWon": 0,
+                "weeklyLost": 0,
+                "seasonPlayed": 102,
+                "seasonWon": 60,
+                "seasonLost": 42
+            },
+            "ARENA_BRACKET_RBG": {
+                "slug": "rbg",
+                "rating": 2169,
+                "weeklyPlayed": 0,
+                "weeklyWon": 0,
+                "weeklyLost": 0,
+                "seasonPlayed": 107,
+                "seasonWon": 57,
+                "seasonLost": 50
+            },
+            "UNKNOWN": {
+                "slug": "unknown",
+                "rating": 576,
+                "weeklyPlayed": 0,
+                "weeklyWon": 0,
+                "weeklyLost": 0,
+                "seasonPlayed": 17,
+                "seasonWon": 6,
+                "seasonLost": 11
+            }
+        }
+    },
+    "totalHonorableKills": 36546
+}
